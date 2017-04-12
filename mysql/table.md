@@ -27,6 +27,7 @@ drop table tabname
 alter table 表名 add 列名 列数据类型 [after 插入位置];
     在表的最后追加列 address: alter table students add address char(60);
     在名为 age 的列后插入列 birthday: alter table students add birthday date after age;
+添加多列alter table user add ( photo blob,birthday date);
 
 修改列
 alter table 表名 change 列名称 列新名称 新数据类型;
