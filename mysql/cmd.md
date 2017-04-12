@@ -34,6 +34,7 @@ Bye
 
 use RUNOOB
 
+mysql -D 所选择的数据库名 -h 主机名 -u 用户名 -p
 
 
 

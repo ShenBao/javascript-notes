@@ -6,6 +6,11 @@
 show table;
 
 
+显示表结构describe（desc）
+desc tableName;
+
+
+
 
 
 
