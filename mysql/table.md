@@ -42,6 +42,27 @@ alter table 表名 rename 新表名;
     重命名 students 表为 workmates: alter table students rename workmates;
 
 
+添加主键:Alter table tabname add primary key(col)
+删除主键:Alter table tabname drop primary key(col)
+
+创建索引:create [unique] index idxname on tabname(col….)
+删除索引:drop index idxname  //注：索引是不可更改的，想更改必须删除重新建。
+
+创建视图：create view viewname as select statement
+删除视图：drop view viewname
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
