@@ -5,6 +5,7 @@
 http://www.cnblogs.com/zbseoag/archive/2013/03/19/2970004.html-->
 
 
+
 MySQL有三大类数据类型, 分别为数字、日期\时间、字符串, 这三大类中又更细致的划分了许多子类型:
 
 数字类型
