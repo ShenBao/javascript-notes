@@ -53,7 +53,7 @@ alter table 表名 rename 新表名;
 删除视图：drop view viewname
 
 
-
+修改表名：rename table oldtablename to newtableneme（库名是不能改的）
 
 
 
