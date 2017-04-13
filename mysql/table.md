@@ -41,6 +41,18 @@ alter table 表名 drop 列名称;
 重命名表
 alter table 表名 rename 新表名;
     重命名 students 表为 workmates: alter table students rename workmates;
+    重命名并移动位置alter table users change sex u_sex varchar(10) after u_name;
+
+修改tel列的位置，在第一列显示
+alter table user modify tel varchar(15) default '02087654321' first;
+修改tel列的位置，在指定列之后显示
+alter table user modify tel varchar(15) default '02087654321' after age;
+
+但是MySQL可以通过多个modify的方式完成：
+alter table user 
+    modify tel varchar(15) default '02087654321' first, 
+    modify name varchar(20) after tel;
+注意：alter modify不支持一次修改多个列，但是Oracle支持多列修改
 
 
 添加主键:Alter table tabname add primary key(col)
