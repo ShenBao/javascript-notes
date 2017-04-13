@@ -58,6 +58,20 @@ alter table 表名 rename 新表名;
 
 
 
+子查询建表方法
+
+查找并添加于新表
+create table userInfo as select * from user;
+
+部分列名匹配模式：
+create table userInfo (
+    name varchar(20),
+    sex char
+    ) 
+as 
+select name, sex from user;
+
+
 
 
 

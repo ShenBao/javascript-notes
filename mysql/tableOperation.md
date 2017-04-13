@@ -46,12 +46,6 @@ limit
 
 
 
-查找并添加于新表
-create table userInfo as select * from user;
-
-
-
-
 
 
 
