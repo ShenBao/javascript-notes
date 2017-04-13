@@ -39,7 +39,10 @@ select 列名称 from 表名称 [查询条件];
 查找：select * from table1 where field1 like ’%value1%’ ---like的语法很精妙，查资料!
 排序：select * from table1 order by field1,field2 [desc]
 
-
+group 
+havding 
+order by 
+limit
 
 
 
