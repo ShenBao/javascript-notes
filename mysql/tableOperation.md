@@ -23,7 +23,7 @@ delete from 表名称 where 删除条件;
     delete from students where age<20;
 
 
-条件查询
+where条件查询
 select 列名称 from 表名称 [查询条件];
 =、>、<、>=、<、!= 以及一些扩展运算符 is [not] null、in、like 等。 还可以对查询条件使用 or 和 and 进行组合查询
     select * from students where age > 21;
@@ -52,6 +52,31 @@ distinct 去掉重复数据
     select distinct id from temp;
     多列将是组合的重复数据
     select distinct id, age from temp;
+
+and 并且
+    select * from temp where age > 20 and name = ‘jack’;
+    查询名称等于jack并且年龄大于20的
+
+or 或者
+    满足一个即可
+    select * from tmep where name = ‘jack’ or name = ‘jackson’;
+
+between v and v2
+    大于等于v且小于等于v2
+    select * from temp where age between 20 and 25; 
+
+in 查询
+    可以多个条件 类似于or
+    select * from temp where id in (1, 2, 3);
+
+like 模糊查询
+    查询name以j开头的:
+    select * from temp where name like ‘j%’;
+    查询name包含k的:
+    select * from temp where name like ‘%k%’;
+    escape转义:
+    select * from temp where name like ‘\_%’ escape ‘\’;
+    指定\为转义字符，上面的就可以查询name中包含“_”的数据
 
 
 
