@@ -71,14 +71,31 @@ in 查询
 
 like 模糊查询
     查询name以j开头的:
-    select * from temp where name like ‘j%’;
+        select * from temp where name like ‘j%’;
     查询name包含k的:
-    select * from temp where name like ‘%k%’;
+        select * from temp where name like ‘%k%’;
     escape转义:
-    select * from temp where name like ‘\_%’ escape ‘\’;
-    指定\为转义字符，上面的就可以查询name中包含“_”的数据
+        select * from temp where name like ‘\_%’ escape ‘\’;
+        指定\为转义字符，上面的就可以查询name中包含“_”的数据
 
+is null、is not null
+    查询为null的数据
+    select * from temp where name is null;
+    查询不为null的数据
+    select * from temp where name is not null;
 
+not
+    select * from temp where not (age > 20);
+    取小于等于20的数据
+    select * from temp where id not in(1, 2);
+
+order by
+    排序，有desc、asc升序、降序
+    select * from temp order by id;
+    默认desc排序
+    select * from temp order by id asc;
+    多列组合
+    select * from temp order by id, age;
 
 
 
