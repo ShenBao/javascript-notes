@@ -9,7 +9,7 @@
     事务控制语句：主要有commit、rollback和savepoint三个关键字完成
 
 
-##字符（串）函数
+## 字符（串）函数
 |名称|描述|
 |------|-----|
 |CONCAT|字符串连接
@@ -29,14 +29,61 @@
 |REPLACE|字符串替换
 
 
+## 数值运算
+|----|---
+|名称|描述|
+|---|----
+|CEIL()|进一取整
+|DIV|整数除法
+|FLOOR()|舍一取整
+|MOD|模运算
+|POWER()|幂运算
+|ROUND()|四舍五入
+|TRUNCARE()|数字截取
 
 
 
+## 比较运算符与函数
+|名称|描述|
+|---|----
+|[NOT] BETWEEN...AND...|[不]在范围内
+|[NOT] IN()|[不]在列出的值范围内
+|IS [NOT] NULL|[不]为空
 
 
 
-
-
+日期时间函数
+--------
+|名称|描述|
+|----|----
+|NOW()|当前日期和时间
+|CURDATE()|当前日期
+|CURTIME()|当前时间
+|DATE_ADD()|日期变化
+|DATEDIFF()|日期差值
+|DATE_FORMATE()|日期格式化
+###NOW/CURDATE/CURTIME
+可以把NOW看作是CURDATE和CURTIME的综合
+###DATE_ADD
+实现日志的增减，加为正数，减为负数
+```mysql
+SELECT DATE_ADD(CURDATE(),INTERVAL 3 WEEK);
+```
+WEEK,也可以是DAY，YEAR
+与之相对的还有一个DATE_SUB函数。
+###DATEDIFF
+获取两个日期之间的差值，左边减去右边，值为天数。
+```MYSQL
+SELECT DATEDIFF('2014-10-11','2014-09-06');
+```
+###DATE_FORMAT()
+日期格式化为其他形式，比如：
+```mysql
+SELECT DATE_FORMAT('2014-11-01','%m/%d/%Y');
+```
+结果为：
+11/01/2014  
+如果是小写的y，则格式化为11/01/14
 
 
 
