@@ -22,6 +22,8 @@ delete from 表名称 where 删除条件;
     delete from students where id=2;
     delete from students where age<20;
 
+truncate的作用就是删除该表里的全部数据，保留表结构。
+    truncate table tname
 
 where条件查询
 select 列名称 from 表名称 [查询条件];
@@ -107,9 +109,6 @@ order by
 最小：select min(field1) as minvalue from table1
 
 
-查找：select * from table1 where field1 like ’%value1%’ ---like的语法很精妙，查资料!
-排序：select * from table1 order by field1,field2 [desc]
-
 group 
 havding 
 order by 
@@ -118,8 +117,7 @@ limit
 
 
 
-truncate的作用就是删除该表里的全部数据，保留表结构。
-truncate table name
+
 
 
 
