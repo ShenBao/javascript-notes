@@ -4,8 +4,10 @@
 插入
 insert [into] 表名 [(列名1, 列名2, 列名3, ...)] values (值1, 值2, 值3, ...);
 
-    insert into students values(NULL, "王刚", "男", 20, "13811371377");
+    insert into students values(NULL, "王刚", "男", 20, "13811371377");主键自增可以不插入，所以用null代替
     insert into students (name, sex, age) values("孙丽华", "女", 21);
+    insert into temp set id = 7, name = 'jason';Set方式插入，也可以指定列
+    insert into temp values(null, ‘jack’, 22), (null, ‘jackson’ 23);    多行插入
 
 
 更新
