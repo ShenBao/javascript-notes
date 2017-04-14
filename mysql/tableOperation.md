@@ -47,8 +47,8 @@ limit
 
 
 
-
-
+truncate的作用就是删除该表里的全部数据，保留表结构。
+truncate table name
 
 
 
