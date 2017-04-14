@@ -174,6 +174,7 @@ having进行条件过滤
 
 
 
+
 sin函数
     select sin(age) from user;
     select sin(1.57);
