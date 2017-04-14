@@ -23,11 +23,9 @@ delete from 表名称 where 删除条件;
     delete from students where age<20;
 
 
-查询
+条件查询
 select 列名称 from 表名称 [查询条件];
-
 =、>、<、>=、<、!= 以及一些扩展运算符 is [not] null、in、like 等。 还可以对查询条件使用 or 和 and 进行组合查询
-
     select * from students where age > 21;
     select * from students where name like "%王%";
     select * from students where id<5 and age>20;
@@ -54,6 +52,10 @@ distinct 去掉重复数据
     select distinct id from temp;
     多列将是组合的重复数据
     select distinct id, age from temp;
+
+
+
+
 
 
 总数：select count as totalcount from table1
