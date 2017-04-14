@@ -99,6 +99,55 @@ order by
     多列组合
     select * from temp order by id, age;
 
+char_length字符长度
+    select char_length(tel) from user;
+
+添加日期函数
+    select date_add('2010-06-21', interval 2 month);
+    interval是一个关键字，2 month是2个月的意思，2是数值，month是单位
+    select addDate('2011-05-28', 2);
+    在前面的日期上加上后面的天数
+
+获取当前系统时间、日期
+    select curdate();
+    select curtime();
+
+加密函数
+    select md5('zhangsan');
+
+Null 处理函数
+    select ifnull(birthday, 'is null birthday') from user;
+    如果birthday为null，就返回后面的字符串
+    
+    select nullif(age, 245) from user;
+    如果age等于245就返回null，不等就返回age
+    
+    select isnull(birthday) from user;
+    判断birthday是否为null
+    
+    select if(isnull(birthday), 'birthday is null', 'birthday not is null') from user;
+    如果birthday为null或是0就返回birthday is null，否则就返回birthday not is null；类似于三目运算符
+
+
+case 流程函数
+    case函数是一个流程控制函数，可以接受多个参数，但最终只会返回一个结果。
+    select name, 
+    age, 
+    (case sex
+        when 1 then '男'
+        when 0 then '女'
+        else '火星人'
+        end
+    ) sex
+    from user;
+
+
+
+
+
+
+
+
 
 
 
@@ -107,6 +156,11 @@ order by
 平均：select avg(field1) as avgvalue from table1
 最大：select max(field1) as maxvalue from table1
 最小：select min(field1) as minvalue from table1
+
+
+sin函数
+    select sin(age) from user;
+    select sin(1.57);
 
 
 group 
