@@ -25,11 +25,36 @@ delete from 表名称 where 删除条件;
 
 查询
 select 列名称 from 表名称 [查询条件];
+
 =、>、<、>=、<、!= 以及一些扩展运算符 is [not] null、in、like 等。 还可以对查询条件使用 or 和 and 进行组合查询
 
     select * from students where age > 21;
     select * from students where name like "%王%";
     select * from students where id<5 and age>20;
+    select age + 2, age / 2, age – 2, age * 2 from temp where age – 2 > 22;对查询的数据进行运算操作
+
+concat函数，字符串连接
+    select concat(name, ‘-eco’) from temp;
+    concat和null进行连接，会导致连接后的数据成为null
+
+as 对列重命名
+    select name as ‘名称’ from temp;
+    as也可以省略不写，效果一样
+    如果重命名的列名出现特殊字符，如“‘”单引号，那就需要用双引号引在外面
+    select name as “名’称” from temp;
+
+给table去别名
+select t.name Name from temp as t;
+
+查询常量
+    select 5 + 2;
+    select concat('a', 'bbb');
+
+distinct 去掉重复数据
+    select distinct id from temp;
+    多列将是组合的重复数据
+    select distinct id, age from temp;
+
 
 总数：select count as totalcount from table1
 求和：select sum(field1) as sumvalue from table1
