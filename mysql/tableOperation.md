@@ -33,6 +33,9 @@ select 列名称 from 表名称 [查询条件];
     select * from students where id<5 and age>20;
     select age + 2, age / 2, age – 2, age * 2 from temp where age – 2 > 22;对查询的数据进行运算操作
 
+去重
+select distinct 列名称 FROM 表名称
+
 concat函数，字符串连接
     select concat(name, ‘-eco’) from temp;
     concat和null进行连接，会导致连接后的数据成为null
@@ -141,21 +144,34 @@ case 流程函数
     ) sex
     from user;
 
+avg平均值运算
+    select avg(age) from user;
+    select avg(distinct age) from user;
+
+count 记录条数统计
+    select count(*), count(age), count(distinct age) from user;
+
+max 最大值
+    select max(age), max(distinct age) from user;
+
+min 最小值
+    select min(age), min(distinct age) from user;
+
+sum 求和、聚和
+    select sum(age), sum(distinct age) from user;
+    select sum(ifnull(age, 0)) from user;
+
+group by 分组
+    select count(*), sex from user group by sex;
+    select count(*) from user group by age;
+    select * from user group by sex, age;
+
+having进行条件过滤
+    不能在where子句中过滤组，where子句仅用于过滤行。过滤group by需要having
+    不能在where子句中用组函数，having中才能用组函数
+    select count(*) from user group by sex having sex <> 2;
 
 
-
-
-
-
-
-
-
-
-总数：select count as totalcount from table1
-求和：select sum(field1) as sumvalue from table1
-平均：select avg(field1) as avgvalue from table1
-最大：select max(field1) as maxvalue from table1
-最小：select min(field1) as minvalue from table1
 
 
 sin函数
