@@ -77,15 +77,18 @@ select t.name Name from temp as t;
 
     select * from tmep where name = ‘jack’ or name = ‘jackson’;
 
-between v and v2
-    大于等于v且小于等于v2
+## between v and v2
+大于等于v且小于等于v2
+
     select * from temp where age between 20 and 25; 
 
-in 查询
-    可以多个条件 类似于or
+## in 查询
+可以多个条件 类似于or
+
     select * from temp where id in (1, 2, 3);
 
-like 模糊查询
+## like 模糊查询
+
     查询name以j开头的:
         select * from temp where name like ‘j%’;
     查询name包含k的:
@@ -94,29 +97,34 @@ like 模糊查询
         select * from temp where name like ‘\_%’ escape ‘\’;
         指定\为转义字符，上面的就可以查询name中包含“_”的数据
 
-is null、is not null
-    查询为null的数据
-    select * from temp where name is null;
-    查询不为null的数据
-    select * from temp where name is not null;
+## is null、is not null
 
-not
+    查询为null的数据
+        select * from temp where name is null;
+    查询不为null的数据
+        select * from temp where name is not null;
+
+## not
+
     select * from temp where not (age > 20);
     取小于等于20的数据
     select * from temp where id not in(1, 2);
 
-order by
-    排序，有desc、asc升序、降序
+## order by
+排序，有desc、asc升序、降序
+
     select * from temp order by id;
     默认desc排序
     select * from temp order by id asc;
     多列组合
     select * from temp order by id, age;
 
-char_length字符长度
+## char_length字符长度
+
     select char_length(tel) from user;
 
-添加日期函数
+## 添加日期函数
+
     select date_add('2010-06-21', interval 2 month);
     interval是一个关键字，2 month是2个月的意思，2是数值，month是单位
     select addDate('2011-05-28', 2);
