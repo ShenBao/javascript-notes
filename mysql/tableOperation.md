@@ -46,29 +46,35 @@ select distinct 列名称 FROM 表名称
     concat和null进行连接，会导致连接后的数据成为null
 
 ## as 对列重命名
+
     select name as ‘名称’ from temp;
     as也可以省略不写，效果一样
     如果重命名的列名出现特殊字符，如“‘”单引号，那就需要用双引号引在外面
     select name as “名’称” from temp;
 
-给table去别名
+## 给table去别名
+
 select t.name Name from temp as t;
 
-查询常量
+## 查询常量
+
     select 5 + 2;
     select concat('a', 'bbb');
 
-distinct 去掉重复数据
+## distinct 去掉重复数据
+
     select distinct id from temp;
     多列将是组合的重复数据
     select distinct id, age from temp;
 
-and 并且
+## and 并且
+
     select * from temp where age > 20 and name = ‘jack’;
     查询名称等于jack并且年龄大于20的
 
-or 或者
-    满足一个即可
+## or 或者
+满足一个即可
+
     select * from tmep where name = ‘jack’ or name = ‘jackson’;
 
 between v and v2
