@@ -130,14 +130,17 @@ select t.name Name from temp as t;
     select addDate('2011-05-28', 2);
     在前面的日期上加上后面的天数
 
-获取当前系统时间、日期
+## 获取当前系统时间、日期
+
     select curdate();
     select curtime();
 
-加密函数
+## 加密函数
+
     select md5('zhangsan');
 
-Null 处理函数
+## Null 处理函数
+
     select ifnull(birthday, 'is null birthday') from user;
     如果birthday为null，就返回后面的字符串
     
@@ -151,8 +154,9 @@ Null 处理函数
     如果birthday为null或是0就返回birthday is null，否则就返回birthday not is null；类似于三目运算符
 
 
-case 流程函数
+## case 流程函数
     case函数是一个流程控制函数，可以接受多个参数，但最终只会返回一个结果。
+
     select name, 
     age, 
     (case sex
@@ -163,34 +167,37 @@ case 流程函数
     ) sex
     from user;
 
-avg平均值运算
+## avg平均值运算
+
     select avg(age) from user;
     select avg(distinct age) from user;
 
-count 记录条数统计
+## count 记录条数统计
+
     select count(*), count(age), count(distinct age) from user;
 
-max 最大值
+## max 最大值
+
     select max(age), max(distinct age) from user;
 
-min 最小值
+## min 最小值
     select min(age), min(distinct age) from user;
 
-sum 求和、聚和
+## sum 求和、聚和
     select sum(age), sum(distinct age) from user;
     select sum(ifnull(age, 0)) from user;
 
-group by 分组
+## group by 分组
     select count(*), sex from user group by sex;
     select count(*) from user group by age;
     select * from user group by sex, age;
 
-having进行条件过滤
+## having进行条件过滤
     不能在where子句中过滤组，where子句仅用于过滤行。过滤group by需要having
     不能在where子句中用组函数，having中才能用组函数
     select count(*) from user group by sex having sex <> 2;
 
-limit
+## limit
     select * from table limit m,n
     其中m是指记录开始的index，从0开始，表示第一条记录
     n是指从第m+1条开始，取n条。
@@ -202,30 +209,7 @@ limit
 
 
 
-
-
-
-sin函数
+## sin函数
     select sin(age) from user;
     select sin(1.57);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
