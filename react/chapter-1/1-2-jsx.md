@@ -57,9 +57,6 @@ JSX 语法听上去很讨厌，但当真正使用的时候会发现，JSX 的写
 </html>
 ```
 
-### 方式四：clone Github hello-world 分支代码
-
-https://github.com/leanklass/leanreact/tree/hello-world 
 
 ## 1.2.2 JSX 语法
 
@@ -67,7 +64,7 @@ https://github.com/leanklass/leanreact/tree/hello-world
 
 创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。
 
-需要提醒读者的是，React 的很多例子都是通过 ES6 来写的， 但这并不是 JSX 语法，后面我们会有单独的一小节讲解 ES6 的基本语法，不过目前为止我们先将跟多精力放在 JSX 上。
+React 的很多例子都是通过 ES6 来写的， 但这并不是 JSX 语法，后面我们会有单独的一小节讲解 ES6 的基本语法，不过目前为止我们先将跟多精力放在 JSX 上。
 
 ### xml 基本规则 
 
@@ -349,9 +346,3 @@ var todolist = {
 3. 数组遍历过后要添加 key 属性，否则会提示 error 信息（在组件章节会讲解）
 4. [html 转 JSX工具](http://facebook.github.io/react/html-jsx.html)， Facebook 提供了 html 转 JSX 组件的工具，可以直接复制 html 转为 JSX 组件
 
-### 参考答案 
-
-https://github.com/leanklass/leanreact/tree/jsx 
-
-  [1]: /img/bVvKLR
-  [2]: /img/bVvLki
