@@ -300,8 +300,4 @@ $ webpack [--params,...]
 
 可以通过 analyse 网站分析 webpack 的编译结果，如下图，可以分析 chunks, modules, Assets 等。
 
-![图片描述][2]
-
-
-  [1]: /img/bVxWgk
-  [2]: /img/bVxWcV
+![2-5-2.png](../img/2-5-2.png)
