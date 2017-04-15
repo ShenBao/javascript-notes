@@ -1,7 +1,8 @@
 
 # 表操作
 
-插入
+## 插入
+
 insert [into] 表名 [(列名1, 列名2, 列名3, ...)] values (值1, 值2, 值3, ...);
 
     insert into students values(NULL, "王刚", "男", 20, "13811371377");主键自增可以不插入，所以用null代替
@@ -10,12 +11,12 @@ insert [into] 表名 [(列名1, 列名2, 列名3, ...)] values (值1, 值2, 值3
     insert into temp values(null, ‘jack’, 22), (null, ‘jackson’ 23);    多行插入
 
 
-更新
+## 更新
 update 表名称 set 列名称=新值 where 更新条件;
 
     update students set name="张伟鹏", age=19 where id=1;
 
-删除
+## 删除
 delete from 表名称 where 删除条件;
 
     delete from students;
@@ -23,6 +24,7 @@ delete from 表名称 where 删除条件;
     delete from students where age<20;
 
 truncate的作用就是删除该表里的全部数据，保留表结构。
+
     truncate table tname
 
 where条件查询
