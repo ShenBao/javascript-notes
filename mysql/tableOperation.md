@@ -27,22 +27,25 @@ truncate的作用就是删除该表里的全部数据，保留表结构。
 
     truncate table tname
 
-where条件查询
+## where条件查询
 select 列名称 from 表名称 [查询条件];
+
 =、>、<、>=、<、!= 以及一些扩展运算符 is [not] null、in、like 等。 还可以对查询条件使用 or 和 and 进行组合查询
+
     select * from students where age > 21;
     select * from students where name like "%王%";
     select * from students where id<5 and age>20;
     select age + 2, age / 2, age – 2, age * 2 from temp where age – 2 > 22;对查询的数据进行运算操作
 
-去重
+## 去重
 select distinct 列名称 FROM 表名称
 
-concat函数，字符串连接
+## concat函数，字符串连接
+
     select concat(name, ‘-eco’) from temp;
     concat和null进行连接，会导致连接后的数据成为null
 
-as 对列重命名
+## as 对列重命名
     select name as ‘名称’ from temp;
     as也可以省略不写，效果一样
     如果重命名的列名出现特殊字符，如“‘”单引号，那就需要用双引号引在外面
