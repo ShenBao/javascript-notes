@@ -143,7 +143,6 @@ React 中组件的组合：
 
 ### 1.1.4.4 分离的框架设计 
 
-
 React.js 现在的版本已经将源码分开为 ReactDOM 和 React.js . 这就意味着 React 不仅仅能够在 web 端工作， 甚至可以在服务端（nodejs），Native 端运行。 
 
 与此同时， 我们可以自定义自己的渲染器， 实现比如 Three.js， Pixi.js， D3.js 的 React 方式渲染。 
