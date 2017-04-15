@@ -14,7 +14,7 @@ TODO 应用添加完整的事件响应，包括新增，删除，标记完成等
 
 ## 1.5.1 获取 DOM 元素
 
-上一节我们已经讲过组件的生命周期，DOM 真正被添加到 HTML 中的 hook 为 
+在组件的生命周期，DOM 真正被添加到 HTML 中的 hook 为 
 
 - componentDidMount
 - componentDidUpdate
@@ -41,7 +41,7 @@ var MyComponent = React.createClass({
 
 ### Refs
 
-上面的方法只能获取到 root  元素，那如果我的 DOM 有很多层级，我想获取一个子级的元素呢？
+上面的方法只能获取到 root  元素，那如果我的 DOM 有很多层级，想获取一个子级的元素呢？
 React 提供了 ref 属性来实现这种需求。
 
 每个组件实例都有一个 `this.refs` 属性，会自动引用所有包含 ref 属性组件的 DOM, eg:
