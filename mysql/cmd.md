@@ -27,12 +27,15 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 ## 退出
 
+```
 mysql> exit
 Bye
+```
 
 # 选择库
-
+```
 use RUNOOB
+```
 
 mysql -D 所选择的数据库名 -h 主机名 -u 用户名 -p
 
