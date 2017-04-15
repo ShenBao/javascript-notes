@@ -15,8 +15,6 @@ MySQL中约束保存在information_schema数据库的table_constraints中，可�
 注：MySQL不支持check约束，但可以使用check约束，而没有任何效果；
 
 
-
-
 ## not null约束
 
 非空约束用于确保当前列的值不为空值，非空约束只能出现在表对象的列上。
