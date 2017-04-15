@@ -31,21 +31,27 @@
 我们先来认识一下 React 中的基本概念
 
 **React.js**
+
 React.js 是 React 的核心库，在应用中必须先加载核心库。 
 
 **ReactDOM.js** 
+
 ReactDOM.js 是 React 的 DOM 渲染器，React 将核心库和渲染器分离开了，为了在 web 页面中显示开发的组件，需要调用 ReactDOM.render 方法， 第一个参数是 React 组件，第二个参数为 HTMLElement。
 
 **JSX**
+
 JSX 是 React 自定义的语法，最终 JSX 会转化为 JS 运行于页面当中。
 
 **组件**
+
 组件是 React 中的核心概念，页面当中的所有元素都是通过 React 组件来表达， 我们将要写的 React 代码绝大部分都是在做 React 组件的开发。
 
 **VIRTUAL DOM**
+
 React 抽象出来的虚拟 DOM 树，虚拟树是 React 高性能的关键。
 
 **单向数据流：one-way reactive data flow**
+
 React 应用的核心设计模式，数据流向自顶向下
 
 ## 1.1.3 Hello React World
