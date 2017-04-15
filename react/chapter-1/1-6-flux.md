@@ -1,10 +1,9 @@
-> [书籍完整目录](https://segmentfault.com/a/1190000005136764)
 
 # 1.6 flux
 
-![图片描述][1]
+![1-6-1.png](../img/1-6-1.png)
 
-这一节将介绍 React 的核心应用架构模式 Flux，包括内容：
+React 的核心应用架构模式 Flux，包括内容：
 
 - Flux 介绍
 - MVC 架构之痛
@@ -24,7 +23,7 @@
 
 > MVC 的实现可能有很多种方式，比较灵活，但基本本质不会改变，只是三者间的数据传递方向可能会改变，即便是 MVP 模式也只是 MVC 的变种，所以为了统一我们且以下图的 MVC 方式来讨论。
 
-![图片描述][2]
+![1-6-2.png](../img/1-6-2.png)
 
 ### 概念
 
@@ -75,37 +74,41 @@
 
 **单向数据流** 
 
-![图片描述][3]
+![1-6-3.png](../img/1-6-3.png)
+
 
 这是 Flux 架构的核心思想，重上面的图中可以看到，数据的流向从action 到 view 的一个单向流。
 
 **Action** 
 
-![图片描述][4]
+![1-6-4.png](../img/1-6-4.png)
+
 
 Action 可以理解为对应用数据修改的指令，任何修改应用数据的行为都必须需通过触发 action 来修改。Action 可以来自于 View，也可以来自服务端的数据更新。
 
 **Action Creator**：
 
-![图片描述][5]
+![1-6-5.png](../img/1-6-5.png)
 
 为了抽象 Action ，提供一些辅助的语义化的方法来创建 Action，这些辅助方法叫做 Action Creator。 
 
 **Stores**
 
-![图片描述][6]
+![1-6-6.png](../img/1-6-6.png)
 
 应用的数据中心，所有应用数据都存放在这里控制，同时包含数据的控制行为，可能包含多个 store
 
 **Dispatcher** 
 
-![图片描述][7]
+![1-6-7.png](../img/1-6-7.png)
+
 
 action 的控制者，所有 action 都会通过 dispatcher，由 dispatcher 控制 action 是否应该传入到 store 中，Dispatcher 是一个单例。
 
 **View** 
 
-![图片描述][8]
+![1-6-8.png](../img/1-6-8.png)
+
 
 页面的视图，对应 React 的 Component, 视图可以触发 action 到 dispatcher。
 
@@ -209,18 +212,3 @@ function notPure(b, c) {
 4. [alt](https://github.com/goatslacker/alt)
 5. [fluxxor](http://fluxxor.com/) 
 
-后面我们会在第四章中专门讲解 Redux 与 React 的应用。
-
-## 1.6.6 Flux 与 React 实例
-
-@todo  
-
-
-  [1]: /img/bVwBD2
-  [2]: /img/bVwCjE
-  [3]: /img/bVwBoo
-  [4]: /img/bVwBZs
-  [5]: /img/bVwB0R
-  [6]: /img/bVwB3b
-  [7]: /img/bVwB3B
-  [8]: /img/bVwB3L
