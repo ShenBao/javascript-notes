@@ -6,6 +6,7 @@
 ## 1.1.1 React 是什么
 
 > React IS A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES 
+
 > 来自：[React 官方网站](http://facebook.github.io/react/)
 
 狭义来讲 React 是 Facebook 内部开源出来的一个前端 UI 开发框架，广义来讲 React 不仅仅是 js 框架本身，更是一套完整的前端开发生态体系，这套体系包括：
@@ -151,9 +152,7 @@ React.js 现在的版本已经将源码分开为 ReactDOM 和 React.js . 这就�
 
 React 可应用的范围：
 
-
 ![1-1-5.png](../img/1-1-5.png)
-
 
 1. web 端应用
 2. 原生应用 - IOS、Android、Native 应用
