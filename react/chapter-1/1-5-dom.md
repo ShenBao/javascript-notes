@@ -184,7 +184,9 @@ onClickCapture
 
 鼠标事件 {
     名称：{
-        onClick onContextMenu onDoubleClick onDrag onDragEnd onDragEnter onDragExit onDragLeave onDragOver onDragStart onDrop onMouseDown onMouseEnter onMouseLeave onMouseMove onMouseOut onMouseOver onMouseUp
+        onClick onContextMenu onDoubleClick onDrag onDragEnd onDragEnter
+        onDragExit onDragLeave onDragOver onDragStart onDrop onMouseDown
+        onMouseEnter onMouseLeave onMouseMove onMouseOut onMouseOver onMouseUp
     }
     属性：{
         boolean altKey
@@ -242,7 +244,11 @@ UI 事件 {
 
 媒体事件 {
     名称：{
-        onAbort onCanPlay onCanPlayThrough onDurationChange onEmptied onEncrypted onEnded onError onLoadedData onLoadedMetadata onLoadStart onPause onPlay onPlaying onProgress onRateChange onSeeked onSeeking onStalled onSuspend onTimeUpdate onVolumeChange onWaiting
+        onAbort onCanPlay onCanPlayThrough onDurationChange
+        onEmptied onEncrypted onEnded onError onLoadedData
+        onLoadedMetadata onLoadStart onPause onPlay onPlaying
+        onProgress onRateChange onSeeked onSeeking onStalled
+        onSuspend onTimeUpdate onVolumeChange onWaiting
     }
 }
 
