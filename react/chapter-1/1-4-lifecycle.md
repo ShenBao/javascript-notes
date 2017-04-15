@@ -61,7 +61,6 @@ var MyComponnet = React.createClass({
 });
 ```
 
-更多 mixins 的使用会在第三章中讲解。
 
 ## 1.4.3 statics 
 
