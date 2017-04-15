@@ -310,7 +310,7 @@ xml 的写法实际上是调用 React 的工厂方法 createElement。
 
 ## 1.2.4 实例练习：通过数据渲染 TODOMVC 代办事项列表 
 
-[TODOMVC](http://todomvc.com) 以代办事项列表为需求模型，包含了各种框架的实现。 本例子的目的为了让读者能够切身的体会 JSX 的使用方法。
+[TODOMVC](http://todomvc.com) 以代办事项列表为需求模型，包含了各种框架的实现。 
 
 ### 问题需求
 
