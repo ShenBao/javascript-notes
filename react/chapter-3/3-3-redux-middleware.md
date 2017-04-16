@@ -3,6 +3,7 @@
 
  ![3-3-1.png](../img/3-3-1.png)
 
+
 关于 redux 中间件的原理，为后面理解 redux 异步 action 做铺垫，主要内容为：
 
 - Redux 中间件是什么
