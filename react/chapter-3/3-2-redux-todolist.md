@@ -4,7 +4,6 @@
  ![3-2-1.png](../img/3-2-1.png)
 
 
-
 现在将利用 redux 在 react 中实现完整的 todolist：
 
 - 在 react 使用 redux
