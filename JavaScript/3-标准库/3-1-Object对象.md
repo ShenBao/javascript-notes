@@ -40,7 +40,7 @@ Object.print(o)
 
 **（2）部署在`Object.prototype`对象**
 
-所有构造函数都有一个prototype属性，指向一个原型对象。凡是定义在Object.prototype对象上面的属性和方法，将被所有实例对象共享。（关于prototype属性的详细解释，参见《面向对象编程》一章。）
+所有构造函数都有一个prototype属性，指向一个原型对象。凡是定义在Object.prototype对象上面的属性和方法，将被所有实例对象共享。
 
 ```javascript
 Object.prototype.print = function(){ console.log(this)};
@@ -58,7 +58,7 @@ o.print() // Object
 
 `Object`本身当作工具方法使用时，可以将任意值转为对象。这个方法常用于保证某个值一定是对象。
 
-如果参数是原始类型的值，`Object`方法返回对应的包装对象的实例（参见《原始类型的包装对象》一节）。
+如果参数是原始类型的值，`Object`方法返回对应的包装对象的实例。
 
 ```javascript
 Object() // 返回一个空对象
@@ -207,7 +207,7 @@ o.valueOf() === o // true
 
 上面代码比较`o.valueOf()`与`o`本身，两者是一样的。
 
-`valueOf`方法的主要用途是，JavaScript自动类型转换时会默认调用这个方法（详见《数据类型转换》一节）。
+`valueOf`方法的主要用途是，JavaScript自动类型转换时会默认调用这个方法。
 
 ```javascript
 var o = new Object();

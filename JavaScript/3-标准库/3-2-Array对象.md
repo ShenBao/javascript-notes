@@ -589,7 +589,7 @@ obj.print()
 // 没有任何输出
 ```
 
-上面代码中，`obj.print`方法有两层`this`，它们的指向是不一致的。外层的`this.times`指向`obj`对象，内层的`this.name`指向顶层对象`window`（详细解释参见《面向对象编程》一章）。这显然是违背原意的，解决方法就是使用`forEach`方法的第二个参数固定`this`。
+上面代码中，`obj.print`方法有两层`this`，它们的指向是不一致的。外层的`this.times`指向`obj`对象，内层的`this.name`指向顶层对象`window`。这显然是违背原意的，解决方法就是使用`forEach`方法的第二个参数固定`this`。
 
 ```javascript
 var obj = {
