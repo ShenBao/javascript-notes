@@ -214,12 +214,10 @@ var AppView = Backbone.View.extend({
 
 使用的时候，需要先新建视图类的实例，然后通过实例，调用render方法，从而让视图在网页上显示。
 
-{% highlight javascript %}
-
+```
 var appView = new AppView();
 appView.render();
-
-{% endhighlight %}
+```
 
 上面代码新建视图类AppView的实例appView，然后调用appView.render，网页上就会显示指定的内容。
 
@@ -258,16 +256,14 @@ var appView = new AppView();
 
 除了直接在render方法中，指定“视图”所绑定的网页元素，还可以用视图的el属性指定网页元素。
 
-{% highlight javascript %}
-
+```
 var AppView = Backbone.View.extend({
   el: $('main'),
   render: function(){
     this.$el.append('<h1>一级标题</h1>');
   }
 });
-
-{% endhighlight %}
+```
 
 上面的代码与render方法直接绑定网页元素，效果完全一样。上面代码中，除了el属性，还是$el属性，前者代表指定的DOM元素，后者则表示该DOM元素对应的jQuery对象。
 
