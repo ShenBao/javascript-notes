@@ -316,18 +316,15 @@ var AppView = Backbone.View.extend({
 
 实际应用中，一般将模板放在script标签中，为了防止浏览器按照JavaScript代码解析，type属性设为text/template。
 
-{% highlight html %}
-
+```
 <script type="text/template" data-name="templateName">
     <!-- template contents goes here -->
 </script>
-
-{% endhighlight %}
+```
 
 可以使用下面的代码编译模板。
 
-{% highlight javascript %}
-
+```
 window.templates = {};
 
 var $sources = $('script[type="text/template"]');
@@ -336,8 +333,7 @@ $sources.each(function(index, el) {
     var $el = $(el);
     templates[$el.data('name')] = _.template($el.html());
 });
-
-{% endhighlight %}
+```
 
 ### events属性
 
@@ -390,8 +386,7 @@ updateView: function() {
 
 在父视图中可以调用子视图。下面就是一种写法。
 
-{% highlight javascript %}
-
+```
 render : function (){
 
     this.$el.html(this.template());
@@ -400,8 +395,7 @@ render : function (){
 
     this.child.appendTo($.('.container-placeholder').render();
 }
-
-{% endhighlight %}
+```
 
 ## Backbone.Events
 
@@ -439,14 +433,12 @@ Router是Backbone提供的路由对象，用来将用户请求的网址与后端
 
 首先，新定义一个Router类。
 
-{% highlight javascript %}
-
+```
 Router = Backbone.Router.extend({
     routes: {
     }
 });
-
-{% endhighlight %}
+```
 
 ## routes属性
 
@@ -456,8 +448,7 @@ routes属性是一个对象，它的每个成员就代表一个路径处理规�
 
 如果键名为空字符串，就代表根路径。
 
-{% highlight javascript %}
-
+```
 routes: {
         '': 'phonesIndex',
 },
@@ -465,8 +456,7 @@ routes: {
 phonesIndex: function () {
         new PhonesIndexView({ el: 'section#main' });
 }
-
-{% endhighlight %}
+```
 
 星号代表任意路径，可以设置路径参数，捕获具体的路径值。
 
@@ -523,15 +513,13 @@ router.on("route:help", function(page) {
 
 设置了router以后，就可以启动应用程序。Backbone.history对象用来监控url的变化。
 
-{% highlight javascript %}
-
+```
 App = new Router();
 
 $(document).ready(function () {
     Backbone.history.start({ pushState: true });
 });
-
-{% endhighlight %}
+```
 
 打开pushState方法。如果应用程序不在根目录，就需要指定根目录。
 
