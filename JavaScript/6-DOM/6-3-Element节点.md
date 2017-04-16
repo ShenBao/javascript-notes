@@ -12,7 +12,7 @@
 
 ### Element.attributes
 
-`Element.attributes`属性返回一个类似数组的对象，成员是当前元素节点的所有属性节点，详见本章《属性的操作》一节。
+`Element.attributes`属性返回一个类似数组的对象，成员是当前元素节点的所有属性节点。
 
 ### Element.id，Element.tagName
 
