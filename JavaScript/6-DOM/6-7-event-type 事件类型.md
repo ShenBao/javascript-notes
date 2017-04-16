@@ -1444,3 +1444,4 @@ var focusEvent = new FocusEvent(typeArg, focusEventInit);
 ```
 
 上面代码中，FocusEvent构造函数的第一个参数为事件类型，第二个参数是可选的配置对象，用来配置FocusEvent对象。
+
