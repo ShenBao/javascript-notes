@@ -422,6 +422,7 @@ function* handleRequest(chan) {
 ```
 
 
+
 ## 参考链接
 
 - http://yelouafi.github.io/redux-saga/docs/advanced/index.html
