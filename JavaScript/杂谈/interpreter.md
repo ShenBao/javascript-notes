@@ -1,7 +1,6 @@
 
 # JavaScript解释器
 
-
 JavaScript解释器的作用，是执行JavaScript源码。它通常可以包含四个组成部分。
 
 - 词法分析器（Lexical Analyser）
