@@ -90,8 +90,7 @@ Promise库
 
 ## Backbone的加载
 
-{% highlight html %}
-
+```
 <script src="/javascripts/lib/jquery.js"></script>
 <script src="/javascripts/lib/underscore.js"></script>
 <script src="/javascripts/lib/backbone.js"></script>
@@ -99,8 +98,7 @@ Promise库
 
 <script src="/javascripts/router.js"></script>
 <script src="/javascripts/init.js"></script>
-
-{% endhighlight %}
+```
 
 ## Backbone的用法
 
