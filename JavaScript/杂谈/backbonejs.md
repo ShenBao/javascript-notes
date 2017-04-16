@@ -201,15 +201,14 @@ Backbone.history.start({pushState: true});
 
 Backbone.View方法用于定义视图类。
 
-{% highlight javascript %}
 
+```
 var AppView = Backbone.View.extend({
   render: function(){
     $('main').append('<h1>一级标题</h1>');
   }
 });
-
-{% endhighlight %}
+```
 
 上面代码通过Backbone.View的extend方法，定义了一个视图类AppView。该类内部有一个render方法，用于将视图放置在网页上。
 
