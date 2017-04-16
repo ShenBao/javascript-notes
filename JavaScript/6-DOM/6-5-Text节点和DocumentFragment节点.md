@@ -149,8 +149,7 @@ splitText方法将Text节点一分为二，变成两个毗邻的Text节点。它
 
 分割后，该方法返回分割位置后方的字符串，而原Text节点变成只包含分割位置前方的字符串。
 
-{% highlight javascript %}
-
+```
 // html代码为 <p id="p">foobar</p>
 var p = document.getElementById('p');
 var textnode = p.firstChild;
@@ -158,8 +157,7 @@ var textnode = p.firstChild;
 var newText = textnode.splitText(3);
 newText // "bar"
 textnode // "foo"
-
-{% endhighlight %}
+```
 
 normalize方法可以将毗邻的两个Text节点合并。
 
