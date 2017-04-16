@@ -336,7 +336,7 @@ document.implementation.hasFeature('MutationEvents','2.0')
 
 ### document.cookie
 
-`document.cookie`属性用来操作浏览器Cookie，详见《浏览器环境》一章的《Cookie》部分。
+`document.cookie`属性用来操作浏览器Cookie，见《Cookie》部分。
 
 ## 读写相关的方法
 
@@ -688,7 +688,7 @@ document.dispatchEvent(event);
 
 ### document.addEventListener()，document.removeEventListener()，document.dispatchEvent()
 
-以下三个方法与`document`节点的事件相关。这些方法都继承自EventTarget接口，详细介绍参见《Event对象》章节的《EventTarget》部分。
+以下三个方法与`document`节点的事件相关。这些方法都继承自EventTarget接口，可以查阅Event对象。
 
 ```javascript
 // 添加事件监听函数
