@@ -113,8 +113,7 @@ replaceData方法用于替换文本，第一个参数为替换开始位置，第
 
 subStringData方法用于获取子字符串，第一个参数为子字符串在Text节点中的开始位置，第二个参数为子字符串长度。
 
-{% highlight javascript %}
-
+```
 // HTML代码为
 // <p>Hello World</p>
 var pElementText = document.querySelector('p').firstChild;
@@ -129,8 +128,7 @@ pElementText.replaceData(7,5,'World');
 // 页面显示 Hello WWorld
 pElementText.substringData(7,10);
 // 页面显示不变，返回"World "
-
-{% endhighlight %}
+```
 
 ### remove()
 
