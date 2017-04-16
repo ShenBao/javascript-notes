@@ -1,7 +1,6 @@
 
 # Image对象
 
-
 ## 概述
 
 `Image`是一个浏览器的原生构造函数，返回一个`HTMLImageElement`对象的实例，即`<img>`标签的实例。
