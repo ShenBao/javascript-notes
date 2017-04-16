@@ -28,7 +28,7 @@ var text2 = new Text("This is a text node");
 
 注意，由于空格也是一个字符，所以哪怕只有一个空格，也会形成Text节点。
 
-Text节点除了继承Node节点的属性和方法，还继承了CharacterData接口。Node节点的属性和方法请参考《Node节点》章节，这里不再重复介绍了，以下的属性和方法大部分来自CharacterData接口。
+Text节点除了继承Node节点的属性和方法，还继承了CharacterData接口。Node节点的属性和方法，查看相关，以下的属性和方法大部分来自CharacterData接口。
 
 ## Text节点的属性
 
