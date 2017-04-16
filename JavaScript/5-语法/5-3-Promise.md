@@ -76,34 +76,30 @@ function f1(){
 
 首先，f2向"信号中心"jQuery订阅"done"信号。
 
-{% highlight javascript %}
 
+```
 jQuery.subscribe("done", f2);
+```
 
-{% endhighlight %}
 
 然后，f1进行如下改写：
 
-{% highlight javascript %}
-
+```
 function f1(){
 	setTimeout(function () {
 		// f1的任务代码
 		jQuery.publish("done");
 	}, 1000);
 }
-
-{% endhighlight %}
+```
 
 jQuery.publish("done")的意思是，f1执行完成后，向"信号中心"jQuery发布"done"信号，从而引发f2的执行。
 
 f2完成执行后，也可以取消订阅（unsubscribe）。
 
-{% highlight javascript %}
-
+```
 jQuery.unsubscribe("done", f2);
-
-{% endhighlight %}
+```
 
 这种方法的性质与"事件监听"类似，但是明显优于后者。因为我们可以通过查看"消息中心"，了解存在多少信号、每个信号有多少订阅者，从而监控程序的运行。
 
