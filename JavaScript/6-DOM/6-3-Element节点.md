@@ -563,7 +563,7 @@ matchesSelector(
 
 ## 事件相关的方法
 
-以下三个方法与`Element`节点的事件相关。这些方法都继承自`EventTarget`接口，详见本章的《Event对象》一节。
+以下三个方法与`Element`节点的事件相关。这些方法都继承自`EventTarget`接口，查看Event对象。
 
 - `Element.addEventListener()`：添加事件的回调函数
 - `Element.removeEventListener()`：移除事件监听函数
