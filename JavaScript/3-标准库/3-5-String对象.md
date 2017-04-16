@@ -338,7 +338,7 @@ matches.index // 1
 matches.input // "cat, bat, sat, fat"
 ```
 
-`match`方法还可以使用正则表达式作为参数，详见《正则表达式》一节。
+`match`方法还可以使用正则表达式作为参数。
 
 ### search()
 
@@ -348,7 +348,7 @@ matches.input // "cat, bat, sat, fat"
 'cat, bat, sat, fat'.search('at') // 1
 ```
 
-`search`方法还可以使用正则表达式作为参数，详见《正则表达式》一节。
+`search`方法还可以使用正则表达式作为参数。
 
 ### replace()
 
@@ -358,7 +358,7 @@ matches.input // "cat, bat, sat, fat"
 'aaa'.replace('a', 'b') // "baa"
 ```
 
-`replace`方法还可以使用正则表达式作为参数，详见《正则表达式》一节。
+`replace`方法还可以使用正则表达式作为参数。
 
 ### split()
 
@@ -405,5 +405,5 @@ matches.input // "cat, bat, sat, fat"
 
 上面代码中，`split`方法的第二个参数，决定了返回数组的成员数。
 
-`split`方法还可以使用正则表达式作为参数，详见《正则表达式》一节。
+`split`方法还可以使用正则表达式作为参数。
 

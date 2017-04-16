@@ -20,7 +20,7 @@ typeof n // "object"
 Number(true) // 1
 ```
 
-上面代码将布尔值`true`转为数值`1`。`Number`作为工具函数的用法，详见上一章的《数据类型转换》一节。
+上面代码将布尔值`true`转为数值`1`。`Number`作为工具函数的用法。
 
 ## Number对象的属性
 
