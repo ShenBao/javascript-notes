@@ -1,7 +1,6 @@
 
 # Mutation Observer
 
-
 ## 概述
 
 Mutation Observer（变动观察器）是监视DOM变动的接口。DOM发生任何变动，Mutation Observer会得到通知。
