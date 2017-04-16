@@ -418,7 +418,7 @@ el.nextElementSibling
 - `Element.hasAttribute()`：返回一个布尔值，表示当前元素节点是否有指定的属性
 - `Element.removeAttribute()`：移除指定属性
 
-这些属性的详细介绍，参见本章的《属性的操作》一节。
+这些属性的详细介绍，查看属性操作相关。
 
 ## 查找相关的方法
 
