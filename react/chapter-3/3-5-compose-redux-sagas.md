@@ -427,4 +427,3 @@ function* handleRequest(chan) {
 
 - http://yelouafi.github.io/redux-saga/docs/advanced/index.html
 - http://gajus.com/blog/2/the-definitive-guide-to-the-javascript-generators#understanding-the-execution-flow
-
