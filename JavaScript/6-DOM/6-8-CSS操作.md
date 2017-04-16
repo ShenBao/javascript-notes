@@ -736,4 +736,3 @@ animation-play-state属性可以控制动画的状态（暂停/播放），该�
 element.style.webkitAnimationPlayState = "paused";
 element.style.webkitAnimationPlayState = "running";
 ```
-
