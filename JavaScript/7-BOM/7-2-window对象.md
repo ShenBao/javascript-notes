@@ -87,7 +87,7 @@ window.open().opener === window // true
 frames === window // true
 ```
 
-因此，`frames[0]`也可以用`window[0]`表示。但是，从语义上看，`frames`更清晰，而且考虑到`window`还是全局对象，因此推荐表示多窗口时，总是使用`frames[0]`的写法。更多介绍请看下文的《多窗口操作》部分。
+因此，`frames[0]`也可以用`window[0]`表示。但是，从语义上看，`frames`更清晰，而且考虑到`window`还是全局对象，因此推荐表示多窗口时，总是使用`frames[0]`的写法。
 
 `window.length`属性返回当前网页包含的框架总数。如果当前网页不包含`frame`和`iframe`元素，那么`window.length`就返回`0`。
 
@@ -355,7 +355,7 @@ if (typeof window.print === 'function') {
 
 ### window.matchMedia()
 
-`window.matchMedia`方法用来检查CSS的mediaQuery语句。详见《DOM》一章的CSS章节。
+`window.matchMedia`方法用来检查CSS的mediaQuery语句。
 
 ### window.focus()
 
