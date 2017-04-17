@@ -35,7 +35,7 @@ ajax.onreadystatechange = handleStateChange;
 
 一旦拿到服务器返回的数据，AJAX不会刷新整个网页，而是只更新相关部分，从而不打断用户正在做的事情。
 
-注意，AJAX只能向同源网址（协议、域名、端口都相同）发出HTTP请求，如果发出跨源请求，就会报错（详见《同源政策》和《CORS机制》两节）。
+注意，AJAX只能向同源网址（协议、域名、端口都相同）发出HTTP请求，如果发出跨源请求，就会报错。
 
 虽然名字里面有`XML`，但是实际上，XMLHttpRequest可以报送各种数据，包括字符串和二进制，而且除了HTTP，它还支持通过其他协议传送（比如File和FTP）。
 
@@ -797,8 +797,7 @@ for (var i = 0; i < files.length; i++) {
 
 上面代码中的FormData对象的append方法，除了可以添加文件，还可以添加二进制对象（Blob）或者字符串。
 
-{% highlight javascript %}
-
+```
 // Files
 formData.append(name, file, filename);
 
@@ -807,15 +806,13 @@ formData.append(name, blob, filename);
 
 // Strings
 formData.append(name, value);    
-
-{% endhighlight %}
+```
 
 append方法的第一个参数是表单的控件名，第二个参数是实际的值，第三个参数是可选的，通常是文件名。
 
 最后，使用Ajax方法向服务器上传文件。
 
-{% highlight javascript %}
-
+```
 var xhr = new XMLHttpRequest();
 
 xhr.open('POST', 'handler.php', true);
@@ -827,8 +824,7 @@ xhr.onload = function () {
 };
 
 xhr.send(formData);
-
-{% endhighlight %}
+```
 
 目前，各大浏览器（包括IE 10）都支持Ajax上传文件。
 
