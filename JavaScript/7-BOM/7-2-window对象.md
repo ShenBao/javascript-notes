@@ -41,7 +41,7 @@ console.log(window.name)
 
 ### window.location
 
-`window.location`返回一个`location`对象，用于获取窗口当前的URL信息。它等同于`document.location`对象，详细介绍见《document对象》一节。
+`window.location`返回一个`location`对象，用于获取窗口当前的URL信息。它等同于`document.location`对象。
 
 ```javascript
 window.location === document.location // true
