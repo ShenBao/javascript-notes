@@ -1,6 +1,7 @@
 
 # CORS通信
 
+
 CORS是一个W3C标准，全称是“跨域资源共享”（Cross-origin resource sharing）。
 
 它允许浏览器向跨源服务器，发出`XMLHttpRequest`请求，从而克服了AJAX只能同源使用的限制。
@@ -244,4 +245,3 @@ Content-Type: text/html; charset=utf-8
 CORS与JSONP的使用目的相同，但是比JSONP更强大。
 
 JSONP只支持`GET`请求，CORS支持所有类型的HTTP请求。JSONP的优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。
-
