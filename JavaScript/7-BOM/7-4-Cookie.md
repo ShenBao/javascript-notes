@@ -200,4 +200,3 @@ Set-Cookie: key=value; HttpOnly
 ```
 
 上面的这个Cookie将无法用JavaScript获取。进行AJAX操作时，`XMLHttpRequest`对象也无法包括这个Cookie。这主要是为了防止XSS攻击盗取Cookie。
-
