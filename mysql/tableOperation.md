@@ -222,6 +222,11 @@ case函数是一个流程控制函数，可以接受多个参数，但最终只�
     select * from table1 where id not in (1,2,3,4,5)
 
 
+
+
+
+
+
 ## sin函数
     select sin(age) from user;
     select sin(1.57);
