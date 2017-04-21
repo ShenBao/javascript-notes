@@ -76,10 +76,18 @@ Fiber，是下一次实施React的和解算法，将有能力根据需要启动�
 您不能保证在组件挂载之前，AJAX请求已经 resolve。如果这样做，那意味着你会尝试在一个未挂载的组件上设置 SetState，这不仅不会起作用，反而会对你大喊大叫。 在 componentDidMount 中执行 AJAX 将保证至少有一个要更新的组件。
 
 
+## shouldComponentUpdate 应该做什么，为什么它很重要？
+
+上面我们讨论了 reconciliation ，什么是 React 在 setState 被调用时所做的。在生命周期方法 shouldComponentUpdate 中，允许我们选择退出某些组件（和他们的子组件）的 reconciliation 过程。
+
+我们为什么要这样做？
+
+如上所述，“一致化处理（ reconciliation ）的最终目标是以最有效的方式，根据新的状态更新用户界面”。如果我们知道我们的用户界面（UI）的某一部分不会改变，那么没有理由让 React 很麻烦地试图去弄清楚它是否应该渲染。通过从 shouldComponentUpdate 返回 false，React 将假定当前组件及其所有子组件将保持与当前组件相同。
 
 
+## 您如何告诉React 构建（build）生产模式，该做什么？
 
-
+通常，您将使用Webpack的 DefinePlugin 方法将 NODE_ENV 设置为 production。这将剥离像 propType 验证和额外的警告。除此之外，还有一个好主意，可以减少你的代码，因为React使用 Uglify 的 dead-code 来消除开发代码和注释，这将大大减少你的包的大小。
 
 
 
