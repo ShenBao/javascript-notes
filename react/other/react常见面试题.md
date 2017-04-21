@@ -13,15 +13,52 @@
 通过这样， React 将会知道发生的确切变化，并且了解发生什么变化以后，只需在绝对必要的情况下进行更新，即可最小化 UI 的占用空间。
 
 
+## 在 React 当中 Element 和 Component 有何区别？
+
+简单地说，一个 React element 描述了你想在屏幕上看到什么。换个说法就是，一个 React element 是一些 UI 的对象表示。
+
+一个 React Component 是一个函数或一个类，它可以接受输入并返回一个 React element （通常是通过 JSX ，它被转化成一个 createElement 调用）。
 
 
+## 什么时候在功能组件( Functional Component )上使用类组件( Class Component)？
+
+如果您的组件具有状态( state )或生命周期方法，请使用 Class 组件。否则，使用功能组件。
 
 
+## 什么是 React 的 refs ，为什么它们很重要？
 
-
-
-
-
+refs 就像是一个逃生舱口，允许你直接访问DOM元素或组件实例。为了使用它们，您可以向组件添加一个 ref 属性，该属性的值是一个回调函数，它将接收底层的 DOM 元素或组件的已挂接实例，作为其第一个参数。
+```
+class UnControlledForm extends Component {
+  handleSubmit = () => {
+    console.log("Input Value: ", this.input.value)
+  }
+  render () {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <input
+          type='text'
+          ref={(input) => this.input = input} />
+        <button type='submit'>Submit</button>
+      </form>
+    )
+  }
+}
+```
+以上注意到我们的输入字段有一个 ref 属性，其值是一个函数。该函数接收放在实例上实际的 DOM 元素 input，以便在 handleSubmit 函数内部访问它。经常被误解的是，您需要使用类组件才能使用ref ，但 ref 也可以通过利用 JavaScript 中的闭包与 功能组件( functional components )一起使用。
+```
+function CustomForm ({handleSubmit}) {
+  let inputElement
+  return (
+    <form onSubmit={() => handleSubmit(inputElement.value)}>
+      <input
+        type='text'
+        ref={(input) => inputElement = input} />
+      <button type='submit'>Submit</button>
+    </form>
+  )
+}
+```
 
 
 
