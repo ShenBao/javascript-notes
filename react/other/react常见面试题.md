@@ -123,7 +123,24 @@ Fiber，是下一次实施React的和解算法，将有能力根据需要启动�
 
 createElement 是 JSX 被转译到的，是 React 用来创建 React Elements 的内容(一些 UI 的对象表示)。cloneElement用于克隆元素并传递新的 props。他们钉住了这两个🙂的命名。
 
+## 可以选择性地传递给 setState 的第二个参数是什么，它的目的是什么？
 
+一个回调函数，当setState结束并re-rendered该组件时将被调用。一些没有说出来的东西是 setState 是异步的，这就是为什么它需要一个第二个回调函数。通常最好使用另一个生命周期方法，而不是依赖这个回调函数，但是很高兴知道它存在。
+```
+this.setState(
+  { username: 'tylermcginnis33' },
+  () => console.log('setState has finished and the component has re-rendered.')
+)
+```
+这段代码有什么问题？
+```
+this.setState((prevState, props) => {
+  return {
+    streak: prevState.streak + props.count
+  }
+})
+```
+没毛病。但是这种写法很少被使用，并不是众所周知的，就是你也可以传递一个函数给setState，它接收到先前的状态和道具并返回一个新的状态，正如我们在上面所做的那样。它不仅没有什么问题，而且如果您根据以前的状态（state）设置状态，推荐使用这种写法。
 
 
 
