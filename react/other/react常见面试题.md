@@ -60,6 +60,41 @@ function CustomForm ({handleSubmit}) {
 }
 ```
 
+## React 中的 keys 是什么，为什么它们很重要？
+
+
+## 受控组件( controlled component )与不受控制的组件( uncontrolled component )有什么区别？
+
+
+
+## 在哪个生命周期事件中你会发出 AJAX 请求，为什么？
+
+AJAX 请求应该在 componentDidMount 生命周期事件中。 有几个原因:
+
+Fiber，是下一次实施React的和解算法，将有能力根据需要启动和停止渲染，以获得性能优势。其中一个取舍之一是 componentWillMount，而在其他的生命周期事件中出发 AJAX 请求，将是具有 “非确定性的”。 这意味着 React 可以在需要时感觉到不同的时间开始调用 componentWillMount。这显然是AJAX请求的不好方式。
+
+您不能保证在组件挂载之前，AJAX请求已经 resolve。如果这样做，那意味着你会尝试在一个未挂载的组件上设置 SetState，这不仅不会起作用，反而会对你大喊大叫。 在 componentDidMount 中执行 AJAX 将保证至少有一个要更新的组件。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
