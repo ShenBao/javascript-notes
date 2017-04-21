@@ -91,10 +91,37 @@ Fiber，是下一次实施React的和解算法，将有能力根据需要启动�
 
 
 
+## 为什么要使用 React.Children.map（props.children，（）=>） 而不是 props.children.map（（）=>）
+
+因为不能保证props.children将是一个数组。
+
+以此代码为例，
+```
+<Parent>
+  <h1>Welcome.</h1>
+</Parent>
+```
+在父组件内部，如果我们尝试使用 props.children.map 映射孩子，则会抛出错误，因为 props.children 是一个对象，而不是一个数组。
+
+如果有多个子元素，React 只会使props.children成为一个数组。就像下面这样：
+```
+<Parent>
+  <h1>Welcome.</h1>
+  <h2>props.children will now be an array</h2>
+</Parent>
+```
+这就是为什么你喜欢 React.Children.map，因为它的实现考虑到 props.children 可能是一个数组或一个对象。
 
 
+## 描述事件在React中的处理方式
 
+为了解决跨浏览器兼容性问题，您的 React 中的事件处理程序将传递SyntheticEvent 的实例，它是 React 的浏览器本机事件的跨浏览器包装器。
 
+这些 SyntheticEvent 与您习惯的原生事件具有相同的接口，除了它们在所有浏览器中都兼容。有趣的是，React 实际上并没有将事件附加到子节点本身。React 将使用单个事件监听器监听顶层的所有事件。这对于性能是有好处的，这也意味着在更新DOM时，React 不需要担心跟踪事件监听器。
+
+## createElement 和 cloneElement 有什么区别？
+
+createElement 是 JSX 被转译到的，是 React 用来创建 React Elements 的内容(一些 UI 的对象表示)。cloneElement用于克隆元素并传递新的 props。他们钉住了这两个🙂的命名。
 
 
 
