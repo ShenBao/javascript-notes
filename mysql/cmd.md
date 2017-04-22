@@ -71,6 +71,3 @@ resetconnection(\x) Clean session context.
 
 
 
-
-
-
