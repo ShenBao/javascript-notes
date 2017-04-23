@@ -260,12 +260,12 @@ void componentWillUnmount()
 
 我们知道 React 的核心模式是单向数据流，这不仅仅是对于组件级别的模式，在组件内部 的生命周期中也是应该符合单向数据的模式。数据从组件的属性流入，再结合组件的状态，流入生命周期方法，直到渲染结束这都应该是一个单向的过程，其间不能随意改变组件的状态。 
 
-![React Componnet Lifecycle 04.png](/img/React/React Componnet Lifecycle 04.png)
+![1-4-4.png](../img/1-4-4.png)
 
 
 ## 总结
 
-![React Componnet Lifecycle 01.jpg](/img/React/React Componnet Lifecycle 01.jpg)
+![React Componnet Lifecycle 01.jpg](../img/1-4-5.jpg)
 
 React 生命周期就介绍完了，其中最上面的虚线框和右下角的虚线框的方法一定会执行，左下角的方法根据props state是否变化去执行，其中建议只有在componentWillMount,componentDidMount,componentWillReceiveProps方法中可以修改state值。
 
