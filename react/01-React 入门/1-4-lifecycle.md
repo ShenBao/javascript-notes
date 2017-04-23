@@ -18,7 +18,7 @@ React 中组件有自己的生命周期方法，简单理解可以为组件从 *
 - getDefaultProps
 - propTypes
   
- 
+
 ## 1.4.2 mixins 
 
 **类型：** `array mixins`
@@ -61,7 +61,6 @@ var MyComponnet = React.createClass({
 });
 ```
 
-
 ## 1.4.3 statics 
 
 **类型：** `object statics`
@@ -92,7 +91,6 @@ React 的组件是 OOP 的思维，MyComponent 是一个 class，class  分为�
 ```js
 // Input (JSX):
 var MyComponent = React.createClass({ });
-
 // Output (JS):
 var MyComponent = React.createClass({displayName: "MyComponent", });
 ```
@@ -118,7 +116,6 @@ object getDefaultProps()
 执行过一次后，被创建的类会有缓存，映射的值会存在this.props,前提是这个prop不是父组件指定的 
 
 这个方法在对象被创建之前执行，因此不能在方法内调用this.props ，另外，注意任何getDefaultProps()返回的对象在实例中共享，不是复制。
-
 
 ### 1.4.5.2 getInitialState
 
@@ -262,10 +259,8 @@ void componentWillUnmount()
 
 ![1-4-4.png](../img/1-4-4.png)
 
-
 ## 1.4.7总结
 
 ![React Componnet Lifecycle 01.jpg](../img/1-4-5.jpg)
 
 React 生命周期就介绍完了，其中最上面的虚线框和右下角的虚线框的方法一定会执行，左下角的方法根据props state是否变化去执行，其中建议只有在componentWillMount,componentDidMount,componentWillReceiveProps方法中可以修改state值。
-
