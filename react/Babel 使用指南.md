@@ -1,7 +1,6 @@
 
 # Babel 使用指南
 
-
 > 代码见[babel-starter](https://github.com/ShenBao/babel-starter)。
 
 # <a id="toc-introduction"></a>介绍
