@@ -1,16 +1,5 @@
----
-layout:     post
-title:      "React学习指南"
-subtitle:   "React学习指南"
-date:       2016-06-15  22:00:00
-author:     "ShenBao"
-catalog: true
-tags:
-    - React
----
 
 # React 学习指南
-
 
 `开发环境`
 - 全局Node环境 && NPM

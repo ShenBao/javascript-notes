@@ -1,14 +1,3 @@
----
-layout:     post
-title:      "Babel 使用指南"
-subtitle:   "Babel"
-date:       2016-06-18  22:00:00
-author:     "ShenBao"
-catalog: true
-tags:
-    - Babel
-    - React
----
 
 # Babel 使用指南
 
