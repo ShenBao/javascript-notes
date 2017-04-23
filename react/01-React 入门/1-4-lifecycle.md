@@ -270,6 +270,3 @@ void componentWillUnmount()
 React 生命周期就介绍完了，其中最上面的虚线框和右下角的虚线框的方法一定会执行，左下角的方法根据props state是否变化去执行，其中建议只有在componentWillMount,componentDidMount,componentWillReceiveProps方法中可以修改state值。
 
 
-
-
-
