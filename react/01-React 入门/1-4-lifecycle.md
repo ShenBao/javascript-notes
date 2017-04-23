@@ -18,7 +18,6 @@ React 中组件有自己的生命周期方法，简单理解可以为组件从 *
 - getDefaultProps
 - propTypes
   
-
 ## 1.4.2 mixins 
 
 **类型：** `array mixins`
@@ -220,7 +219,6 @@ boolean shouldComponentUpdate(
 当shouldComponentUpdate方法返回false时，讲不会执行render()方法，componentWillUpdate和componentDidUpdate方法也不会被调用
 
 默认情况下，shouldComponentUpdate方法返回true防止state快速变化时的问题，但是如果·state不变，props只读，可以直接覆盖shouldComponentUpdate用于比较props和state的变化，决定UI是否更新，当组件比较多时，使用这个方法能有效提高应用性能
-
 
 ### 1.4.5.8 componentWillUpdate
 
