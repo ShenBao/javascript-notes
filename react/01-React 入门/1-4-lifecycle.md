@@ -111,7 +111,7 @@ var MyComponent = React.createClass({displayName: "MyComponent", });
 ![1-4-3.png](../img/1-4-3.png)
 
 
-### getDefaultProps
+### 1.4.5.1 getDefaultProps
 
 object getDefaultProps()
 
@@ -120,13 +120,13 @@ object getDefaultProps()
 这个方法在对象被创建之前执行，因此不能在方法内调用this.props ，另外，注意任何getDefaultProps()返回的对象在实例中共享，不是复制。
 
 
-### getInitialState
+### 1.4.5.2 getInitialState
 
 object getInitialState()
 
 控件加载之前执行，返回值会被用于state的初始化值
 
-### componentWillMount
+### 1.4.5.3 componentWillMount
 
 ```javascript
 void componentWillMount()
@@ -138,7 +138,7 @@ void componentWillMount()
 执行一次，在初始化render之前执行，如果在这个方法内调用setState，render()知道state发生变化，并且只执行一次
 
 
-### render
+### 1.4.5.4 render
 
 ReactElement render()
 
@@ -151,7 +151,7 @@ render的时候会调用render()会被调用
 render()方法是很纯净的，这就意味着不要在这个方法里初始化组件的state，每次执行时返回相同的值，不会读写DOM或者与服务器交互，如果必须如服务器交互，在componentDidMount()方法中实现或者其他生命周期的方法中实现，保持render()方法纯净使得服务器更准确，组件更简单。
 
 
-### componentDidMount
+### 1.4.5.5 componentDidMount
 
 ```javascript
 void componentDidMount()
@@ -164,7 +164,7 @@ void componentDidMount()
 
 从这个函数开始，就可以和 JS 其他框架交互了，例如设置计时 setTimeout 或者 setInterval，或者发起网络请求
 
-### componentWillReceiveProps(newProps)
+### 1.4.5.6 componentWillReceiveProps(newProps)
 
 ```javascript
 void componentWillReceiveProps(
@@ -207,7 +207,7 @@ eg:
 
 > 参考 Facebook [(A=>B) => (B => A)](http://facebook.github.io/react/blog/2016/01/08/A-implies-B-does-not-imply-B-implies-A.html)
 
-### shouldComponentUpdate(nextProps, nextState)
+### 1.4.5.7 shouldComponentUpdate(nextProps, nextState)
 
 ```javascript
 boolean shouldComponentUpdate(
@@ -225,7 +225,7 @@ boolean shouldComponentUpdate(
 默认情况下，shouldComponentUpdate方法返回true防止state快速变化时的问题，但是如果·state不变，props只读，可以直接覆盖shouldComponentUpdate用于比较props和state的变化，决定UI是否更新，当组件比较多时，使用这个方法能有效提高应用性能
 
 
-### componentWillUpdate
+### 1.4.5.8 componentWillUpdate
 
 ```javascript
 void componentWillUpdate(
@@ -239,7 +239,7 @@ void componentWillUpdate(
 
 当props和state发生变化时执行，并且在render方法之前执行，当然初始化render时不执行该方法，需要特别注意的是，在这个函数里面，你就不能使用this.setState来修改状态。这个函数调用之后，就会把nextProps和nextState分别设置到this.props和this.state中。紧接着这个函数，就会调用render()来更新界面了
 
-### componentDidUpdate
+### 1.4.5.9 componentDidUpdate
 
 ```javascript
 void componentDidUpdate(
@@ -250,20 +250,20 @@ void componentDidUpdate(
 **条件**：更新被应用到 DOM 之后（组件更新结束之后执行，在初始化render时不执行）
 **用处**：可以执行组件更新过后的操作
 
-### componentWillUnmount
+### 1.4.5.10 componentWillUnmount
 
 void componentWillUnmount()
 
 当组件要被从界面上移除的时候，就会调用componentWillUnmount(),在这个函数中，可以做一些组件相关的清理工作，例如取消计时器、网络请求等。
 
-## 生命周期与单向数据流
+## 1.4.6 生命周期与单向数据流
 
 我们知道 React 的核心模式是单向数据流，这不仅仅是对于组件级别的模式，在组件内部 的生命周期中也是应该符合单向数据的模式。数据从组件的属性流入，再结合组件的状态，流入生命周期方法，直到渲染结束这都应该是一个单向的过程，其间不能随意改变组件的状态。 
 
 ![1-4-4.png](../img/1-4-4.png)
 
 
-## 总结
+## 1.4.7总结
 
 ![React Componnet Lifecycle 01.jpg](../img/1-4-5.jpg)
 
