@@ -1,17 +1,18 @@
 
 
-http://www.cnblogs.com/kuikui/p/3505768.html
-
-doT.js详细介绍
+# doT.js详细介绍
 
 doT.js特点是快，小，无依赖其他插件。
 
 官网：http://olado.github.io
 
-doT.js详细使用介绍
+中文简述：http://www.cnblogs.com/kuikui/p/3505768.html
+
+
+## doT.js详细使用介绍
 
 使用方法：
-
+```
 {{= }} for interpolation
 {{ }} for evaluation
 {{~ }} for array iteration
@@ -19,11 +20,13 @@ doT.js详细使用介绍
 {{! }} for interpolation with encoding
 {{# }} for compile-time evaluation/includes and partials
 {{## #}} for compile-time defines
+```
 
 调用方式：
+```
 var tmpText = doT.template(模板);
 tmpText(数据源);
-
+```
 
 例子一：
 = 放在html中
