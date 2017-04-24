@@ -6,11 +6,12 @@ doT.js详细介绍
 
 doT.js特点是快，小，无依赖其他插件。
 
-官网：
-http://olado.github.io
+官网：http://olado.github.io
 
 doT.js详细使用介绍
+
 使用方法：
+
 {{= }} for interpolation
 {{ }} for evaluation
 {{~ }} for array iteration
