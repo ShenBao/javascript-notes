@@ -63,7 +63,6 @@ Webpack目前也是处理大型SPA应用项目的最好方案，利用它的代�
 
 > 那么Gulp或Grunt呢？ Webpack比起来最适合处理静态资源。所以他们开始可以用来跑一些其他的任务（但是也不推荐），现在更简单的方法是直接用上 [npm scripts](https://docs.npmjs.com/cli/run-script)
 
-
 ## React
 
 React在目前前端技术所表现出的亮点吸引了大批的开发者：
@@ -159,8 +158,12 @@ Universal或Isometric的JavaScript代表着JavaScript写的代码可以被同时
 
 感谢React，之前只有类似于Ebay或Facebook这样的巨型科技公司才能实施的方案，现在很多小的开发团队都能做到。不过它并不那么容易，它显著的加大了复杂性，限制了你类库和工具选择。如果你在构建B2C的网站，类似于电商网站，那么你可能必须使用这个方案。但如果你是在做内部网站或者是B2B应用站点，那么这样的性能提升和SEO其实并不需要。所以和你的项目经理讨论下，看看是否有必要~
 
+
+
+
 ## 参考资料
 
-1.《[展望 Javascript 2016年的趋势和生态发展](https://github.com/gaohailang/blog/issues/12)》，gaohailang同学译著，英文原文为《[State of the Art JavaScript in 2016](https://medium.com/javascript-and-opinions/state-of-the-art-javascript-in-2016-ab67fc68eb0b)》
+1.《[展望 Javascript 2016年的趋势和生态发展](https://github.com/gaohailang/blog/issues/12)》，gaohailang同学译著，英文版为《[State of the Art JavaScript in 2016](https://medium.com/javascript-and-opinions/state-of-the-art-javascript-in-2016-ab67fc68eb0b)》
 
 2.《[如何学习React](https://github.com/petehunt/react-howto/blob/master/README-zh.md)》，Zhangjd同学译著，原文为《[react-howto](https://github.com/petehunt/react-howto)》
+
