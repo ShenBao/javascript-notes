@@ -160,7 +160,6 @@ Universal或Isometric的JavaScript代表着JavaScript写的代码可以被同时
 
 
 
-
 ## 参考资料
 
 1.《[展望 Javascript 2016年的趋势和生态发展](https://github.com/gaohailang/blog/issues/12)》，gaohailang同学译著，英文版为《[State of the Art JavaScript in 2016](https://medium.com/javascript-and-opinions/state-of-the-art-javascript-in-2016-ab67fc68eb0b)》
