@@ -1,4 +1,4 @@
-# webpack-demo
+# webpack
 
 
 [webpack1中文翻译](http://webpackdoc.com/usage.html)
