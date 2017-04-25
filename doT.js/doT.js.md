@@ -143,8 +143,12 @@ if（）{
 {{?? }} else if
 {{??}} else
 数据源：{"name":"Jake","age":31}
-区域：<div id="condition"></div>
+区域：
+```
+<div id="condition"></div>
+```
 模板：
+```
 <script id="conditionstmpl" type="text/x-dot-template">
 {{? !it.name }}
 <div>Oh, I love your name, {{=it.name}}!</div>
@@ -154,11 +158,13 @@ if（）{
 You are {{=it.age}} and still dont have a name?
 {{?}}
 </script>
+```
 调用方式：
+```
 var dataEncode = {"uri":"http://bebedo.com/?keywords=Yoga","html":"<div style='background: #f00; height: 30px; line-height: 30px;'>html元素</div>"};
 var EncodeText = doT.template($("#conditionstmpl").text());
 $("#condition").html(EncodeText(dataEncode));
-
+```
 
 
 例子五：
@@ -166,19 +172,26 @@ $("#condition").html(EncodeText(dataEncode));
 5、for interpolation with encoding
 数据源：{"uri":"http://bebedo.com/?keywords=Yoga"}
 格式：
+```
  {{!it.uri}}
-
-区域：<div id="encode"></div>
+```
+区域：
+```
+<div id="encode"></div>
+```
 
 模板：
+```
 <script id="encodetmpl" type="text/x-dot-template">
 Visit {{!it.uri}} {{!it.html}}
 </script>
+```
 调用方式：
+```
 var dataEncode = {"uri":"http://bebedo.com/?keywords=Yoga","html":"<div style='background: #f00; height: 30px; line-height: 30px;'>html元素</div>"};
 var EncodeText = doT.template($("#encodetmpl").text());
 $("#encode").html(EncodeText(dataEncode));
-
+```
 
 
 
@@ -188,10 +201,17 @@ $("#encode").html(EncodeText(dataEncode));
 
 6、{{# }} for compile-time evaluation/includes and partials
 {{## #}} for compile-time defines
-数据源：{"name":"Jake","age":31}
 
-区域：<div id="part"></div>
+数据源：
+```
+{"name":"Jake","age":31}
+```
+区域：
+```
+<div id="part"></div>
+```
 模板：
+```
 <script id="parttmpl" type="text/x-dot-template">
 {{##def.snippet:
 <div>{{=it.name}}</div>{{#def.joke}}
@@ -199,9 +219,11 @@ $("#encode").html(EncodeText(dataEncode));
 {{#def.snippet}}
 {{=it.html}}
 </script>
-
+```
 调用方式：
+```
 var dataPart = {"name":"Jake","age":31,"html":"<div style='background: #f00; height: 30px; line-height: 30px;'>html元素</div>"};
 var defPart = {"joke":"<div>{{=it.name}} who?</div>"};
 var partText = doT.template($("#parttmpl").text(), undefined, defPart);
 $("#part").html(partText(dataPart));
+```
