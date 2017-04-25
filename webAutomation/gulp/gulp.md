@@ -78,6 +78,10 @@ var uglify 		= require('gulp-uglify');			//js压缩
 var rename     	= require('gulp-rename');			//改名字
 var changed  	= require('gulp-changed');
 
+var handlebars = require('gulp-handlebars');
+var wrap = require('gulp-wrap');
+var declare = require('gulp-declare');
+
 
 
 
