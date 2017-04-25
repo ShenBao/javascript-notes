@@ -202,10 +202,10 @@ var EncodeText = doT.template($("#encodetmpl").text());
 $("#encode").html(EncodeText(dataEncode));
 ```
 
-例子六：
-表示没看懂
+#### 例子六：
+```
 {{## #}} for compile-time defines
-
+```
 6、{{# }} for compile-time evaluation/includes and partials
 {{## #}} for compile-time defines
 
@@ -234,3 +234,7 @@ var defPart = {"joke":"<div>{{=it.name}} who?</div>"};
 var partText = doT.template($("#parttmpl").text(), undefined, defPart);
 $("#part").html(partText(dataPart));
 ```
+
+
+
+
