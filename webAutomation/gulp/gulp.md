@@ -81,10 +81,13 @@ var changed  	= require('gulp-changed');
 var handlebars = require('gulp-handlebars');
 var wrap = require('gulp-wrap');
 var declare = require('gulp-declare');
-
+const gulpif = require('gulp-if');
+const plumber = require('gulp-plumber');
+const tar = require('gulp-tar');
+const gzip = require('gulp-gzip');
 const shell = require('gulp-shell');
 
-
+var shrink = require('gulp-cssshrink');
 
 gulp API
     gulp.src(globs[, options])
