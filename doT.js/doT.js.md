@@ -172,9 +172,15 @@ $("#condition").html(EncodeText(dataEncode));
 ```
 
 #### 例子五：
+
 ！ val值显示在text中               = val显示在html中
+
 5、for interpolation with encoding
-数据源：{"uri":"http://bebedo.com/?keywords=Yoga"}
+
+数据源：
+```
+{"uri":"http://bebedo.com/?keywords=Yoga"}
+```
 格式：
 ```
  {{!it.uri}}
@@ -183,7 +189,6 @@ $("#condition").html(EncodeText(dataEncode));
 ```
 <div id="encode"></div>
 ```
-
 模板：
 ```
 <script id="encodetmpl" type="text/x-dot-template">
@@ -196,8 +201,6 @@ var dataEncode = {"uri":"http://bebedo.com/?keywords=Yoga","html":"<div style='b
 var EncodeText = doT.template($("#encodetmpl").text());
 $("#encode").html(EncodeText(dataEncode));
 ```
-
-
 
 例子六：
 表示没看懂
