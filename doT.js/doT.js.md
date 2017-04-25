@@ -102,24 +102,34 @@ $("#evaluation").html(evalText(dataEval));
 循环数组
 3、for array iteration 数组
 格式：
+```
 {{~data.array :value:index }}
 ...
 {{~}}
-数据源:{"array":["banana","apple","orange"]}
-区域：<div id="arrays"></div>
-
+```
+数据源:
+```
+{"array":["banana","apple","orange"]}
+```
+区域：
+```
+<div id="arrays"></div>
+```
 模板：
+```
 <script id="arraystmpl" type="text/x-dot-template">
 {{~it.array:value:index}}
 <div>{{= index+1 }}{{= value }}!</div>
 {{~}}
 </script>
+```
 
 调用方式：
+```
 var dataArr = {"array":["banana","apple","orange"]};
 var arrText = doT.template($("#arraystmpl").text());
 $("#arrays").html(arrText(dataArr));
-
+```
 
 
 例子四：
