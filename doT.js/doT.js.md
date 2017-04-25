@@ -7,7 +7,6 @@ doT.js特点是快，小，无依赖其他插件。
 
 中文简述：http://www.cnblogs.com/kuikui/p/3505768.html
 
-
 ## doT.js详细使用介绍
 
 使用方法：
@@ -27,19 +26,22 @@ var tmpText = doT.template(模板);
 tmpText(数据源);
 ```
 
-例子一：
+
+#### 例子一：
+
 = 放在html中
 1、for interpolation 赋值
 格式：
 {{= }}
  
-数据源：{"name":"Jake","age":31}
-
+数据源：
+```
+{"name":"Jake","age":31}
+```
 区域:
 ```
 <div id="interpolation"></div>
 ```
-
 模板：
 ```
 <script id="interpolationtmpl" type="text/x-dot-template">
@@ -47,7 +49,6 @@ tmpText(数据源);
 <div>{{=it.age || ''}}</div>
 </script>
 ```
-
 调用方式：
 ```
 var dataInter = {"name":"Jake","age":31};
@@ -55,7 +56,7 @@ var interText = doT.template($("#interpolationtmpl").text());
 $("#interpolation").html(interText(dataInter));
 ```
 
-例子二：
+#### 例子二：
 取key及val           普通循环(不是foreach)
 2、for evaluation for in 循环
 格式：
@@ -76,7 +77,6 @@ $("#interpolation").html(interText(dataInter));
     }
 }
 ```
-
 区域：
 ```
 <div id="evaluation"></div>
@@ -96,8 +96,7 @@ var evalText = doT.template($("#evaluationtmpl").text());
 $("#evaluation").html(evalText(dataEval));
 ```
 
-
-例子三：
+#### 例子三：
 循环数组
 3、for array iteration 数组
 格式：
@@ -122,7 +121,6 @@ $("#evaluation").html(evalText(dataEval));
 {{~}}
 </script>
 ```
-
 调用方式：
 ```
 var dataArr = {"array":["banana","apple","orange"]};
