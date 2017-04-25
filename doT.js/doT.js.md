@@ -60,23 +60,42 @@ $("#interpolation").html(interText(dataInter));
 取key及val           普通循环(不是foreach)
 2、for evaluation for in 循环
 格式：
+```
 {{ for var key in data { }} 
 {{= key }} 
 {{ } }}
-数据源：{"name":"Jake","age":31,"interests": ["basketball","hockey","photography"],"contact":{"email":"jake@xyz.com","phone":"999999999"}}
+```
+数据源：
+```
+{
+    "name":"Jake",
+    "age":31,
+    "interests": ["basketball","hockey","photography"],
+    "contact":{
+        "email":"jake@xyz.com",
+        "phone":"999999999"
+    }
+}
+```
 
-区域：<div id="evaluation"></div>
+区域：
+```
+<div id="evaluation"></div>
+```
 模板：
+```
 <script id="evaluationtmpl" type="text/x-dot-template">
 {{ for(var prop in it) { }}
 <div>KEY:{{= prop }}---VALUE:{{= it[prop] }}</div>
 {{ } }}
 </script>
+```
 调用方式：
+```
 var dataEval = {"name":"Jake","age":31,"interests":["basketball","hockey","photography"],"contact":{"email":"jake@xyz.com","phone":"999999999"}};
 var evalText = doT.template($("#evaluationtmpl").text());
 $("#evaluation").html(evalText(dataEval));
-
+```
 
 
 例子三：
