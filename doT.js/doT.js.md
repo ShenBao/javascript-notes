@@ -36,19 +36,25 @@ tmpText(数据源);
  
 数据源：{"name":"Jake","age":31}
 
-区域:<div id="interpolation"></div>
- 
+区域:
+```
+<div id="interpolation"></div>
+```
+
 模板：
+```
 <script id="interpolationtmpl" type="text/x-dot-template">
 <div>Hi {{=it.name}}!</div>
 <div>{{=it.age || ''}}</div>
 </script>
+```
 
 调用方式：
+```
 var dataInter = {"name":"Jake","age":31};
 var interText = doT.template($("#interpolationtmpl").text());
 $("#interpolation").html(interText(dataInter));
-
+```
 
 例子二：
 取key及val           普通循环(不是foreach)
