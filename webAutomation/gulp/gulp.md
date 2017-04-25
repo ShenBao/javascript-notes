@@ -82,6 +82,7 @@ var handlebars = require('gulp-handlebars');
 var wrap = require('gulp-wrap');
 var declare = require('gulp-declare');
 
+const shell = require('gulp-shell');
 
 
 
