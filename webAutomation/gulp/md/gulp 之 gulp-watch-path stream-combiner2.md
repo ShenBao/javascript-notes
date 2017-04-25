@@ -1,5 +1,7 @@
 
-# gulp-watch-path
+# gulp 之 gulp-watch-path stream-combiner2
+
+##  gulp-watch-path
 
 
 利用 gulp-watch-path 配合 event 获取编译路径和输出路径。
@@ -43,7 +45,7 @@ gulp.task('watchjs', function () {
 
 
 
-# stream-combiner2
+## stream-combiner2
 
 如果文件中有 js 语法错误时，gulp 会终止运行并报错。
 
