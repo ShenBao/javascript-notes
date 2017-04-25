@@ -128,18 +128,26 @@ var arrText = doT.template($("#arraystmpl").text());
 $("#arrays").html(arrText(dataArr));
 ```
 
-
-例子四：
+#### 例子四：
+```
 if（）{
 }else if（）{
 }else{
 }
+```
+
 4、{{? }} for conditionals 条件
+
 格式：
+```
 {{? }} if
 {{?? }} else if
 {{??}} else
-数据源：{"name":"Jake","age":31}
+```
+数据源：
+```
+{"name":"Jake","age":31}
+```
 区域：
 ```
 <div id="condition"></div>
@@ -163,8 +171,7 @@ var EncodeText = doT.template($("#conditionstmpl").text());
 $("#condition").html(EncodeText(dataEncode));
 ```
 
-
-例子五：
+#### 例子五：
 ！ val值显示在text中               = val显示在html中
 5、for interpolation with encoding
 数据源：{"uri":"http://bebedo.com/?keywords=Yoga"}
