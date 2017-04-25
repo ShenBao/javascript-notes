@@ -20,7 +20,46 @@ gulp.task('sass', function () {
 
 
 
+### 源文件
+less/a.sass
 
+```css
+.less{
+	a{
+        color:pink;
+    }
+}
+```
+less/import.sass
+
+```css
+@import "a.less";
+.import{
+	a{
+		color:red;
+    }
+}
+```
+
+### 编译之后
+
+less/a.css
+
+```css
+.less a {
+  color: pink;
+}
+```
+less/import.css
+
+```css
+.less a {
+  color: pink;
+}
+.import a{
+  color: red;
+}
+```
 
 
 
