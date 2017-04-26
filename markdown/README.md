@@ -61,7 +61,7 @@
 
 ###想点击某个图片进入一个网页,比如我想点击github的icorn然后再进入www.github.com
 [![image]](http://www.github.com/)
-[image]: ./images/02.jpg "github-02.jpg"
+[image](./images/02.jpg "github-02.jpg")
 
 ### 文字被些字符包围
 > 文字被些字符包围
