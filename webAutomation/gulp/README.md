@@ -31,21 +31,9 @@
 
 
 ### js 模块化
-"gulp 之 gulp-webpack gulp-uglify vinyl-named imports-loader.md",
 
 ### server
-"gulp 之 gulp-webserver.md"
-"gulp 之 gulp-connect.md",
 
-
-"gulp 之 gulp-concat.md",
-"gulp 之 gulp-livereload.md",
-"gulp 之 gulp-load-plugins.md",
-"gulp 之 gulp-rename.md",
-"gulp 之 gulp-shell.md",
-"gulp 之 gulp-sourcemaps.md",
-"gulp 之 gulp-util.md",
-"gulp 之 gulp-watch-path stream-combiner2.md",
 
 
 
