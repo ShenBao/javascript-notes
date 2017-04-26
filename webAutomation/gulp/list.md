@@ -83,13 +83,11 @@
     gulp-eslint - ECMAScript/JavaScript代码校验.
 
     Angular相关
-
     gulp-angular-templatecache - 在$templateCache中联系并注册AngularJS模板
     gulp-ng-html2js - 将html转化为js文件, 感觉和 gulp-angular-templatecache 差不多
     gulp-ng-annotate - 自动添加依赖注入
 
     其他
-
     gulp-iife - 将js文件包裹在一个立即执行函数中.
     gulp-size - 输出文件打下
     gulp-util - 一些工具方法
@@ -101,9 +99,7 @@
     require-dir 分离gulp任务到多个文件
     browser-sync -同步多浏览器
 
-
     文档
-
     jsdoc - 生成js的API文档
     docdash - 一款主题
 
