@@ -27,7 +27,8 @@ gulp.task('js', function () {
           test: /\.js$/,
           loader: 'imports?define=>false'
         }]
-      }
+      },
+      devtool: "#eval-source-map"
     }))
     // js 压缩
     .pipe(uglify().on('error', function (e) {
@@ -39,8 +40,13 @@ gulp.task('js', function () {
 });
 ```
 
+1. 对于有多个入口文件（entry point）的情况，需要使用vinyl-named这个模块，这样就能实现以下打包需求
 
-
+```
+src/scripts/index.js -> prd/scripts/index.js
+src/scripts/touch.js -> prd/scripts/touch.js
+在output里面可以设置打包后的文件名，如 "[name].min.js"
+```
 
 
 
