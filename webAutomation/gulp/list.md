@@ -2,6 +2,7 @@
 # list
 
 
+gulp-load-plugins 自动加载插件
 
 
 
