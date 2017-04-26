@@ -14,6 +14,7 @@ gulp-concat : 合并文件
 gulp-rename : 重命名文件 
 gulp-htmlmin : 压缩html 
 gulp-clean : 清空文件夹
+gulp-swig: 模版层面的前后端分离
 
 gulp-rev
 gulp-rev-collector
