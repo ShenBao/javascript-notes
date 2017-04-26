@@ -9,8 +9,10 @@
     gulp-less ：less插件
     gulp-notify：通知
     gulp-clean-css：文件压缩
+    gulp-stylus ： Stylus 编译成 CSS.
     vinyl-paths：管道删除 gulp.src先定义一个位置 然后.pipe(vinylPaths(del))不建议写
     gulp-base64：base64
+    gulp-typescript - TypeScript 编译成JavaScript.
     gulp-load-plugins 自动加载插件
     gulp-sequence ： 顺序执行  gulp4.0已经解决
     gulp-nodemon 自动启动/重启你的node程序，开发node服务端程序必备
@@ -28,7 +30,7 @@
     gulp-swig: 模版层面的前后端分离
     gulp-rev：版本控制
     gulp-rev-collector：路径修改器
-    run-sequence 让gulp任务，可以相互独立，解除任务间的依赖，增强task复用，同步执行 (重要，有些报错就是因为这个没弄好)
+    run-sequence 让gulp任务，可以相互独立，解除任务间的依赖，增强task复用，同步执行 (重要，有些报错就是因为这个没弄好) (注意: 在 Gulp4.0 中, 已经提供了 gulp.series 方法)
     browser-sync 静态文件服务器，同时也支持浏览器自动刷新
     del  删除文件/文件夹
     gulp-coffee ：编译coffee代码为Js代码，使用coffeescript必备
@@ -70,11 +72,15 @@
     gulp-cssshrink：
     gulp-browserify
     gulp-gh-pages
-
-
-
-
-
+    gulp-svgmin ： 压缩 SVG 文件
+    merge-stream - Merge multiple streams into one interleaved stream.
+    event-stream - 方便操作stream
+    gulp-changed - 只通过修改过的文件
+    gulp-changed-in-place - 只通过修改过的文件 
+        区别? gulp-changed 比较的是生成的文件, gulp-changed-in-place比较的是源文件, 复杂情况用后者. (比如需要babel的时候)
+    gulp-order - 重新对文件进行排序 (引入顺序重要的话, 这个插件结合 event-stream 是神器)
+    gulp-csslint - 通过CSSLint自动校验CSS.
+    gulp-eslint - ECMAScript/JavaScript代码校验.
 
 
 
