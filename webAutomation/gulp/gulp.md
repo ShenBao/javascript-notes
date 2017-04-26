@@ -1,9 +1,15 @@
 
+## gulp 相关文章
+
 http://www.ydcss.com/archives/tag/gulp
 
 https://segmentfault.com/q/1010000004234745
 
 https://github.com/fwon/gulp-webpack-demo
+
+https://juejin.im/entry/5727f912f38c840059d26002?from=timeline
+
+https://github.com/xiaoyu2er/automating-your-workflow-with-gulp
 
 
 Gulp使用 node-glob 模块，借助 minimatch 库，将glob表达式(glob expressions)转换成JavaScript正则表达式(JavaScript RegExp) ，从而实现文件匹配功能。我们所看到的 ** 和 * 都是其所提供的语法：
