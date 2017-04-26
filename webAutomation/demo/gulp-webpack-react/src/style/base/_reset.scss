@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+//------------------------------------------------------------------------------
+// 格式化页面
+//------------------------------------------------------------------------------
+
+// css3 元素块状化，让它们在 IE6/7/8/9 & FF3 下不至于被识别为 not defined（未定义）
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+summary {
+    display: block;
+}
+
+// 设置一下元素为行内元素，让它们在 IE6/7/8/9 & FF3 下不至于被识别为 not defined（未定义）
+audio,
+canvas,
+video {
+    display: inline-block;
+    @if $lte7 {
+        *display: inline;
+        *zoom: 1;
+    }
+}
+
+// 1。防止现代浏览器显示没有控制的 “ audio ”
+// 2。去除在 iOS5 设备上多余的高度
+audio:not([controls]) {
+    display: none; // 1
+    height: 0; // 2
+}
+
+// address 的 [hidden] 样式不会出现在 IE 8/9。
+// 在IE,Firefox Safari,Firefox < 22 上隐藏 “template” 元素。
+[hidden], template {
+    display: none;
+}

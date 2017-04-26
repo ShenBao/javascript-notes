@@ -1,0 +1,42 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "一个完整项目的所有目录及所需package",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kevin",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "connect-rest": "^1.9.5",
+    "del": "^2.2.2",
+    "eslint": "^3.9.1",
+    "eslint-plugin-react": "^6.5.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cached": "^1.1.0",
+    "gulp-cli": "github:gulpjs/gulp-cli",
+    "gulp-connect": "^5.0.0",
+    "gulp-remember": "^0.3.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
