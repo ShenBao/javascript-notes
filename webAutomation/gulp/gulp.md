@@ -1,12 +1,11 @@
+
 http://www.ydcss.com/archives/tag/gulp
 
+https://segmentfault.com/q/1010000004234745
+
+https://github.com/fwon/gulp-webpack-demo
 
 
-gulp API
-    gulp.src(globs[, options])
-    gulp.dest(path[, options])
-    gulp.task(name[, deps], fn)
-    gulp.watch(glob [, opts], tasks), gulp.watch(glob [, opts, cb])
 Recipes
 gulp-browserify
 gulp-jshint
