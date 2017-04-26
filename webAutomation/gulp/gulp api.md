@@ -50,22 +50,46 @@ gulp.src('client/js/**/*.js', { base: 'client' })
   .pipe(gulp.dest('build'));  // Writes 'build/js/somedir/somefile.js
 ```
 
+## gulp.dest(path[, options])
 
+说明：dest方法是指定处理完后文件输出的路径；
 
+```
+gulp.src('./client/templates/*.jade')
+  .pipe(jade())
+  .pipe(gulp.dest('./build/templates'))
+  .pipe(minify())
+  .pipe(gulp.dest('./build/minified_templates'));
+```
+path：  类型(必填)：String or Function 指定文件输出路径，或者定义函数返回文件输出路径亦可；
 
+options：  类型(可选)：Object，有2个属性cwd、mode；
 
+    options.cwd：  类型：String  默认：process.cwd()：前脚本的工作目录的路径 当文件输出路径为相对路径将会用到；
+    options.mode：  类型：String  默认：0777 指定被创建文件夹的权限；
 
+## gulp.task(name[, deps], fn)
 
+说明：task定义一个gulp任务；
 
+name：  类型(必填)：String 指定任务的名称（不应该有空格）；
 
+deps：  类型(可选)：StringArray，该任务依赖的任务（注意：被依赖的任务需要返回当前任务的事件流，请参看下面示例）；
 
+```
+gulp.task('testLess', function () {
+    return gulp.src(['less/style.less'])
+        .pipe(less())
+        .pipe(gulp.dest('./css'));
+});
+ 
+gulp.task('minicss', ['testLess'], function () { //执行完testLess任务后再执行minicss任务
+    gulp.src(['css/*.css'])
+        .pipe(minifyCss())
+        .pipe(gulp.dest('./dist/css'));
+});
+```
 
+fn：  类型(必填)：Function 该任务调用的插件操作；
 
-
-
-
-
-
-
-
-
+## 
