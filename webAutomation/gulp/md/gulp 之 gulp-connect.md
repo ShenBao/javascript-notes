@@ -92,15 +92,47 @@ gulp.task('watch', function () {
 gulp.task('default', ['connectDist', 'connectDev', 'watch']);
 ```
 
+### API
+
+options.root：根目录
+
+options.port：端口号 Type: Number Default: 8080
+
+options.host：域名 Type: String；Default: localhost
+
+options.name：服务器名称 Type: String Default: Server
+
+options.https：Type: Object；Default: false
+
+options.livereload：Type: Object or Boolean Default: false
+
+options.livereload.port：Type: Number Default: 35729
+
+options.livereload.hostname：Type: String Default: 'undefined'
+
+
+options.fallback：Type: String Default: undefined
+
+options.middleware：Type: Function Default: []
+
+options.debug：Type: Boolean Default: false
+
+options.index
+
+Type: Boolean or String of a new index pass or Array of new indexes in preferred order Default: true
 
 
 
-
-
-
-
-
-
-
-
+```
+gulp.task('connect', function() {
+  connect.server({
+    root: "app",
+    middleware: function(connect, opt) {
+      return [
+        // ... 
+      ]
+    }
+  });
+});
+```
 
