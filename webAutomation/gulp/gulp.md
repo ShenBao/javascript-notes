@@ -6,40 +6,6 @@ https://segmentfault.com/q/1010000004234745
 https://github.com/fwon/gulp-webpack-demo
 
 
-Recipes
-gulp-browserify
-gulp-jshint
-gulp-jslint
-imagemin
-glup-sass
-browser-sync
-gulp-handlebars
-gulp-usemin
-gulp-uglify
-gulp-sourcemaps
-gulp-gh-pages
-
-其它一些关注度高的gulp插件
-    gulp-inject
-    gulp-header
-    gulp-filter
-    gulp-changed
-    gulp-bower
-    gulp-if
-    gulp-replace
-    gulp-shell
-    gulp-exec
-    gulp-install
-    gulp-rename
-    gulp-ignore
-    gulp-util
-    gulp-clean
-    gulp-concat
-    gulp-wrap
-    gulp-declare
-
-
-
 Gulp使用 node-glob 模块，借助 minimatch 库，将glob表达式(glob expressions)转换成JavaScript正则表达式(JavaScript RegExp) ，从而实现文件匹配功能。我们所看到的 ** 和 * 都是其所提供的语法：
 
 * 匹配文件路径中的0个或多个字符，但不会匹配路径分隔符，除非路径分隔符出现在末尾。

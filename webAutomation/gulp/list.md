@@ -34,7 +34,7 @@
     gulp-coffee ：编译coffee代码为Js代码，使用coffeescript必备
     coffee-script gulpfile默认采用js后缀，如果要使用gulpfile.coffee来编写，那么需要此模块
     yargs 用于获取启动参数，针对不同参数，切换任务执行过程时需要
-    gulp-util gulp常用的工具库
+    gulp-util gulp常用的工具库,提供一些辅助方法。
     gulp-sourcemaps  处理JS时，生成SourceMap
     connect-history-api-fallback 开发angular应用必须，用于支持HTML5 history API.
     gulp-load-plugins 可以加载package.json文件中所有的gulp模块
@@ -52,8 +52,6 @@
     gulp-exec exec插件
     gulp-install 安装npm和bower包， 如果它们的配置文件存在的话。
     gulp-ignore忽略管道中的部分文件。
-    gulp-util提供一些辅助方法。
-    gulp-clean提供clean功能。
     gulp-wrap 将一个lodash模版包装成流内容。
     gulp-declare  安全的声明命名空间，设置属性。
     gulp-cached 以及 gulp-remember 增量编译
@@ -70,6 +68,8 @@
     gulp-babel：babel es6->es5
     gulp-tar：
     gulp-cssshrink：
+    gulp-browserify
+    gulp-gh-pages
 
 
 
