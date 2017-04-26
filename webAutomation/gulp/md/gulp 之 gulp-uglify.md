@@ -10,19 +10,31 @@ var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 
 gulp.task('script', function() {
+    var options = {
+            mangle: true,//类型：Boolean 默认：true 是否修改变量名
+            compress: true,//类型：Boolean 默认：true 是否完全压缩
+            preserveComments: 'all' //保留所有注释
+        };
     gulp.src('js/*.js')
-        .pipe(uglify())
+        .pipe(uglify(options))
         .pipe(gulp.dest('dist/js'))
 });
 ```
 
-- `gulp.task(name, fn)` - 定义任务，第一个参数是任务名，第二个参数是任务内容。
-- `gulp.src(path)` - 选择文件，传入参数是文件路径。
-- `gulp.dest(path)` - 输出文件
-- `gulp.pipe()` - 管道，你可以暂时将 pipe 理解为将操作加入执行队列
+Options
+
+    mangle
+    output
+    compress
+    preserveComments:all/license/function/some (deprecated)
 
 
+Errors
 
-
+    fileName: The full file path for the file being minified.
+    cause: The original UglifyJS error, if available.
+    message (or msg)
+    filename
+    line
 
 
