@@ -14,7 +14,8 @@
 
 [一小时包教会 —— webpack 入门指南](http://www.cnblogs.com/vajoy/p/4650467.html)
 
-
+教程 
+https://github.com/kraaas/webpack-tutorial-collection
 
 https://github.com/nimojs/webpack-book
 
@@ -27,6 +28,16 @@ https://github.com/94dreamer/webpack
 https://github.com/songjinzhong/webpack-learning
 
 https://github.com/TongchengQiu/webpack-best-practice
+
+https://github.com/xiaoyunchen/webpack
+
+https://github.com/94dreamer/webpack
+
+
+
+
+
+
 
 
 
