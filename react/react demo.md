@@ -1,6 +1,8 @@
 
 # react demo
 
+渐进式学习React生态圈
+https://github.com/minooo/React-Study
 
 https://github.com/bailicangdu/react-pxq
 
