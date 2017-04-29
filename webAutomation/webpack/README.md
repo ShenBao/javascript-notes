@@ -7,10 +7,7 @@
 
 [webpack2中文2](http://www.css88.com/doc/webpack2/)
 
-
-
 [webpack使用优化](http://www.open-open.com/lib/view/open1452487103323.html)
-
 
 [一小时包教会 —— webpack 入门指南](http://www.cnblogs.com/vajoy/p/4650467.html)
 
@@ -21,7 +18,7 @@ https://github.com/nimojs/webpack-book
 
 
 
-demo
+## demo
 
 https://github.com/94dreamer/webpack
 
