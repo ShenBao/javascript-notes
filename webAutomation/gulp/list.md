@@ -12,7 +12,7 @@
     gulp-sequence ： 顺序执行  gulp4.0已经解决
     gulp-nodemon 自动启动/重启你的node程序，开发node服务端程序必备
     gulp-livereload 后端控制前端同步刷新，不过需要依赖 chrome 插件 LiveReload
-    gulp-minify-html 
+    gulp-minify-html 压缩html
     gulp-ruby-sass : 支持sass 
     gulp-minify-css : 压缩css 
     gulp-jshint : 检查js
@@ -112,6 +112,7 @@
 
     gulp-flatten 当拷贝文件时，不想拷贝目录时使用 segmentfault
 
+    gulp-csso 优化CSS
 
 
 - **AngularJS**
