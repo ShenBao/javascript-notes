@@ -8,7 +8,7 @@
     vinyl-paths：管道删除 gulp.src先定义一个位置 然后.pipe(vinylPaths(del))不建议写
     gulp-base64：base64
     gulp-typescript - TypeScript 编译成JavaScript.
-    gulp-load-plugins 自动加载插件
+    gulp-load-plugins 自动加载插件 自动导入gulp plugin
     gulp-sequence ： 顺序执行  gulp4.0已经解决
     gulp-nodemon 自动启动/重启你的node程序，开发node服务端程序必备
     gulp-livereload 后端控制前端同步刷新，不过需要依赖 chrome 插件 LiveReload
@@ -35,7 +35,7 @@
     connect-history-api-fallback 开发angular应用必须，用于支持HTML5 history API.
     gulp-load-plugins 可以加载package.json文件中所有的gulp模块
     gulp-handlebars  模版引擎库， ember.js用它作为前端的模版引擎。gulp-handlebars编译handlebars文件。
-    gulp-usemin 
+    gulp-usemin  Replaces references to non-optimized scripts or stylesheets into a set of HTML files
     gulp-inject  可以注入css,javascript和web组件，不需手工更新ndex.html。
     gulp-header  为管道中的文件增加header。
     gulp-footer
@@ -108,11 +108,20 @@
     morgan
     gulp-cssnano
     gulp-clone
+    gulp-grunt
     vinyl-source-stream
 
     gulp-flatten 当拷贝文件时，不想拷贝目录时使用 segmentfault
 
     gulp-csso 优化CSS
+      - [gulp-load-utils](https://www.npmjs.com/package/gulp-load-utils) 增强版gulp-utils
+  - [gulp-task-listing](https://github.com/OverZealous/gulp-task-listing) 快速显示gulp task列表
+  - [gulp-help](https://github.com/chmontgomery/gulp-help) 为task添加帮助描述
+  - [gulp-jsdoc](https://github.com/jsBoot/gulp-jsdoc) 生成JS文档- [wiredep](https://github.com/taptapship/wiredep) 将bower依赖自动写到index.html中 [Example](https://github.com/hjzheng/CUF_meeting_knowledge_share/tree/master/2015-8-17/bower-dependence-inject)
+  - [gulp-useref](https://github.com/jonkemp/gulp-useref) 功能类似与usemin [Example](https://github.com/hjzheng/CUF_meeting_knowledge_share/tree/master/2015-8-17/bower-dependence-inject) 新版本用法有变化，详见gulp-useref的README.md
+
+
+
 
 
 - **AngularJS**
