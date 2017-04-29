@@ -40,6 +40,7 @@
     gulp-inject  可以注入css,javascript和web组件，不需手工更新ndex.html。
     gulp-header  为管道中的文件增加header。
     gulp-footer
+    gulp-newer pass through newer source files only, supports many:1 source:dest
     gulp-filter  筛选vinyl stream中的文件。
     gulp-bower 执行bower安装。
     gulp-if  有条件的执行任务
@@ -78,6 +79,8 @@
     gulp-csslint - 通过CSSLint自动校验CSS.
     gulp-eslint - ECMAScript/JavaScript代码校验.
 
+    webpack-stream gulp与webpack Example
+
     Angular相关
     gulp-angular-templatecache - 在$templateCache中联系并注册AngularJS模板
     gulp-ng-html2js - 将html转化为js文件, 感觉和 gulp-angular-templatecache 差不多
@@ -102,8 +105,9 @@
     gulp-nunjucks-render
     gulp-data
     gulp-iconfont
-    ulp-rev-replace
+    gulp-rev-replace
     gulp-rev-napkin
+    
     gulp-svgstore
     gulp-sizereport
     compression
