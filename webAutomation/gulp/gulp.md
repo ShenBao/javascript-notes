@@ -13,6 +13,11 @@ https://github.com/xiaoyu2er/automating-your-workflow-with-gulp
 
 http://colobu.com/2014/11/17/gulp-plugins-introduction/
 
+https://github.com/Platform-CUF/use-gulp
+
+https://github.com/xiaoyu2er/automating-your-workflow-with-gulp
+
+https://github.com/fe-knowledge/gulp-book
 
 ## 常用资料
 

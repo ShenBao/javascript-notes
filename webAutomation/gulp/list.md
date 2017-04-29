@@ -101,12 +101,18 @@
     jsdoc - 生成js的API文档
     docdash - 一款主题
 
+    - [gulp-svg-symbols](https://github.com/Hiswe/gulp-svg-symbols) 制作SVG Symbols, [关于使用SVG Symbol](http://isux.tencent.com/zh-hans/16292.html)
+    - [gulp-template](https://github.com/sindresorhus/gulp-template) 模板替换
+    - [gulp-dom-src](https://github.com/cgross/gulp-dom-src) 将html中的script，link等标签中的文件转成gulp stream。
+    - [gulp-cheerio](https://github.com/KenPowers/gulp-cheerio) Manipulate HTML and XML files with Cheerio in Gulp. 
+    - [require-dir](https://www.npmjs.com/package/require-dir) 利用它我们可以将 gulpfile.js 分成多个文件，具体用法可以参考这个[Splitting a gulpfile into multiple files](http://macr.ae/article/splitting-gulpfile-multiple-files.html)
 
     gulp-nunjucks-render
     gulp-data
     gulp-iconfont
     gulp-rev-replace
     gulp-rev-napkin
+    colors
     
     gulp-svgstore
     gulp-sizereport
