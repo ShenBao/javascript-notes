@@ -26,7 +26,6 @@
     gulp-rev：版本控制
     gulp-rev-collector：路径修改器
     run-sequence 让gulp任务，可以相互独立，解除任务间的依赖，增强task复用，同步执行 (重要，有些报错就是因为这个没弄好) (注意: 在 Gulp4.0 中, 已经提供了 gulp.series 方法)
-    browser-sync 静态文件服务器，同时也支持浏览器自动刷新
     del  删除文件/文件夹
     gulp-coffee ：编译coffee代码为Js代码，使用coffeescript必备
     coffee-script gulpfile默认采用js后缀，如果要使用gulpfile.coffee来编写，那么需要此模块
@@ -52,7 +51,7 @@
     gulp-wrap 将一个lodash模版包装成流内容。
     gulp-declare  安全的声明命名空间，设置属性。
     gulp-cached 以及 gulp-remember 增量编译
-    browser-sync 保持多浏览器、多设备同步、在前端开发是非常有用，可谓是必备组件。
+    browser-sync 保持多浏览器、多设备同步、在前端开发是非常有用，可谓是必备组件。静态文件服务器，同时也支持浏览器自动刷新
     gulp-gzip Gzip 插件
     gulp-markdown markdown 不用多说，这个基本上都要用到。
     gulp-plumber 错误处理插件，如果不希望总是因为错误而中断任务的话，那么它几乎是必备组件
@@ -92,13 +91,22 @@
     del - Delete files/folders using globs.
     yargs - 处理 process.argv
     require-dir 分离gulp任务到多个文件
-    browser-sync -同步多浏览器
 
     文档
     jsdoc - 生成js的API文档
     docdash - 一款主题
 
 
+    gulp-nunjucks-render
+    gulp-data
+    gulp-iconfont
+    ulp-rev-replace
+    gulp-rev-napkin
+    gulp-svgstore
+    gulp-sizereport
+    compression
+    morgan
+    gulp-cssnano
 
 
 
