@@ -41,7 +41,7 @@ https://github.com/xiaoyann/webpack-react-redux-es6-boilerplate
 
 https://github.com/lengziyu/learn-webpack
 
-
+https://github.com/duxianwei520/react
 
 
 
