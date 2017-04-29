@@ -16,7 +16,7 @@
 
 
 
-
+https://github.com/nimojs/webpack-book
 
 
 
@@ -26,7 +26,7 @@ https://github.com/94dreamer/webpack
 
 https://github.com/songjinzhong/webpack-learning
 
-
+https://github.com/TongchengQiu/webpack-best-practice
 
 
 
