@@ -12,9 +12,13 @@ https://github.com/bodyno/react-starter-kit
 
 
 
+## demo
 
+https://github.com/TerryBeanX2/Webpack-React-Router-Redux-ES6
 
+https://github.com/duxianwei520/react
 
+https://github.com/hyy1115/react-redux-webpack2
 
-
+https://github.com/ouxu/react-redux-simple-boilerplate
 
