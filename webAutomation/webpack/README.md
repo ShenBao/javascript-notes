@@ -33,11 +33,13 @@ https://github.com/xiaoyunchen/webpack
 
 https://github.com/94dreamer/webpack
 
+https://github.com/wodewone/keepForMac
 
+https://github.com/wxyyxc1992/create-react-boilerplate
 
+https://github.com/xiaoyann/webpack-react-redux-es6-boilerplate
 
-
-
+https://github.com/lengziyu/learn-webpack
 
 
 
