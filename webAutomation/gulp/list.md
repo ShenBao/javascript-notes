@@ -107,10 +107,18 @@
     compression
     morgan
     gulp-cssnano
+    gulp-clone
+    vinyl-source-stream
+
+    gulp-flatten 当拷贝文件时，不想拷贝目录时使用 segmentfault
 
 
 
-
+- **AngularJS**
+  - [gulp-ng-annotate](https://github.com/Kagami/gulp-ng-annotate) 注明依赖 for angular
+  - [gulp-ng-html2js](https://github.com/marklagendijk/gulp-ng-html2js) html2js for angular
+  - [gulp-angular-extender](https://libraries.io/npm/gulp-angular-extender) 为angular module添加dependencies
+  - [gulp-angular-templatecache](https://github.com/miickel/gulp-angular-templatecache) 将html模板缓存到$templateCache中
 
 
 
