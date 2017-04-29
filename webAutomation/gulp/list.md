@@ -50,7 +50,7 @@
     gulp-ignore忽略管道中的部分文件。
     gulp-wrap 将一个lodash模版包装成流内容。
     gulp-declare  安全的声明命名空间，设置属性。
-    gulp-cached 以及 gulp-remember 增量编译
+    gulp-cached 将文件先cache起来，先不进行操作 以及 gulp-remember 增量编译
     browser-sync 保持多浏览器、多设备同步、在前端开发是非常有用，可谓是必备组件。静态文件服务器，同时也支持浏览器自动刷新
     gulp-gzip Gzip 插件
     gulp-markdown markdown 不用多说，这个基本上都要用到。
