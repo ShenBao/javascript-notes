@@ -16,6 +16,7 @@
     gulp-ruby-sass : 支持sass 
     gulp-minify-css : 压缩css 
     gulp-jshint : 检查js
+    gulp-jscs 检查JS代码风格 
     gulp-jslint ： javascript代码质量检测工具。
     gulp-uglify : 压缩js 
     gulp-concat : 合并文件 
@@ -40,7 +41,6 @@
     gulp-header  为管道中的文件增加header。
     gulp-footer
     gulp-filter  筛选vinyl stream中的文件。
-    gulp-changed 只允许改变的文件通过管道。
     gulp-bower 执行bower安装。
     gulp-if  有条件的执行任务
     gulp-replace 字符串替换插件。
@@ -62,6 +62,8 @@
     gulp-cache ：缓存代理
     node-glob
     gulp-babel：babel es6->es5
+    [babelify](https://github.com/babel/babelify)  Browserify transform for Babel
+    [gulp-traceur](https://github.com/sindresorhus/gulp-traceur)  Traceur is a JavaScript.next-to-JavaScript-of-today compiler 
     gulp-tar：
     gulp-cssshrink：
     gulp-browserify
@@ -122,7 +124,7 @@
 
 
 
-
+gulp-browserify 用它和 babelify 实现ES6 module Example
 
 - **AngularJS**
   - [gulp-ng-annotate](https://github.com/Kagami/gulp-ng-annotate) 注明依赖 for angular
