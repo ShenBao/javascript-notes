@@ -1,6 +1,5 @@
 # webpack
 
-
 [webpack1中文翻译](http://webpackdoc.com/usage.html)
 
 [webpack2中文](https://doc.webpack-china.org/concepts/)
@@ -15,7 +14,6 @@
 https://github.com/kraaas/webpack-tutorial-collection
 
 https://github.com/nimojs/webpack-book
-
 
 
 ## demo
@@ -39,6 +37,5 @@ https://github.com/xiaoyann/webpack-react-redux-es6-boilerplate
 https://github.com/lengziyu/learn-webpack
 
 https://github.com/duxianwei520/react
-
 
 
