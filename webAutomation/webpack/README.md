@@ -21,7 +21,8 @@ https://github.com/kraaas/webpack-tutorial-collection
 
 https://github.com/nimojs/webpack-book
 
-
+很不错的博客
+http://blog.csdn.net/alanfancy/article/category/6804410
 
 ## demo
 
