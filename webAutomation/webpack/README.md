@@ -50,3 +50,10 @@ https://github.com/ParryQiu/DevOpenClub-Tech-Webpack2
 
 
 
+
+awesome-webpack-cn
+learn-webpack
+react-babel-webpack-boilerplate
+webpack-book
+webpack-doc
+webpack-handbook

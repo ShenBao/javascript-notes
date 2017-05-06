@@ -29,6 +29,14 @@ https://github.com/fe-knowledge/gulp-book
 - StuQ-Gulp实战和原理解析 http://i5ting.github.io/stuq-gulp/
 - glob用法 https://github.com/isaacs/node-glob
 
+[编写插件]: writing-a-plugin/README.md
+[gulp 介绍幻灯片]: http://slid.es/contra/gulp
+[Freenode]: http://freenode.net/
+[search-gulp-plugins]: http://gulpjs.com/plugins/
+[npm plugin search]: https://npmjs.org/browse/keyword/gulpplugin
+
+
+github to  gulp-docs-zh-cn
 
 
 Gulp使用 node-glob 模块，借助 minimatch 库，将glob表达式(glob expressions)转换成JavaScript正则表达式(JavaScript RegExp) ，从而实现文件匹配功能。我们所看到的 ** 和 * 都是其所提供的语法：
