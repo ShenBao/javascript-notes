@@ -2,7 +2,8 @@
 # gulp plugins list
 
     gulp-file-include 合并html
-
+    stream-combiner2
+    
     gulp-less ：less插件
     gulp-notify：通知
     gulp-clean-css：文件压缩
