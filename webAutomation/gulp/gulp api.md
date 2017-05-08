@@ -1,11 +1,17 @@
+# gulp
+
+>根据gulp的文档，它努力实现的主要特性是：
+>   - 易于使用：采用代码优于配置策略，gulp让简单的事情继续简单，复杂的任务变得可管理。
+>   - 高效：通过利用node.js强大的流，不需要往磁盘写中间文件，可以更快地完成构建。
+>   - 高质量：gulp严格的插件指导方针，确保插件简单并且按你期望的方式工作。
+>   - 易于学习：通过把API降到最少，你能在很短的时间内学会gulp。构建工作就像你设想的一样：是一系列流管道。
+
 
 # gulp API
     gulp.src(globs[, options])
     gulp.dest(path[, options])
     gulp.task(name[, deps], fn)
     gulp.watch(glob [, opts], tasks), gulp.watch(glob [, opts, cb])
-
-
 
 ## gulp.src(globs[, options])
 

@@ -42,13 +42,11 @@ gulp.task('jsLint', function () {
     eqnull: false  //值为false时，如果代码中使用"=="来比较变量与null，则JSHint会给出警告；值为true时，则不会.
 
 
+打印带样式的报告
 
+jshint-srylish
 
-
-
-
-
-
+自定义报告，借助map-stream
 
 
 

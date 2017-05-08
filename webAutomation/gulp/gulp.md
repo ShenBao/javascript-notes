@@ -13,6 +13,32 @@ https://github.com/xiaoyu2er/automating-your-workflow-with-gulp
 
 http://colobu.com/2014/11/17/gulp-plugins-introduction/
 
+https://github.com/Platform-CUF/use-gulp
+
+https://github.com/xiaoyu2er/automating-your-workflow-with-gulp
+
+https://github.com/fe-knowledge/gulp-book
+
+## 常用资料
+
+- Gulp官网 http://gulpjs.com/
+- Gulp中文网 http://www.gulpjs.com.cn/
+- Gulp中文文档 https://github.com/lisposter/gulp-docs-zh-cn
+- Gulp插件网 http://gulpjs.com/plugins/
+- Awesome Gulp https://github.com/alferov/awesome-gulp
+- StuQ-Gulp实战和原理解析 http://i5ting.github.io/stuq-gulp/
+- glob用法 https://github.com/isaacs/node-glob
+
+[编写插件]: writing-a-plugin/README.md
+[gulp 介绍幻灯片]: http://slid.es/contra/gulp
+[Freenode]: http://freenode.net/
+[search-gulp-plugins]: http://gulpjs.com/plugins/
+[npm plugin search]: https://npmjs.org/browse/keyword/gulpplugin
+
+
+github to  gulp-docs-zh-cn
+
+
 Gulp使用 node-glob 模块，借助 minimatch 库，将glob表达式(glob expressions)转换成JavaScript正则表达式(JavaScript RegExp) ，从而实现文件匹配功能。我们所看到的 ** 和 * 都是其所提供的语法：
 
 * 匹配文件路径中的0个或多个字符，但不会匹配路径分隔符，除非路径分隔符出现在末尾。
