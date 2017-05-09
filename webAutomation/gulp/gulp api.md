@@ -7,6 +7,8 @@
 >   - 易于学习：通过把API降到最少，你能在很短的时间内学会gulp。构建工作就像你设想的一样：是一系列流管道。
 
 
+
+
 # gulp API
     gulp.src(globs[, options])
     gulp.dest(path[, options])
