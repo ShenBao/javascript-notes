@@ -147,5 +147,3 @@ gulp-browserify 用它和 babelify 实现ES6 module Example
 
 
 
-
-
