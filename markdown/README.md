@@ -2,7 +2,6 @@
 # 前言
 关于markdown相关笔记
 
-
 # 目录
 * [markdown简介](#markdown简介)
   * 宗旨
