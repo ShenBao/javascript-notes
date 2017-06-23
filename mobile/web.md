@@ -223,7 +223,35 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 background-clip: padding-box;
 ```
 
+## 顶部状态栏背景色
+```
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+```
+说明：
+除非你先使用apple-mobile-web-app-capable指定全屏模式，否则这个meta标签不会起任何作用。
 
+如果content设置为default，则状态栏正常显示。如果设置为blank，则状态栏会有一个黑色的背景。如果设置为blank-translucent，则状态栏显示为黑色半透明。如果设置为default或blank，则页面显示在状态栏的下方，即状态栏占据上方部分，页面占据下方部分，二者没有遮挡对方或被遮挡。如果设置为blank-translucent，则页面会充满屏幕，其中页面顶部会被状态栏遮盖住（会覆盖页面20px高度，而iphone4和itouch4的Retina屏幕为40px）。默认值是default。
+
+## 设置缓存
+```
+<meta http-equiv="Cache-Control" content="no-cache" />
+```
+手机页面通常在第一次加载后会进行缓存，然后每次刷新会使用缓存而不是去重新向服务器发送请求。如果不希望使用缓存可以设置no-cache。
+
+## 桌面图标
+```
+<link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png" />
+```
+iOS下针对不同设备定义不同的桌面图标。如果不定义则以当前屏幕截图作为图标。
+
+上面的写法可能大家会觉得会有默认光泽，下面这种设置方法可以去掉光泽效果，还原设计图的效果！
+```
+<link rel="apple-touch-icon-precomposed" href="touch-icon-iphone.png" />
+```
+图片尺寸可以设定为5757（px）或者Retina可以定为114114（px），ipad尺寸为72*72（px)
 
 
 
