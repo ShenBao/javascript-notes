@@ -254,14 +254,120 @@ iOS下针对不同设备定义不同的桌面图标。如果不定义则以当�
 图片尺寸可以设定为5757（px）或者Retina可以定为114114（px），ipad尺寸为72*72（px)
 
 
+## 启动画面
+```
+<link rel="apple-touch-startup-image" href="start.png"/>
+```
+iOS下页面启动加载时显示的画面图片，避免加载时的白屏。
+可以通过madia来指定不同的大小：
+```
+<!--iPhone-->
+<link href="apple-touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image" />
+ 
+<!-- iPhone Retina -->
+<link href="apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+ 
+<!-- iPhone 5 -->
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="apple-touch-startup-image-640x1096.png">
+ 
+<!-- iPad portrait -->
+<link href="apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image" />
+ 
+<!-- iPad landscape -->
+<link href="apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (orientation: landscape)" rel="apple-touch-startup-image" />
+ 
+<!-- iPad Retina portrait -->
+<link href="apple-touch-startup-image-1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+ 
+<!-- iPad Retina landscape -->
+<link href="apple-touch-startup-image-1496x2048.png"media="(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"rel="apple-touch-startup-image" />
+
+```
 
 
+## 浏览器私有及其它meta
+以下属性在项目中没有应用过，可以写一个demo测试以下！
+```
+QQ浏览器私有
+全屏模式
+<meta name="x5-fullscreen" content="true">
+强制竖屏
+<meta name="x5-orientation" content="portrait">
+强制横屏
+<meta name="x5-orientation" content="landscape">
+应用模式
+<meta name="x5-page-mode" content="app">
+UC浏览器私有
+全屏模式
+<meta name="full-screen" content="yes">
+强制竖屏
+<meta name="screen-orientation" content="portrait">
+强制横屏
+<meta name="screen-orientation" content="landscape">
+应用模式
+<meta name="browsermode" content="application">
+其它
+针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓
+<meta name="HandheldFriendly" content="true">
+微软的老式浏览器
+<meta name="MobileOptimized" content="320">
+windows phone 点击无高光
+<meta name="msapplication-tap-highlight" content="no">
+```
 
+## IOS中input键盘事件keyup、keydown、keypress支持不是很好
+问题是这样的，用input search做模糊搜索的时候，在键盘里面输入关键词，会通过ajax后台查询，然后返回数据，然后再对返回的数据进行关键词标红。用input监听键盘keyup事件，在安卓手机浏览器中是可以的，但是在ios手机浏览器中变红很慢，用输入法输入之后，并未立刻相应keyup事件，只有在通过删除之后才能相应！
+解决办法：
+可以用html5的oninput事件去代替keyup
+```
+<input type="text" id="testInput">
+<script type="text/javascript">
+    document.getElementById('testInput').addEventListener('input', function(e){
+        var value = e.target.value;
+  });
+</script>
+```
+然后就达到类似keyup的效果！
 
+## h5网站input 设置为type=number的问题
+h5网页input 的type设置为number一般会产生三个问题，一个问题是maxlength属性不好用了。另外一个是form提交的时候，默认给取整了。三是部分安卓手机出现样式问题。
+问题一解决，我目前用的是js。如下
+```
+<input type="number" oninput="checkTextLength(this ,10)">
 
+function checkTextLength(obj, length) { 
+      if(obj.value.length > length)  {    
+            obj.value = obj.value.substr(0, length); 
+      } 
+}
+```
+问题二，是因为form提交默认做了表单验证，step默认是1,要设置step属性，假如保留2位小数，写法如下：
+```
+<input type="number" step="0.01" />
+```
+关于step，我在这里做简单的介绍，input 中type=number，一般会自动生成一个上下箭头，点击上箭头默认增加一个step，点击下箭头默认会减少一个step。number中默认step是1。也就是step=0.01,可以允许输入2位小数，并且点击上下箭头分别增加0.01和减少0.01。
 
+假如step和min一起使用，那么数值必须在min和max之间。
 
+看下面的例子：
+```
+<input type="number" step="3.1" min="1" />
+```
 
+输入框可以输入哪些数字？
+
+首先，最小值是1，那么可以输入1.0，第二个是可以输入（1+3.1）那就是4.1,以此类推，每次点击上下箭头都会增加或者减少3.1，输入其他数字无效。这就是step的简单介绍。
+
+问题三，去除input默认样式
+```input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+```
 
 
 
