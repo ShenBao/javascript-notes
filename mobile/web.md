@@ -468,7 +468,9 @@ this.value = this.value.replace(/\u2006/g, '');
 
 ## 移动端 HTML5 audio autoplay 失效问题
 这个不是 BUG，由于自动播放网页中的音频或视频，会给用户带来一些困扰或者不必要的流量消耗，所以苹果系统和安卓系统通常都会禁止自动播放和使用 JS 的触发播放，必须由用户来触发才可以播放。
+
 解决方法思路：先通过用户 touchstart 触碰，触发播放并暂停（音频开始加载，后面用 JS 再操作就没问题了）。
+
 解决代码：
 ```
 document.addEventListener('touchstart', function () {
