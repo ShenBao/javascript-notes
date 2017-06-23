@@ -1,7 +1,7 @@
 # 移动端Web页面问题解决方案
 
-
 ## 安卓浏览器看背景图片，有些设备会模糊。
+
 用同等比例的图片在PC机上很清楚，但是手机上很模糊，原因是什么呢？
 
 经过研究，是devicePixelRatio作怪，因为手机分辨率太小，如果按照分辨率来显示网页，这样字会非常小，所以苹果当初就把iPhone 4的960640分辨率，在网页里只显示了480320，这样devicePixelRatio＝2。现在android比较乱，有1.5的，有2的也有3的。
@@ -18,6 +18,7 @@ background-size: 50px 50px;display:inline-block; width:100%; height:50px;
 
 ## 图片加载
 若您遇到图片加载很慢的问题，对这种情况，手机开发一般用canvas方法加载：
+
 具体的canvas API 参见：http://javascript.ruanyifeng.com/htmlapi/canvas.html
 
 下面举例说明一个canvas的例子：
@@ -55,10 +56,12 @@ render();
 ```
 
 ## 假如手机网站不用兼容IE浏览器，一般我们会使用zeptojs。
-    zeptojs内置Touch events方法，具体可以看http://zeptojs.com/#Touch events
+zeptojs内置Touch events方法，具体可以看http://zeptojs.com/#Touch events
+
 看了一下zeptio新版的API，已经支持IE10以上浏览器，对zeptojs可以选择使用！
 
 ## 防止手机中网页放大和缩小，这点是最基本的，最为手机网站开发者来说应该都知道的，就是设置meta中的viewport
+
 还有就是，有些手机网站我们看到如下声明：
 ```
 代码如下:
@@ -151,6 +154,7 @@ Element {
 }
 ```
 设置alpha值为0就可以去除半透明灰色遮罩，备注：transparent的属性值在android下无效。
+
 后面一篇文章有详细介绍，地址：http://www.jb51.net/post/phone_web_ysk
 
 ## active兼容处理 即 伪类 :active 失效
@@ -192,6 +196,7 @@ Element{
 
 ## webkit mask 兼容处理
 某些低端手机不支持css3 mask，可以选择性的降级处理。
+
 比如可以使用js判断来引用不同class：
 ```
 if( 'WebkitMask' in document.documentElement.style){
@@ -259,6 +264,7 @@ iOS下针对不同设备定义不同的桌面图标。如果不定义则以当�
 <link rel="apple-touch-startup-image" href="start.png"/>
 ```
 iOS下页面启动加载时显示的画面图片，避免加载时的白屏。
+
 可以通过madia来指定不同的大小：
 ```
 <!--iPhone-->
@@ -283,7 +289,6 @@ iOS下页面启动加载时显示的画面图片，避免加载时的白屏。
 <link href="apple-touch-startup-image-1496x2048.png"media="(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"rel="apple-touch-startup-image" />
 
 ```
-
 
 ## 浏览器私有及其它meta
 以下属性在项目中没有应用过，可以写一个demo测试以下！
@@ -317,8 +322,8 @@ windows phone 点击无高光
 
 ## IOS中input键盘事件keyup、keydown、keypress支持不是很好
 问题是这样的，用input search做模糊搜索的时候，在键盘里面输入关键词，会通过ajax后台查询，然后返回数据，然后再对返回的数据进行关键词标红。用input监听键盘keyup事件，在安卓手机浏览器中是可以的，但是在ios手机浏览器中变红很慢，用输入法输入之后，并未立刻相应keyup事件，只有在通过删除之后才能相应！
-解决办法：
-可以用html5的oninput事件去代替keyup
+
+解决办法：可以用html5的oninput事件去代替keyup
 ```
 <input type="text" id="testInput">
 <script type="text/javascript">
@@ -331,6 +336,7 @@ windows phone 点击无高光
 
 ## h5网站input 设置为type=number的问题
 h5网页input 的type设置为number一般会产生三个问题，一个问题是maxlength属性不好用了。另外一个是form提交的时候，默认给取整了。三是部分安卓手机出现样式问题。
+
 问题一解决，我目前用的是js。如下
 ```
 <input type="number" oninput="checkTextLength(this ,10)">
