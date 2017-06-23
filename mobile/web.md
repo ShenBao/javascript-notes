@@ -409,7 +409,9 @@ select option {
 
 ## 移动端点击300ms延迟
 300ms尚可接受，不过因为300ms产生的问题，我们必须要解决。300ms导致用户体验并不是很好，解决这个问题，我们一般在移动端用tap事件来取代click事件。
+
 推荐两个js，一个是fastclick，一个是tap.js
+
 关于300ms延迟，具体请看：http://thx.github.io/mobile/300ms-click-delay/
 
 
