@@ -393,5 +393,67 @@ select option {
 }
 ```
 
+## 通过transform进行skew变形，rotate旋转会造成出现锯齿现象
+可以设置如下：
+```
+-webkit-transform: rotate(-4deg) skew(10deg) translateZ(0);
+ transform: rotate(-4deg) skew(10deg) translateZ(0);
+ outline: 1px solid rgba(255,255,255,0)
+```
+
+## 移动端点击300ms延迟
+300ms尚可接受，不过因为300ms产生的问题，我们必须要解决。300ms导致用户体验并不是很好，解决这个问题，我们一般在移动端用tap事件来取代click事件。
+推荐两个js，一个是fastclick，一个是tap.js
+关于300ms延迟，具体请看：http://thx.github.io/mobile/300ms-click-delay/
+
+
+
+## 移动端点透问题
+案例如下：
+```
+<div id="haorooms">点头事件测试</div>
+<a href="www.jb51.net">www.jb51.net</a>
+```
+div是绝对定位的蒙层,并且z-index高于a。而a标签是页面中的一个链接，我们给div绑定tap事件：
+```
+$('#haorooms').on('tap',function(){
+    $('#haorooms').hide();
+});
+```
+我们点击蒙层时 div正常消失，但是当我们在a标签上点击蒙层时，发现a链接被触发，这就是所谓的点透事件。
+原因：
+touchstart 早于 touchend 早于click。 亦即click的触发是有延迟的，这个时间大概在300ms左右，也就是说我们tap触发之后蒙层隐藏， 此时 click还没有触发，300ms之后由于蒙层隐藏，我们的click触发到了下面的a链接上。
+
+解决：
+（1）尽量都使用touch事件来替换click事件。例如用touchend事件(推荐)。
+（2）用fastclick，https://github.com/ftlabs/fastclick
+（3）用preventDefault阻止a标签的click
+（4）延迟一定的时间(300ms+)来处理事件 （不推荐）
+（5）以上一般都能解决，实在不行就换成click事件。
+
+下面介绍一下touchend事件，如下：
+```
+$("#haorooms").on("touchend", function (event) {
+   event.preventDefault();
+ });
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
