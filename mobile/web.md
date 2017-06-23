@@ -130,8 +130,49 @@ Element {
 解决移动设备可选中页面文本(视产品需要而定)
 
 
+## 长时间按住页面出现闪退
+```
+element {
+    -webkit-touch-callout: none;
+}
+```
 
+## iphone及ipad下输入框默认内阴影
+```
+Element{
+    -webkit-appearance: none;
+}
+```
 
+## ios和android下触摸元素时出现半透明灰色遮罩
+```
+Element {
+    -webkit-tap-highlight-color:rgba(255,255,255,0)
+}
+```
+设置alpha值为0就可以去除半透明灰色遮罩，备注：transparent的属性值在android下无效。
+后面一篇文章有详细介绍，地址：http://www.jb51.net/post/phone_web_ysk
+
+## active兼容处理 即 伪类 :active 失效
+方法一：body添加ontouchstart
+```
+<body ontouchstart="">
+```
+方法二：js给 document 绑定 touchstart 或 touchend 事件
+```
+<style>
+    a {
+         color: #000;
+    }
+    a:active {
+         color: #fff;
+    }
+</style>
+<a herf=foo >bar</a>
+<script>
+     document.addEventListener('touchstart',function(){},false);
+</script>
+```
 
 
 
