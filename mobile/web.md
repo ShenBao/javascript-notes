@@ -54,6 +54,97 @@ var render=function(){
 render();
 ```
 
+## 假如手机网站不用兼容IE浏览器，一般我们会使用zeptojs。
+    zeptojs内置Touch events方法，具体可以看http://zeptojs.com/#Touch events
+看了一下zeptio新版的API，已经支持IE10以上浏览器，对zeptojs可以选择使用！
+
+## 防止手机中网页放大和缩小，这点是最基本的，最为手机网站开发者来说应该都知道的，就是设置meta中的viewport
+还有就是，有些手机网站我们看到如下声明：
+```
+代码如下:
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+```
+设置了DTD的方式是XHTML的写法，假如我们页面运用的是html5，可以不用设置DTD,直接声明<!DOCTYPE html>。
+使用viewport使页面禁止缩放。 通常把user-scalable设置为0来关闭用户对页面视图缩放的行为。
+```
+<meta name="viewport" content="user-scalable=0" />
+```
+但是为了更好的兼容，我们会使用完整的viewport设置。
+
+代码如下
+```
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+```
+当然，user-scalable=0,有的人也写成user-scalable=no，都可以的。
+
+
+## apple-mobile-web-app-capable
+apple-mobile-web-app-capable是设置Web应用是否以全屏模式运行。
+语法：
+```
+<meta name="apple-mobile-web-app-capable" content="yes">
+```
+说明：
+如果content设置为yes，Web应用会以全屏模式运行，反之，则不会。content的默认值是no，表示正常显示。你可以通过只读属性window.navigator.standalone来确定网页是否以全屏模式显示。
+
+## format-detection
+format-detection 启动或禁用自动识别页面中的电话号码。
+语法：
+```
+<meta name="format-detection" content="telephone=no">
+```
+说明：默认情况下，设备会自动识别任何可能是电话号码的字符串。设置telephone=no可以禁用这项功能。
+
+## html5调用安卓或者ios的拨号功能
+html5提供了自动调用拨号的标签，只要在a标签的href中添加tel:就可以了。
+如下：
+```
+<a href="tel:4008106999,1034">400-810-6999 转 1034</a>
+```
+拨打手机直接如下
+```
+<a href="tel:15677776767">点击拨打15677776767</a>
+```
+
+## html5GPS定位功能
+具体请看：http://www.jb51.net/post/html5_GPS_getCurrentPosition
+
+## 上下拉动滚动条时卡顿、慢
+```
+body {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+```
+Android3+和iOS5+支持CSS3的新属性为overflow-scrolling
+
+## 禁止复制、选中文本
+```
+Element {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+```
+解决移动设备可选中页面文本(视产品需要而定)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
