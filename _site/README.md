@@ -2,6 +2,7 @@
 
 - [developers.google站点](https://developers.google.com/web/?hl=zh-cn)
 - [GotGitHub](https://github.com/xirong/my-github/wiki/GotGitHub)
+- [git emoko](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
 
 - [来聊聊前端工程师的面试套路](https://mp.weixin.qq.com/s/p4SdOKWgj53bXeM2WriZDg)
 - [android Webview支持input type=file](http://blog.csdn.net/earbao/article/details/50716747)
