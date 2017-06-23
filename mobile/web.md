@@ -429,15 +429,16 @@ $('#haorooms').on('tap',function(){
 });
 ```
 我们点击蒙层时 div正常消失，但是当我们在a标签上点击蒙层时，发现a链接被触发，这就是所谓的点透事件。
+
 原因：
 touchstart 早于 touchend 早于click。 亦即click的触发是有延迟的，这个时间大概在300ms左右，也就是说我们tap触发之后蒙层隐藏， 此时 click还没有触发，300ms之后由于蒙层隐藏，我们的click触发到了下面的a链接上。
 
 解决：
-（1）尽量都使用touch事件来替换click事件。例如用touchend事件(推荐)。
-（2）用fastclick，https://github.com/ftlabs/fastclick
-（3）用preventDefault阻止a标签的click
-（4）延迟一定的时间(300ms+)来处理事件 （不推荐）
-（5）以上一般都能解决，实在不行就换成click事件。
+-（1）尽量都使用touch事件来替换click事件。例如用touchend事件(推荐)。
+-（2）用fastclick，https://github.com/ftlabs/fastclick
+-（3）用preventDefault阻止a标签的click
+-（4）延迟一定的时间(300ms+)来处理事件 （不推荐）
+-（5）以上一般都能解决，实在不行就换成click事件。
 
 下面介绍一下touchend事件，如下：
 ```
