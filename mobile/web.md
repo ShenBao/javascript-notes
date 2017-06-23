@@ -174,8 +174,54 @@ Element {
 </script>
 ```
 
+## 动画定义3D启用硬件加速
+```
+Element {
+    -webkit-transform:translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0);
+}
+```
+注意：3D变形会消耗更多的内存与功耗
 
+## Retina屏的1px边框
+```
+Element{
+    border-width: thin;
+}
+```
 
+## webkit mask 兼容处理
+某些低端手机不支持css3 mask，可以选择性的降级处理。
+比如可以使用js判断来引用不同class：
+```
+if( 'WebkitMask' in document.documentElement.style){
+    alert('支持mask');
+} else {
+    alert('不支持mask');
+}
+```
+
+## 旋转屏幕时，字体大小调整的问题
+```
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust:100%;
+}
+```
+
+## transition闪屏
+/设置内嵌的元素在 3D 空间如何呈现：保留3D /
+```
+-webkit-transform-style: preserve-3d;
+```
+/ 设置进行转换的元素的背面在面对用户时是否可见：隐藏 /
+```
+-webkit-backface-visibility:hidden;
+```
+## 圆角bug
+某些Android手机圆角失效
+```
+background-clip: padding-box;
+```
 
 
 
