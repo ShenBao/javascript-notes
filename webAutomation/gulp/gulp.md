@@ -1,6 +1,8 @@
 
 ## gulp 相关文章
 
+- [Gulp资料大全 入门、插件、脚手架、包清单](https://segmentfault.com/a/1190000004915222#articleHeader2)
+
 http://www.ydcss.com/archives/tag/gulp
 
 https://segmentfault.com/q/1010000004234745
