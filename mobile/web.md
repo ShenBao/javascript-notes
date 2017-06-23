@@ -369,8 +369,29 @@ input[type=number]::-webkit-outer-spin-button {
 }
 ```
 
+## ios 设置input 按钮样式会被默认样式覆盖
+解决方式如下：
+```
+input, textarea {
+    border: 0;
+    -webkit-appearance: none;
+}
+```
+设置默认样式为none
 
+## IOS键盘字母输入，默认首字母大写
+解决方案，设置如下属性
+```
+<input type="text" autocapitalize="off" />
+```
 
+## select 下拉选择设置右对齐
+设置如下：
+```
+select option {
+    direction: rtl;
+}
+```
 
 
 
