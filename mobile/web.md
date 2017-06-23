@@ -438,6 +438,67 @@ $("#haorooms").on("touchend", function (event) {
  });
 ```
 
+## 消除 IE10 里面的那个叉号
+```
+input:-ms-clear{display:none;}
+```
+
+### 关于 iOS 与 OS X 端字体的优化(横竖屏会出现字体加粗不一致等)
+iOS 浏览器横屏时会重置字体大小，设置 text-size-adjust 为 none 可以解决 iOS 上的问题，但桌面版 Safari 的字体缩放功能会失效，因此最佳方案是将 text-size-adjust 为 100% 。
+```
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+text-size-adjust: 100%;
+```
+
+## 关于 iOS 系统中，中文输入法输入英文时，字母之间可能会出现一个六分之一空格
+可以通过正则去掉
+```
+this.value = this.value.replace(/\u2006/g, '');
+```
+
+## 移动端 HTML5 audio autoplay 失效问题
+这个不是 BUG，由于自动播放网页中的音频或视频，会给用户带来一些困扰或者不必要的流量消耗，所以苹果系统和安卓系统通常都会禁止自动播放和使用 JS 的触发播放，必须由用户来触发才可以播放。
+解决方法思路：先通过用户 touchstart 触碰，触发播放并暂停（音频开始加载，后面用 JS 再操作就没问题了）。
+解决代码：
+```
+document.addEventListener('touchstart', function () {
+    document.getElementsByTagName('audio')[0].play();
+    document.getElementsByTagName('audio')[0].pause();
+});
+```
+
+## 移动端 HTML5 input date 不支持 placeholder 问题
+这个我感觉没有什么好的解决方案，用如下方法
+
+代码如下:
+```
+<input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date">
+```
+有的浏览器可能要点击两遍！
+
+## 部分机型存在type为search的input，自带close按钮样式修改方法
+有些机型的搜索input控件会自带close按钮（一个伪元素），而通常为了兼容所有浏览器，我们会自己实现一个，此时去掉原生close按钮的方法为
+```
+#Search::-webkit-search-cancel-button{
+    display: none; 
+}
+```
+如果想使用原生close按钮，又想使其符合设计风格，可以对这个伪元素的样式进行修改。
+
+## 唤起select的option展开
+```
+zepto方式:
+$(sltElement).trrgger("mousedown");
+原生js方式:
+function showDropdown(sltElement) {
+    var event;
+    event = document.createEvent('MouseEvents');
+    event.initMouseEvent('mousedown', true, true, window);
+    sltElement.dispatchEvent(event);
+};
+```
+
 
 
 
