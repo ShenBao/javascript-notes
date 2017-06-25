@@ -1,5 +1,6 @@
 #content-toc{
     counter-reset: h2;
+    list-style: none;
 }
 #content ul li:before {
      content: ""; 

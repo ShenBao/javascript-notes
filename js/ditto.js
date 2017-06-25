@@ -186,7 +186,8 @@ function li_create_linkage(li_tag, header_level) {
   // add custom id and class attributes
   html_safe_tag = replace_symbols(li_tag.text());
   li_tag.attr('data-src', html_safe_tag);
-  li_tag.attr("class", "link");
+  li_tag.attr("class", "link toc-h"+header_level);
+  li_tag.attr("title", html_safe_tag);
 
   // add click listener - on click scroll to relevant header section
   li_tag.click(function(e) {
@@ -213,9 +214,12 @@ function create_page_anchors() {
   // create page anchors by matching li's to headers
   // if there is a match, create click listeners
   // and scroll to relevant sections
-
+    var ul_tag = $('<ol></ol>')
+      .insertAfter('#content h1')
+      .addClass('content-toc')
+      .attr('id', 'content-toc');
   // go through header level 1 to 3
-  for (var i = 2; i <= 4; i++) {
+  for (var i = 2; i <= 6; i++) {
     // parse all headers
     var headers = [];
     $('#content h' + i).map(function() {
@@ -239,12 +243,9 @@ function create_page_anchors() {
         goSection(replace_symbols(content));
       });
     });
+    console.log(headers)
 
     if ((i === 2) && headers.length !== 0) {
-      var ul_tag = $('<ol></ol>')
-        .insertAfter('#content h1')
-        .addClass('content-toc')
-        .attr('id', 'content-toc');
       for (var j = 0; j < headers.length; j++) {
         var li_tag = $('<li></li>').html('<a href="#' + location.hash.split('#')[1] + '#' + headers[j] + '">' + headers[j] + '</a>');
         ul_tag.append(li_tag);
