@@ -1,26 +1,7 @@
-# 
+# idoc-template
 
-- [developers.google站点](https://developers.google.com/web/?hl=zh-cn)
-- [GotGitHub](https://github.com/xirong/my-github/wiki/GotGitHub)
-- [git emoko](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
-- [linux](https://github.com/xirong/my-linux)
-- [来聊聊前端工程师的面试套路](https://mp.weixin.qq.com/s/p4SdOKWgj53bXeM2WriZDg)
-- [android Webview支持input type=file](http://blog.csdn.net/earbao/article/details/50716747)
-- [android Webview支持alert]
-- [你还不是弄不懂“this” 上](https://mp.weixin.qq.com/s/AMd-aIuwS2D1ENjimZWXxg)
-- [你还不是弄不懂“this”  下](https://mp.weixin.qq.com/s/IjPBq0hHpid_5FsTets5Wg)
-- [流浪的诗人 博客](http://www.cnblogs.com/wdlhao/)
-- [不挑食的程序员](https://segmentfault.com/u/pines_cheng/articles)
-- [前端知识体系精简](http://www.cnblogs.com/onepixel/p/7021506.html)
+idoc-template
+
+文档管理模板
 
 
--[腾讯IM](http://imweb.io/)
-
-
-
-
-http://www.jianshu.com/u/10ae59f49b13#
-
-https://juejin.im/post/59278e312f301e006c2e1510?utm_source=gold_browser_extension&from=groupmessage
-
-http://www.cnblogs.com/wdlhao/

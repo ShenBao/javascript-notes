@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>404 - idoc-template</title>
+    
+    <link rel="shortcut icon" href="images/xiaobaobao.png" type="image/x-icon">
+    <link rel="icon" href="xiaobaobao.png" type="image/x-icon">
+    
+    <script>
+      var loc = 'http://shenbao.github.io/idoc-template';
+      var regex = /http:\/\/shenbao\.github\.io\/idoc-template\/([^#]+)#(.+)/;
+      var result = regex.exec(window.location);
+      if (result) {
+        window.location = loc + '/#docs/' + result[1] + '#' + result[2];
+      } else {
+        window.location = loc;
+      }
+    </script>
+  
+  </head>
+  <body>
+
+    <p>redirecting...</p>
+  
+  </body>
+</html>
