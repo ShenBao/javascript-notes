@@ -215,43 +215,43 @@ function create_page_anchors() {
   // and scroll to relevant sections
 
   // go through header level 1 to 3
-  // for (var i = 2; i <= 4; i++) {
-  //   // parse all headers
-  //   var headers = [];
-  //   $('#content h' + i).map(function() {
-  //     var content = $(this).text();
-  //     headers.push(content);
-  //     $(this).addClass(replace_symbols(content));
-  //     this.id = replace_symbols(content);
-  //     $(this).hover(function () {
-  //       $(this).html(content +
-  //         ' <a href="#' + location.hash.split('#')[1] +
-  //         '#' +
-  //         replace_symbols(content) +
-  //         '" class="section-link">§</a> <a href="#' +
-  //         location.hash.split('#')[1] + '" onclick="goTop()">⇧</a>');
-  //     }, function () {
-  //       $(this).html(content);
-  //     });
-  //     $(this).on('click', 'a.section-link', function(event) {
-  //       event.preventDefault();
-  //       history.pushState(null, null, '#' + location.hash.split('#')[1] + '#' + replace_symbols(content));
-  //       goSection(replace_symbols(content));
-  //     });
-  //   });
+  for (var i = 2; i <= 4; i++) {
+    // parse all headers
+    var headers = [];
+    $('#content h' + i).map(function() {
+      var content = $(this).text();
+      headers.push(content);
+      $(this).addClass(replace_symbols(content));
+      this.id = replace_symbols(content);
+      $(this).hover(function () {
+        $(this).html(content +
+          ' <a href="#' + location.hash.split('#')[1] +
+          '#' +
+          replace_symbols(content) +
+          '" class="section-link">§</a> <a href="#' +
+          location.hash.split('#')[1] + '" onclick="goTop()">⇧</a>');
+      }, function () {
+        $(this).html(content);
+      });
+      $(this).on('click', 'a.section-link', function(event) {
+        event.preventDefault();
+        history.pushState(null, null, '#' + location.hash.split('#')[1] + '#' + replace_symbols(content));
+        goSection(replace_symbols(content));
+      });
+    });
 
-    // if ((i === 2) && headers.length !== 0) {
-      var ul_tag = $('<div></div>')
+    if ((i === 2) && headers.length !== 0) {
+      var ul_tag = $('<ol></ol>')
         .insertAfter('#content h1')
         .addClass('content-toc')
         .attr('id', 'content-toc');
-      // for (var j = 0; j < headers.length; j++) {
-      //   var li_tag = $('<li></li>').html('<a href="#' + location.hash.split('#')[1] + '#' + headers[j] + '">' + headers[j] + '</a>');
-      //   ul_tag.append(li_tag);
-      //   li_create_linkage(li_tag, i);
-      // }
-    // }
-  // }
+      for (var j = 0; j < headers.length; j++) {
+        var li_tag = $('<li></li>').html('<a href="#' + location.hash.split('#')[1] + '#' + headers[j] + '">' + headers[j] + '</a>');
+        ul_tag.append(li_tag);
+        li_create_linkage(li_tag, i);
+      }
+    }
+  }
 }
 
 function normalize_paths() {
@@ -332,11 +332,7 @@ function router() {
     }
     normalize_paths();
     create_page_anchors();
-    // creat toc
-    $('#content-toc').toc({
-      'selectors': 'h2,h3,h4,h5,h6', //elements to use as headings
-      'container': '#content'
-    });
+
     // 完成代码高亮
     $('#content code').map(function() {
       Prism.highlightElement(this);
