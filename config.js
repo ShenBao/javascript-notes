@@ -2,7 +2,7 @@
 // CONFIG Setting
 var CONFIG = {
   // your website's title
-  document_title: "沈宝的笔记",
+  document_title: "沈宝的开发笔记",
   // your website's url
   site_url: "http://shenbao.github.io/shenbao-notes",
   // index page
