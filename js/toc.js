@@ -72,14 +72,14 @@ $.fn.toc = function(options) {
     headings.each(function(i, heading) {
       var $h = $(heading);
       headingOffsets.push($h.offset().top - opts.highlightOffset);
-
+      $h.attr('id', opts.headerText(i, heading, $h))
       //add anchor
-      var anchor = $('<span/>').attr('id', opts.anchorName(i, heading, opts.prefix)).insertBefore($h);
+    //   var anchor = $('<span/>').attr('id', opts.headerText(i, heading, $h)).insertBefore($h);
 
       //build TOC item
       var a = $('<a/>')
         .text(opts.headerText(i, heading, $h))
-        .attr('href', '#' + location.hash.split('#')[1] + '#' + opts.anchorName(i, heading, opts.prefix))
+        .attr('href', '#' + location.hash.split('#')[1] + '#' + opts.headerText(i, heading, $h))
         .bind('click', function(e) { 
           scrollTo(e);
           el.trigger('selected', $(this).attr('href'));
