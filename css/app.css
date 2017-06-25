@@ -426,12 +426,9 @@ input.searchButton {
     z-index: 30;
     left: 0;
     bottom: 15px;
-	margin-left: 20px;
-	margin-right: 20px;
     width: 100%;
     font-size: 0.8rem;
 	line-height:1.3rem;
-    /* border: 1px solid black; */
 
 	counter-reset: section;
 }
