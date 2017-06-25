@@ -7,8 +7,9 @@
 ## 前言
 1. [前言](#README)
 
-## 目录
-1. [欢乐颂](#docs/a)
+## JavaScript
+1. [概述](#docs/JavaScript/intro)
+1. [JavaScript的历史](#docs/JavaScript/history)
 
 
 
