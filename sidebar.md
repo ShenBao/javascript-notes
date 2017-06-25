@@ -10,6 +10,7 @@
 ## JavaScript
 1. [概述](#docs/JavaScript/intro)
 1. [JavaScript的历史](#docs/JavaScript/history)
+1. [基础语法](#docs/JavaScript/basic)
 
 
 
