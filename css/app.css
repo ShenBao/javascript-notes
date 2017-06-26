@@ -277,9 +277,9 @@ input.searchButton {
 
 #content ul {
     display: block;
-    list-style-type: none;
-	padding-top: 0.5rem;
-	padding-bottom:0.5rem;
+    /*list-style-type: none;*/
+	padding-top: 0.25rem;
+	padding-bottom:0.25rem;
 }
 
 #content ol {
