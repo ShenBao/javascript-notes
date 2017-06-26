@@ -182,24 +182,23 @@ function replace_symbols(text) {
     .replace(/[()]/g, '');
 }
 
-function li_create_linkage(li_tag, header_level) {
+function li_create_linkage(li_tag, li, header_level) {
   // add custom id and class attributes
-  html_safe_tag = replace_symbols(li_tag.text());
-  li_tag.attr('data-src', html_safe_tag);
-  li_tag.attr("class", "link toc-h"+header_level);
-  li_tag.attr("title", html_safe_tag);
+  // html_safe_tag = replace_symbols(li_tag.text());
+  li_tag.attr('data-src', li.textContent);
+  li_tag.attr("class", "link");
+  li_tag.addClass('toc-'+li.localName)
 
   // add click listener - on click scroll to relevant header section
   li_tag.click(function(e) {
     e.preventDefault();
     // scroll to relevant section
     var header = $(
-      ditto.content_id + " h" + header_level + "." + li_tag.attr('data-src')
+      ditto.content_id + " h" + li.attributes.toc.nodeValue + "." + li_tag.attr('data-src')
     );
     $('html, body').animate({
       scrollTop: header.offset().top
     }, 200);
-
     // highlight the relevant section
     original_color = header.css("color");
     header.animate({ color: "#ED1C24", }, 500, function() {
@@ -214,18 +213,14 @@ function create_page_anchors() {
   // create page anchors by matching li's to headers
   // if there is a match, create click listeners
   // and scroll to relevant sections
-    var ul_tag = $('<ol></ol>')
-      .insertAfter('#content h1')
-      .addClass('content-toc')
-      .attr('id', 'content-toc');
-  // go through header level 1 to 3
-  for (var i = 2; i <= 6; i++) {
+  // go through header level 2 to 4
+  for (var i = 2; i <= 4; i++) {
     // parse all headers
     var headers = [];
     $('#content h' + i).map(function() {
       var content = $(this).text();
       headers.push(content);
-      $(this).addClass(replace_symbols(content));
+      $(this).addClass(replace_symbols(content)).addClass('page-toc');
       this.id = replace_symbols(content);
       $(this).hover(function () {
         $(this).html(content +
@@ -236,23 +231,28 @@ function create_page_anchors() {
           location.hash.split('#')[1] + '" onclick="goTop()">⇧</a>');
       }, function () {
         $(this).html(content);
-      });
+      }).attr('toc',i);
       $(this).on('click', 'a.section-link', function(event) {
         event.preventDefault();
         history.pushState(null, null, '#' + location.hash.split('#')[1] + '#' + replace_symbols(content));
         goSection(replace_symbols(content));
       });
     });
-    console.log(headers)
-
-    if ((i === 2) && headers.length !== 0) {
-      for (var j = 0; j < headers.length; j++) {
-        var li_tag = $('<li></li>').html('<a href="#' + location.hash.split('#')[1] + '#' + headers[j] + '">' + headers[j] + '</a>');
-        ul_tag.append(li_tag);
-        li_create_linkage(li_tag, i);
-      }
+  }
+  // creat page toc
+  var tocList = $('.page-toc');
+  if(tocList.length > 0){
+    var ul_tag = $('<ol></ol>')
+        .insertAfter('#content h1')
+        .addClass('content-toc')
+        .attr('id', 'content-toc');
+    for (var index = 0; index < tocList.length; index++) {
+      var li_tag = $('<li></li>').html('<a href="#' + location.hash.split('#')[1] + '#' + tocList[index].textContent + '">' + tocList[index].textContent + '</a>');
+      ul_tag.append(li_tag);
+      li_create_linkage(li_tag, tocList[index]);
     }
   }
+
 }
 
 function normalize_paths() {
@@ -331,7 +331,9 @@ function router() {
     } else {
       document.title = $(ditto.content_id + " h1").text() + " - " + ditto.document_title;
     }
+    // img
     normalize_paths();
+    // toc
     create_page_anchors();
 
     // 完成代码高亮

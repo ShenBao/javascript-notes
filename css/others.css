@@ -23,23 +23,9 @@
     counter-increment: h4;
     content: counter(h2) "." counter(h3)"." counter(h4) "\3000";
 }
-/*#content-toc li.toc-h4~li.toc-h5 a:before{
-    counter-increment: h5;
-    content: counter(h2) "."counter(h3)"."counter(h4)"."counter(h5) "\3000";
-}*/
-/*#content-toc li.toc-h5~li.toc-h6 a:before{
-    counter-increment: h6;
-    content: counter(h2) "."counter(h3)"."counter(h4)"."counter(h5)"."counter(h6) "\3000";
-}*/
 #content-toc .toc-h3{
     padding-left: 20px;
 }
 #content-toc .toc-h4{
     padding-left: 40px;
-}
-#content-toc .toc-h5{
-    padding-left: 60px;
-}
-#content-toc .toc-h6{
-    padding-left: 80px;
 }
