@@ -15,6 +15,10 @@
 
 
 
+## 资源
+1. [常用用具](#docs/resource/tool)
+1. [链接](#docs/resource/article)
+<!--1. [我的博客](https://shenbao.github.io/)-->
 
 ## 其他
 

@@ -194,6 +194,10 @@ input.searchButton {
 	}
 }
 
+#content {
+    padding-bottom: 50px;
+}
+
 #content pre{
     margin-left: auto;
     margin-right: auto;
