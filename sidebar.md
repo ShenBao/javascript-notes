@@ -12,6 +12,7 @@
 1. [JavaScript的历史](#docs/JavaScript/history)
 1. [基础语法](#docs/JavaScript/basic)
 1. [数据类型](#docs/JavaScript/types)
+1. [数值](#docs/JavaScript/number)
 
 
 
