@@ -16,4 +16,9 @@
 - [MDN JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources)
 
 
+## others
+
+- [Exploring ES2016 and ES2017](http://exploringjs.com/es2016-es2017/)
+
+
 
