@@ -15,6 +15,7 @@
 1. [null、undefined、boolean](#docs/JavaScript/null-undefined-boolean)
 1. [数值](#docs/JavaScript/number)
 1. [字符串](#docs/JavaScript/string)
+1. [对象](#docs/JavaScript/object)
 
 
 
@@ -23,10 +24,10 @@
 1. [资料](#docs/resource/officialdata)
 1. [链接](#docs/resource/article)
 
-- [我的博客](https://shenbao.github.io/)
 
 ## 其他
 
+- [我的博客](https://shenbao.github.io/)
 - [反馈意见](https://github.com/ShenBao/shenbao-notes/issues)
 
 
