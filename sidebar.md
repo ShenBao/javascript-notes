@@ -21,7 +21,8 @@
 1. [常用用具](#docs/resource/tool)
 1. [资料](#docs/resource/officialdata)
 1. [链接](#docs/resource/article)
-<!--1. [我的博客](https://shenbao.github.io/)-->
+
+- [我的博客](https://shenbao.github.io/)
 
 ## 其他
 
