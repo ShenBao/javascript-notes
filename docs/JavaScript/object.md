@@ -609,9 +609,3 @@ p.join('') // "Hello Alice!"
 
 上面代码中，`with`区块内部，模板变量`name`可以被对象`o`的属性替换，而`p`依然是全局变量。这就是很多模板引擎的实现原理。
 
-## 参考链接
-
-- Dr. Axel Rauschmayer，[Object properties in JavaScript](http://www.2ality.com/2012/10/javascript-properties.html)
-- Lakshan Perera, [Revisiting JavaScript Objects](http://www.laktek.com/2012/12/29/revisiting-javascript-objects/)
-- Angus Croll, [The Secret Life of JavaScript Primitives](http://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)i
-- Dr. Axel Rauschmayer, [JavaScript’s with statement and why it’s deprecated](http://www.2ality.com/2011/06/with-statement.html)
