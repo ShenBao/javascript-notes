@@ -118,6 +118,3 @@ var a = [];
 o instanceof Array // false
 a instanceof Array // true
 ```
-
-
-

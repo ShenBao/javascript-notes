@@ -17,6 +17,7 @@
 1. [字符串](#docs/JavaScript/string)
 1. [对象](#docs/JavaScript/object)
 1. [数组](#docs/JavaScript/array)
+1. [函数](#docs/JavaScript/function)
 
 ## 库
 
