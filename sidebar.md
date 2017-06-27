@@ -18,6 +18,10 @@
 1. [对象](#docs/JavaScript/object)
 1. [数组](#docs/JavaScript/array)
 
+## 库
+
+1. [doT.js](#docs/library/doT.js)
+
 
 
 ## 资源

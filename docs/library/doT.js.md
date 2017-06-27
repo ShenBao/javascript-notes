@@ -1,10 +1,11 @@
-# doT.js详细介绍
+# doT.js
+
+## 简介
 
 doT.js特点是快，小，无依赖其他插件。
 
 官网：http://olado.github.io
 
-中文简述：http://www.cnblogs.com/kuikui/p/3505768.html
 
 ## doT.js详细使用介绍
 
