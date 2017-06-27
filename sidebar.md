@@ -7,12 +7,13 @@
 ## 前言
 1. [前言](#README)
 
-## JavaScript
+## JavaScript 基础
 1. [概述](#docs/JavaScript/intro)
 1. [JavaScript的历史](#docs/JavaScript/history)
 1. [基础语法](#docs/JavaScript/basic)
 1. [数据类型](#docs/JavaScript/types)
 1. [数值](#docs/JavaScript/number)
+1. [字符串](#docs/JavaScript/string)
 
 
 
