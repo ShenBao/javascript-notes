@@ -19,6 +19,8 @@
 1. [数组](#docs/JavaScript/array)
 1. [函数](#docs/JavaScript/function)
 1. [运算符](#docs/JavaScript/operator)
+1. [数据类型转换](#docs/JavaScript/typesconversion)
+
 
 ## 库
 
