@@ -1219,3 +1219,5 @@ q = a ? b : (c ? d : (e ? f : g));
 ## 参考链接
 
 - [MDN, Bitwise Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
+
+

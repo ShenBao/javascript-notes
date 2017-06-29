@@ -1,5 +1,6 @@
 # JavaScript语言的历史
 
+
 ## JavaScript的诞生
 
 JavaScript因为互联网而生，紧随着浏览器的出现而问世。回顾它的历史，就要从浏览器的历史讲起。
