@@ -18,6 +18,7 @@
 1. [对象](#docs/JavaScript/object)
 1. [数组](#docs/JavaScript/array)
 1. [函数](#docs/JavaScript/function)
+1. [运算符](#docs/JavaScript/operator)
 
 ## 库
 
