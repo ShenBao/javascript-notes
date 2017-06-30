@@ -1,13 +1,14 @@
+# thymeleaf
 
-官方文档：http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#conditional-expressions
+
+> 官方文档：http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#conditional-expressions
 
 
-#   介绍
+##   介绍
 
 thymeleaf是基于Java的模板引擎，支持xml/xhtml/HTML5。
 
 lthymeleaf在指定的模式下处理文件之前会首先将文件转换为格式良好的XML文件，而此XML文件仍然是完全有效的HTML5.1解析xml方式为SAX.所以web页面要求严格格式，一定要有封闭标签：/> 或 </>
-
 
 ##  引入文件
 ```
