@@ -24,6 +24,7 @@
 
 ## 内置对象
 1. [Object对象](#docs/ES5/object)
+1. [Array 对象](#docs/ES5/array)
 
 
 
