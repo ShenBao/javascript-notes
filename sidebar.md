@@ -27,11 +27,8 @@
 1. [Array 对象](#docs/ES5/array)
 
 
-
 ## 库
-
 1. [doT.js](#docs/library/doT.js)
-
 
 
 ## 资源
@@ -41,9 +38,7 @@
 
 
 ## 其他
-
 - [我的博客](https://shenbao.github.io/)
 - [反馈意见](https://github.com/ShenBao/shenbao-notes/issues)
-
 
 <br/><br/>
