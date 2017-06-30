@@ -27,6 +27,7 @@ https://mp.weixin.qq.com/debug/wxadoc/dev/
 
 
 
+- [H5 android JsBridge]https://github.com/lzyzsd/JsBridge
 
 
 
