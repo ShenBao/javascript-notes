@@ -248,7 +248,7 @@ JSON.stringify(o) // "{a:1, b:2, c:3}"
 
 基本上，JavaScript原生提供的属性都是不可枚举的，用户自定义的属性都是可枚举的。
 
-与枚举性相关的几个操作的区别的是，`for...in`循环包括继承自原型对象的属性，`Object.keys`方法只返回对象本身的属性。如果需要获取对象自身的所有属性，不管是否可枚举，可以使用`Object.getOwnPropertyNames`方法，详见下文。
+与枚举性相关的几个操作的区别的是，`for...in`循环包括继承自原型对象的属性，`Object.keys`方法只返回对象本身的属性。如果需要获取对象自身的所有属性，不管是否可枚举，可以使用`Object.getOwnPropertyNames`方法。
 
 考虑到`JSON.stringify`方法会排除`enumerable`为`false`的值，有时可以利用这一点，为对象添加注释信息。
 
