@@ -31,6 +31,11 @@
 1. [doT.js](#docs/library/doT.js)
 
 
+## markdown
+1. [markdown](#docs/markdown/md)
+1. [emoji](#docs/markdown/emoji)
+
+
 ## 资源
 1. [常用用具](#docs/resource/tool)
 1. [资料](#docs/resource/officialdata)
