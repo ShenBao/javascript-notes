@@ -403,11 +403,11 @@ divA.parentNode.replaceChild(newSpan, divA);
 
 `Node.contains`方法接受一个节点作为参数，返回一个布尔值，表示参数节点是否为当前节点的后代节点。
 
-{% highlight javascript %}
+```
 
 document.body.contains(node)
 
-{% endhighlight %}
+```
 
 上面代码检查某个节点，是否包含在当前文档之中。
 
