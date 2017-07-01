@@ -186,7 +186,7 @@ function replace_symbols(text) {
 function li_create_linkage(li_tag, li, header_level) {
   // add custom id and class attributes
   // html_safe_tag = replace_symbols(li_tag.text());
-  li_tag.attr('data-src', li.textContent);
+  li_tag.attr('data-src', replace_symbols(li.textContent));
   li_tag.attr("class", "link");
   li_tag.addClass('toc-'+li.localName)
 
@@ -242,14 +242,16 @@ function create_page_anchors() {
   }
   // creat page toc
   var tocList = $('.page-toc');
+  console.log(tocList.eq(2))
   if(tocList.length > 0){
     var ul_tag = $('<ol></ol>')
         .insertAfter('#content h1')
         .addClass('content-toc')
         .attr('id', 'content-toc');
     for (var index = 0; index < tocList.length; index++) {
-      var li_tag = $('<li></li>').html('<a href="#' + location.hash.split('#')[1] + '#' + tocList[index].textContent + '">' + tocList[index].textContent + '</a>');
+      var li_tag = $('<li></li>').html('<a href="#' + location.hash.split('#')[1] + '#' + replace_symbols(tocList[index].textContent) + '">' + tocList[index].textContent + '</a>');
       ul_tag.append(li_tag);
+      console.log(tocList.eq(2))
       li_create_linkage(li_tag, tocList[index]);
     }
   }

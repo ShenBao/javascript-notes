@@ -175,7 +175,6 @@ div.onclick = function(event){
 window.addEventListener('load', doSomething, false);
 ```
 
-addEventListener方法的详细介绍，参见本节EventTarget接口的部分。
 
 在上面三种方法中，第一种“HTML标签的on-属性”，违反了HTML与JavaScript代码相分离的原则；第二种“Element节点的事件属性”的缺点是，同一个事件只能定义一个监听函数，也就是说，如果定义两次onclick属性，后一次定义会覆盖前一次。因此，这两种方法都不推荐使用，除非是为了程序的兼容问题，因为所有浏览器都支持这两种方法。
 
