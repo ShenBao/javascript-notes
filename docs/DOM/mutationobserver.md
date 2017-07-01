@@ -1,10 +1,5 @@
----
-title: Mutation Observer API
-category: dom
-layout: page
-date: 2013-09-16
-ModifiedOn: 2013-09-16
----
+# Mutation Observer API
+
 
 ## 概述
 
