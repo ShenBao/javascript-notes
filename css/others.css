@@ -29,3 +29,17 @@
 #content-toc .toc-h4{
     padding-left: 40px;
 }
+
+
+#content table code {
+    background: none;
+    color: #d20992;
+}
+#content .emoji {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-size: 1.5em;
+}

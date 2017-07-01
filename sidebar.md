@@ -65,9 +65,9 @@
 1. [doT.js](#docs/library/doT.js)
 
 
-<!--## markdown
+## markdown
 1. [markdown](#docs/markdown/md)
-1. [emoji](#docs/markdown/emoji)-->
+1. [emoji](#docs/markdown/emoji)
 
 
 ## 资源
