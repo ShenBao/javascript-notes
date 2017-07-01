@@ -266,6 +266,3 @@ var foo = url.searchParams.get('foo') || 'somedefault';
 
 - MOZILLA DEVELOPER NETWORK，[Manipulating the browser history](https://developer.mozilla.org/en-US/docs/DOM/Manipulating_the_browser_history)
 - MOZILLA DEVELOPER NETWORK，[window.onpopstate](https://developer.mozilla.org/en-US/docs/DOM/window.onpopstate)
-- Johnny Simpson, [Controlling History: The HTML5 History API And ‘Selective’ Loading](http://www.inserthtml.com/2013/06/history-api/)
-- Louis Lazaris, [HTML5 History API: A Syntax Primer](http://www.impressivewebs.com/html5-history-api-syntax/)
-- Eric Bidelman, [Easy URL manipulation with URLSearchParams](https://developers.google.com/web/updates/2016/01/urlsearchparams?hl=en)
