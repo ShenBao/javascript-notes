@@ -350,11 +350,11 @@ if (typeof window.print === 'function') {
 
 ### window.getComputedStyle()
 
-`getComputedStyle`方法接受一个HTML元素作为参数，返回一个包含该HTML元素的最终样式信息的对象。详见《DOM》一章的CSS章节。
+`getComputedStyle`方法接受一个HTML元素作为参数，返回一个包含该HTML元素的最终样式信息的对象。
 
 ### window.matchMedia()
 
-`window.matchMedia`方法用来检查CSS的mediaQuery语句。详见《DOM》一章的CSS章节。
+`window.matchMedia`方法用来检查CSS的mediaQuery语句。
 
 ### window.focus()
 
