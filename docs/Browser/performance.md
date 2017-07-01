@@ -104,7 +104,7 @@ var pageLoadTime = t.loadEventEnd - t.navigationStart;
 
 performance.now方法返回当前网页自从performance.timing.navigationStart到当前时间之间的微秒数（毫秒的千分之一）。也就是说，它的精度可以达到100万分之一秒。
 
-{% highlight javascript %}
+```
 
 performance.now() 
 // 23493457.476999998
@@ -112,13 +112,13 @@ performance.now()
 Date.now() - (performance.timing.navigationStart + performance.now())
 // -0.64306640625
 
-{% endhighlight %}
+```
 
 上面代码表示，performance.timing.navigationStart加上performance.now()，近似等于Date.now()，也就是说，Date.now()可以替代performance.now()。但是，前者返回的是毫秒，后者返回的是微秒，所以后者的精度比前者高1000倍。
 
 通过两次调用performance.now方法，可以得到间隔的准确时间，用来衡量某种操作的耗时。
 
-{% highlight javascript %}
+```
 
 var start = performance.now();
 doTasks();
@@ -126,27 +126,27 @@ var end = performance.now();
 
 console.log('耗时：' + (end - start) + '微秒。');
 
-{% endhighlight %}
+```
 
 ## performance.mark()
 
 mark方法用于为相应的视点做标记。
 
-{% highlight javascript %}
+```
 
 window.performance.mark('mark_fully_loaded');
 
-{% endhighlight %}
+```
 
 clearMarks方法用于清除标记，如果不加参数，就表示清除所有标记。
 
-{% highlight javascript %}
+```
 
 window.peformance.clearMarks('mark_fully_loaded');
 
 window.performance.clearMarks();
 
-{% endhighlight %}
+```
 
 ## performance.getEntries()
 

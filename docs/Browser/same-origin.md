@@ -3,9 +3,6 @@
 
 浏览器安全的基石是“同源政策”（[same-origin policy](https://en.wikipedia.org/wiki/Same-origin_policy)）。很多开发者都知道这一点，但了解得不全面。
 
-本节详细介绍“同源政策”的各个方面，以及如何规避它。
-
-![](http://www.ruanyifeng.com/blogimg/asset/2016/bg2016040801.jpg)
 
 ## 概述
 
@@ -347,6 +344,3 @@ CORS是跨源资源分享（Cross-Origin Resource Sharing）的缩写。它是W3
 ## 参考链接
 
 - Mozilla Developer Network, [Window.postMessage](https://developer.mozilla.org/en-US/docs/Web/API/window.postMessage)
-- Jakub Jankiewicz, [Cross-Domain LocalStorage](http://jcubic.wordpress.com/2014/06/20/cross-domain-localstorage/)
-- David Baron, [setTimeout with a shorter delay](http://dbaron.org/log/20100309-faster-timeouts): 利用window.postMessage可以实现0毫秒触发回调函数
-

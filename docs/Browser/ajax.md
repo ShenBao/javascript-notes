@@ -797,7 +797,7 @@ for (var i = 0; i < files.length; i++) {
 
 上面代码中的FormData对象的append方法，除了可以添加文件，还可以添加二进制对象（Blob）或者字符串。
 
-{% highlight javascript %}
+```
 
 // Files
 formData.append(name, file, filename);
@@ -808,13 +808,13 @@ formData.append(name, blob, filename);
 // Strings
 formData.append(name, value);    
 
-{% endhighlight %}
+```
 
 append方法的第一个参数是表单的控件名，第二个参数是实际的值，第三个参数是可选的，通常是文件名。
 
 最后，使用Ajax方法向服务器上传文件。
 
-{% highlight javascript %}
+```
 
 var xhr = new XMLHttpRequest();
 
@@ -828,7 +828,7 @@ xhr.onload = function () {
 
 xhr.send(formData);
 
-{% endhighlight %}
+```
 
 目前，各大浏览器（包括IE 10）都支持Ajax上传文件。
 
