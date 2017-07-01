@@ -245,7 +245,7 @@ function create_page_anchors() {
   console.log(tocList.eq(2))
   if(tocList.length > 0){
     var ul_tag = $('<ol></ol>')
-        .insertAfter('#content h1')
+        .insertAfter('#content h1').eq(0)
         .addClass('content-toc')
         .attr('id', 'content-toc');
     for (var index = 0; index < tocList.length; index++) {
