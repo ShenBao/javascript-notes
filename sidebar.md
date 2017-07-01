@@ -9,7 +9,7 @@
 ## 前言
 1. [前言](#README)
 
-<!--## JavaScript 基础
+## JavaScript 基础
 1. [概述](#docs/JavaScript/intro)
 1. [JavaScript的历史](#docs/JavaScript/history)
 1. [基础语法](#docs/JavaScript/basic)
@@ -56,7 +56,7 @@
 1. [History对象](#docs/BOM/history)
 1. [Cookie](#docs/BOM/cookie)
 1. [Web Storage](#docs/BOM/webstorage)
-1. [IndexedDB：浏览器端数据库](#docs/BOM/indexeddb)-->
+1. [IndexedDB：浏览器端数据库](#docs/BOM/indexeddb)
 
 ## Browser
 
