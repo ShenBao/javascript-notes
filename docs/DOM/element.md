@@ -684,6 +684,3 @@ el.remove();
 document.getElementById('my-span').focus();
 ```
 
-## 参考链接
-
-- Craig Buckler，[How to Translate from DOM to SVG Coordinates and Back Again](https://www.sitepoint.com/how-to-translate-from-dom-to-svg-coordinates-and-back-again/)

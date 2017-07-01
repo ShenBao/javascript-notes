@@ -716,10 +716,5 @@ after方法用于在当前节点的后面，插入一个同级节点。如果参
 
 replaceWith方法使用参数指定的节点，替换当前节点。如果参数是节点对象，替换当前节点的就是该节点对象；如果参数是文本，替换当前节点的就是参数对应的文本节点。
 
-## 参考链接
 
-- Louis Lazaris, [Thinking Inside The Box With Vanilla JavaScript](http://coding.smashingmagazine.com/2013/10/06/inside-the-box-with-vanilla-javascript/)
-- David Walsh, [HTML5 classList API](http://davidwalsh.name/classlist)
-- Derek Johnson, [The classList API](http://html5doctor.com/the-classlist-api/)
-- Mozilla Developer Network, [element.dataset API](http://davidwalsh.name/element-dataset)
-- David Walsh, [The element.dataset API](http://davidwalsh.name/element-dataset) 
+
