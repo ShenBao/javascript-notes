@@ -3,6 +3,8 @@
 
 将对应表情的特殊字符复制后输入到你的markdown文本中，预览即可显示emoji表情。如：`:blush:`,显示效果：<b>:blush:</b>。
 
+- [emoji-cheat-sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
+
 ## 人物
 
 | 语法                                | 预览                               | 语法                                | 预览                               |
