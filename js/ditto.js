@@ -44,7 +44,8 @@ var getHash = function (hash) {
   }
 };
 
-var disqusCode = '<h3>留言</h3><div id="hypercomments_widget"></div><div id="disqus_thread"></div>';
+// var disqusCode = '<h3>留言</h3><div id="hypercomments_widget"></div><div id="disqus_thread"></div>';
+var disqusCode = '<div id="hypercomments_widget"></div><div id="disqus_thread"></div>';
 var menu = new Array();
 
 function initialize() {
