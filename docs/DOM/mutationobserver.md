@@ -112,7 +112,7 @@ observer.disconnect();
 observer.takeRecords();
 ```
 
-下面是一个例子。
+例：
 
 ```javascript
 // 保存所有没有被观察器处理的变动
