@@ -279,7 +279,7 @@ var popup = window.open('somefile.html');
 - 第三个参数：字符串，内容为逗号分隔的键值对，表示新窗口的参数，比如有没有提示栏、工具条等等。如果省略，则默认打开一个完整UI的新窗口。
 - 第四个参数：布尔值，表示第一个参数指定的网址，是否应该替换`history`对象之中的当前网址记录，默认值为`false`。显然，这个参数只有在第二个参数指向已经存在的窗口时，才有意义。
 
-下面是一个例子。
+例：
 
 ```javascript
 var popup = window.open(
@@ -302,7 +302,7 @@ var windowB = window.open('windowB.html', 'WindowB');
 windowB.window.name // "WindowB"
 ```
 
-下面是另一个例子。
+例:
 
 ```javascript
 var w = window.open();

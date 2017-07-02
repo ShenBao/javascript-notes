@@ -121,7 +121,7 @@ event = new MouseEvent(typeArg, mouseEventInit);
 - view，设置事件的视图，一般是window或document.defaultView，等同于Event.view属性。
 - detail，设置鼠标点击的次数，等同于Event.detail属性。
 
-下面是一个例子。
+例:
 
 ```javascript
 function simulateClick() {
@@ -268,7 +268,7 @@ relatedTarget属性返回事件的次要相关节点。对于那些没有次要�
 |dragenter |将要进入的节点 |将要离开的节点 |
 |dragexit |将要离开的节点 |将要进入的节点 |
 
-下面是一个例子。
+例:
 
 ```javascript
 // HTML代码为
@@ -456,7 +456,7 @@ error事件有一个特殊的性质，就是不会冒泡。这样的设计是正
 
 - loaded：返回一个数值，表示当前进度已经完成的数量。该属性除以total属性，就可以得到目前进度的百分比。
 
-下面是一个例子。
+例：
 
 ```javascript
 var xhr = new XMLHttpRequest();
@@ -901,7 +901,7 @@ event.dataTransfer.clearData("text/uri-list");
 
 拖动过程中（dragstart事件触发后），浏览器会显示一张图片跟随鼠标一起移动，表示被拖动的节点。这张图片是自动创造的，通常显示为被拖动节点的外观，不需要自己动手设置。setDragImage方法可以用来自定义这张图片，它接受三个参数，第一个是img图片元素或者canvas元素，如果省略或为null则使用被拖动的节点的外观，第二个和第三个参数为鼠标相对于该图片左上角的横坐标和右坐标。
 
-下面是一个例子。
+例：
 
 ```javascript
 // HTML代码为
@@ -1026,7 +1026,7 @@ var touches = touchEvent.touches;
 
 - touchcancel：触摸点取消时触发，比如在触摸区域跳出一个情态窗口（modal window）、触摸点离开了文档区域（进入浏览器菜单栏区域）、用户放置更多的触摸点（自动取消早先的触摸点）。
 
-下面是一个例子。
+例：
 
 ```javascript
 var el = document.getElementsByTagName("canvas")[0];
