@@ -13,13 +13,13 @@
 学习过程中，做的笔记。方便查找！<b>:joy:</b>
 
 
-如果你刚好来到这里，那希望对你也有所帮助，欢迎你提供意见或建议！！
+如果你刚好来到这里，那希望对你也有所帮助，欢迎你提供意见或建议！！(ps:[点击这里给我留言](https://github.com/ShenBao/shenbao-notes/issues))
 
 
 ## INTRODUCTION
 
 - Name：[ShenBao](https://github.com/ShenBao)
-- City: BeiJing,China
+- City: BeiJing
 - Mail: <a href="mailto:shenbaoone@gmail.com">shenbaoone@gmail.com</a>
 - QQ、WeChat：1351814223
 - 微博: [沈宝](http://weibo.com/ShenBaoPro)
