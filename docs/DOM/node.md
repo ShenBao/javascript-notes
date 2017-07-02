@@ -388,7 +388,7 @@ while (element.firstChild) {
 replacedNode = parentNode.replaceChild(newChild, oldChild);
 ```
 
-下面是一个例子。
+例：
 
 ```javascript
 var divA = document.getElementById('A');
