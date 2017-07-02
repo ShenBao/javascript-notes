@@ -36,7 +36,7 @@
 1. [RegExp对象](#docs/ES5/regexp)
 1. [JSON对象](#docs/ES5/json)
 1. [console对象](#docs/ES5/console)
-1. [二进制数组](#docs/ES5/arraybuffer)
+<!--1. [二进制数组](#docs/ES5/arraybuffer)-->
 
 
 ## DOM
@@ -57,7 +57,7 @@
 1. [History对象](#docs/BOM/history)
 1. [Cookie](#docs/BOM/cookie)
 1. [Web Storage](#docs/BOM/webstorage)
-1. [IndexedDB：浏览器端数据库](#docs/BOM/indexeddb)
+<!--1. [IndexedDB：浏览器端数据库](#docs/BOM/indexeddb)-->
 
 
 ## Browser
