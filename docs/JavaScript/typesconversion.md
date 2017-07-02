@@ -89,7 +89,7 @@ Number([5]) // 5
 
 3. 如果`toString`方法返回的是对象，就报错。
 
-请看下面的例子。
+例：
 
 ```javascript
 var obj = {x: 1};
@@ -196,7 +196,7 @@ e
 
 3. 如果`valueOf`方法返回的是对象，就报错。
 
-下面是一个例子。
+例：
 
 ```javascript
 String({a: 1})
