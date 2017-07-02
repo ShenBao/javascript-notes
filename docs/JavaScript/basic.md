@@ -547,7 +547,7 @@ for (initialize; test; increment) {
 - 测试表达式（test）：检查循环条件，只要为真就进行后续操作。
 - 递增表达式（increment）：完成后续操作，然后返回上一步，再一次检查循环条件。
 
-下面是一个例子。
+例：
 
 ```javascript
 var x = 3;
@@ -601,7 +601,7 @@ do {
 
 不管条件是否为真，`do..while`循环至少运行一次，这是这种结构最大的特点。另外，`while`语句后面的分号不能省略。
 
-下面是一个例子。
+例：
 
 ```javascript
 var x = 3;
