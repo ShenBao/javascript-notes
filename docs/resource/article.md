@@ -26,6 +26,9 @@ https://github.com/GcsSloop/AndroidNote
 - [H5 android JsBridge]https://github.com/lzyzsd/JsBridge
 
 
+- [朱安邦的博客](http://taobao.fm/)
+- [朱安邦的博客](https://zhubangbang.com/)
+
 
 
 ## 遇到的问题
