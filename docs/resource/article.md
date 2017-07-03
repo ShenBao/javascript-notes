@@ -36,7 +36,7 @@
 - [朱安邦的博客](https://zhubangbang.com/)
 
 
-
+- [webpack gp](http://www.css88.com/doc/webpack2/)
 - [webpack 好文](https://github.com/webpack-china/awesome-webpack-cn)
 
 
