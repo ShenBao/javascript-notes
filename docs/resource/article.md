@@ -32,6 +32,8 @@ https://github.com/GcsSloop/AndroidNote
 
 
 
+- [webpack 好文](https://github.com/webpack-china/awesome-webpack-cn)
+
 ## 遇到的问题
 
 - [设置WebView支持js的Alert,Confirm,Prompt函数的弹出提示框.](http://blog.csdn.net/mchenys/article/details/49930739)
