@@ -7,9 +7,6 @@
 
 - [微信支付文档](https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=7_7&index=6)
 
-## Android
-
-https://github.com/GcsSloop/AndroidNote
 
 - [JQ](http://hemin.cn/jq/)
 
@@ -40,6 +37,12 @@ https://github.com/GcsSloop/AndroidNote
 
 
 - [webpack 好文](https://github.com/webpack-china/awesome-webpack-cn)
+
+
+## Android
+- [Android](https://github.com/GcsSloop/AndroidNote)
+
+
 
 ## 遇到的问题
 
