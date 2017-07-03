@@ -18,9 +18,10 @@
 - [msdn JavaScript](https://msdn.microsoft.com/zh-cn/library/d1et7k7c(v=vs.94).aspx)
 
 
-
-
-
+- [react](http://facebook.github.io/react/)
+- [router](http://www.uprogrammer.cn/react-router-cn/index.html)
+- [redux](http://www.redux.org.cn/)
+- [react-native](http://facebook.github.io/react-native/)
 
 
 ## others

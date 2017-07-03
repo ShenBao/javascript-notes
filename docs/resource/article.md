@@ -38,6 +38,7 @@
 
 - [redux中文](http://cn.redux.js.org/)
 
+- [webpack](http://uprogrammer.cn/webpack-handbook/)
 - [webpack gp](http://www.css88.com/doc/webpack2/)
 - [webpack 好文](https://github.com/webpack-china/awesome-webpack-cn)
 
