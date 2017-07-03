@@ -20,7 +20,7 @@ https://github.com/GcsSloop/AndroidNote
 - [笔记社区](http://www.bijishequ.com/)
 - [蚂蚁社区](http://edu.zzfriend.com/)
 - [JS函数式编程指南](https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/)
-
+- [携程webkit css](http://ued.ctrip.com/webkitcss/index.html)
 
 
 - [H5 android JsBridge]https://github.com/lzyzsd/JsBridge
