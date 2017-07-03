@@ -1,9 +1,7 @@
-
-# gulp
+# gulp 配置
 
 
 ## gulp-htmlmin
-
 
 使用gulp-htmlmin压缩html，可以压缩页面javascript、css，去除页面空格、注释，删除多余属性等操作。
 
