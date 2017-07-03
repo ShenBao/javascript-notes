@@ -9,13 +9,9 @@
 
 https://github.com/GcsSloop/AndroidNote
 
-## JQ
+- [JQ](http://hemin.cn/jq/)
 
-http://hemin.cn/jq/
-
-## css参考手册
-
-http://css.doyoe.com/
+- [css参考手册](http://css.doyoe.com/)
 
 - [小程序官方文档](https://mp.weixin.qq.com/debug/wxadoc/dev/)
 - [jjc wechat](https://github.com/justjavac/awesome-wechat-weapp)
