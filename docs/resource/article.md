@@ -5,6 +5,8 @@
 > 平时开发遇到的问题，网络搜索找到的解决方案
 ```
 
+- [微信支付文档](https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=7_7&index=6)
+
 ## Android
 
 https://github.com/GcsSloop/AndroidNote
@@ -28,6 +30,7 @@ https://github.com/GcsSloop/AndroidNote
 - [w3school](http://www.w3school.com.cn/index.html)
 - [H5 android JsBridge]https://github.com/lzyzsd/JsBridge
 
+- [webpack 中文网](https://doc.webpack-china.org/)
 
 - [朱安邦的博客](http://taobao.fm/)
 - [朱安邦的博客](https://zhubangbang.com/)
