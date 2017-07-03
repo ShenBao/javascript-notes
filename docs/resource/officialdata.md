@@ -11,10 +11,17 @@
 - [ECMAScript 2017](https://tc39.github.io/ecma402/)
 - [ECMAScript 2018](https://tc39.github.io/ecma262/)
 
-## 
+## 文档
 
 - [MDN JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources)
 - [developers.google](https://developers.google.com/web/?hl=zh-cn)
+- [msdn JavaScript](https://msdn.microsoft.com/zh-cn/library/d1et7k7c(v=vs.94).aspx)
+
+
+
+
+
+
 
 ## others
 
