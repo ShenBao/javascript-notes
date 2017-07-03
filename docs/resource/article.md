@@ -32,8 +32,9 @@ https://mp.weixin.qq.com/debug/wxadoc/dev/
 
 
 
+## 遇到的问题
 
-
+- [设置WebView支持js的Alert,Confirm,Prompt函数的弹出提示框.](http://blog.csdn.net/mchenys/article/details/49930739)
 
 
 
