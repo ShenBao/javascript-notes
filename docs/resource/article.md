@@ -36,6 +36,8 @@
 - [朱安邦的博客](https://zhubangbang.com/)
 
 
+- [redux中文](http://cn.redux.js.org/)
+
 - [webpack gp](http://www.css88.com/doc/webpack2/)
 - [webpack 好文](https://github.com/webpack-china/awesome-webpack-cn)
 
