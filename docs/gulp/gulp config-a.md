@@ -128,6 +128,21 @@ gulp.task('testWatch', function () {
 
 `npm install gulp-autoprefixer --save-dev`
 
+autoprefixer 处理前：
+```
+.demo {
+    display:flex;
+}
+```
+autoprefixer 处理后：
+```
+.demo {
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+}
+```
+
 基本使用
 ```
 var gulp = require('gulp'),
