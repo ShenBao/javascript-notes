@@ -140,5 +140,98 @@ module: {
 test就是要处理的文件类型，loader就是处理文件的加载器。
 
 
+## gulp-browserify
+
+browserify可以为浏览器编译node风格的遵循commonjs的模块。 它搜索文件中的require()调用， 递归的建立模块依赖图。
+
+```
+var gulp = require('gulp');
+var browserify = require('gulp-browserify');
+// Basic usage
+gulp.task('scripts', function() {
+    // Single entry point to browserify
+    gulp.src('src/js/app.js')
+        .pipe(browserify({
+          insertGlobals : true,
+          debug : !gulp.env.production
+        }))
+        .pipe(gulp.dest('./build/js'))
+});
+```
+
+## gulp-jshint
+
+jshint是一个侦测javascript代码中错误和潜在问题的工具。
+
+```
+var jshint = require('gulp-jshint');
+var gulp   = require('gulp');
+gulp.task('lint', function() {
+  return gulp.src('./lib/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('YOUR_REPORTER_HERE'));
+});
+```
+
+## gulp-jslint
+
+jslint是一个javascript代码质量检测工具。
+
+```
+var gulp = require('gulp');
+var jslint = require('gulp-jslint');
+// build the main source into the min file
+gulp.task('default', function () {
+    return gulp.src(['source.js'])
+        // pass your directives
+        // as an object
+        .pipe(jslint({
+            // these directives can
+            // be found in the official
+            // JSLint documentation.
+            node: true,
+            evil: true,
+            nomen: true,
+            // you can also set global
+            // declarations for all source
+            // files like so:
+            global: [],
+            predef: [],
+            // both ways will achieve the
+            // same result; predef will be
+            // given priority because it is
+            // promoted by JSLint
+            // pass in your prefered
+            // reporter like so:
+            reporter: 'default',
+            // ^ there's no need to tell gulp-jslint
+            // to use the default reporter. If there is
+            // no reporter specified, gulp-jslint will use
+            // its own.
+            // specify whether or not
+            // to show 'PASS' messages
+            // for built-in reporter
+            errorsOnly: false
+        }))
+        // error handling:
+        // to handle on error, simply
+        // bind yourself to the error event
+        // of the stream, and use the only
+        // argument as the error object
+        // (error instanceof Error)
+        .on('error', function (error) {
+            console.error(String(error));
+        });
+});
+```
+
+
+
+
+
+
+
+
+
 
 

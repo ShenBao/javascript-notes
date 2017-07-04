@@ -93,9 +93,9 @@ gulp.task('testWatch', function () {
 });
 ```
 
-## gulp Sass
+## gulp sass
 
-Sass 是一种 CSS 的开发工具，提供了许多便利的写法，大大节省了开发者的时间，使得 CSS 的开发，变得简单和可维护。
+sass 是一种 CSS 的开发工具，提供了许多便利的写法，大大节省了开发者的时间，使得 CSS 的开发，变得简单和可维护。
 
 ```
 // 获取 gulp
@@ -114,6 +114,21 @@ gulp sass 插件提供4种输出格式：
 - expanded：没有缩进的、扩展的css代码。
 - compact：简洁格式的css代码。
 - compressed：压缩后的css代码。
+
+## gulp-ruby-sass
+
+gulp-ruby-sass是另外一款sass的gulp插件， 比glup-sass慢，但是更稳定，功能更多。 它使用compass预处理sass文件，所以你需要安装ruby和compass。
+```
+var gulp = require('gulp');
+var sass = require('gulp-ruby-sass');
+gulp.task('default', function () {
+    return gulp.src('src/scss/app.scss')
+        .pipe(sass({sourcemap: true, sourcemapPath: '../scss'}))
+        .on('error', function (err) { console.log(err.message); })
+        .pipe(gulp.dest('dist/css'));
+});
+```
+
 
 
 ## gulp-autoprefixer
