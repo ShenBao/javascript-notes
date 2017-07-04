@@ -145,3 +145,13 @@ gulp-browserify 用它和 babelify 实现ES6 module Example
 
 
 
+清理 dist/ 文件夹
+  del，根据 glob 来删除文件/目录
+压缩文件
+  gulp-htmlmin，压缩 html 文件
+  gulp-minify-html，同上
+  gulp-cssmin，压缩 css 文件
+  gulp-minify-css，同上，封装了 clean-css，star 比上面的多
+  gulp-uglify，混淆 JavaScript 代码
+  gulp-usemin，合并指定 block 中的文件
+  gulp-rev，给静态文件加上版本号，如 app.js -> app-d41d8cd98f.js
