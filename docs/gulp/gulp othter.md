@@ -115,3 +115,14 @@ plugins.rubySass = require('gulp-ruby-sass');
 gulp-load-plugins并不会一开始就加载所有package.json里的gulp插件，而是在我们需要用到某个插件的时候，才去加载那个插件。
 最后要提醒的一点是，因为gulp-load-plugins是通过你的package.json文件来加载插件的，所以必须要保证你需要自动加载的插件已经写入到了package.json文件里，并且这些插件都是已经安装好了的。
 
+
+
+
+
+
+
+
+
+
+
+
