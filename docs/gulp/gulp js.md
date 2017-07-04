@@ -78,3 +78,31 @@ gulp.task('jsmin', function () {
 });
 ```
 
+Options
+- mangle
+- output
+- compress
+- preserveComments:all/license/function/some (deprecated)
+
+Errors
+- fileName: The full file path for the file being minified.
+- cause: The original UglifyJS error, if available.
+- message (or msg)
+- filename
+- line
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
