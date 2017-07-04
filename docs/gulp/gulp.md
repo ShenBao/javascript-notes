@@ -64,6 +64,19 @@ Task 可以通过 `gulp <task> <othertask>` 方式来执行。如果只运行 `g
     gulp.task(name[, deps], fn)
     gulp.watch(glob [, opts], tasks), gulp.watch(glob [, opts, cb])
 
+- gulp.src(glob[, options])
+    - 根据 glob 匹配文件，返回 stream，可以通过 .pipe() 方法传递给后续的插件。
+- gulp.dest(path[, options])
+    - 一般用法 .pipe(gulp.dest(path))，把 pipe 中的内容按照指定的 path 写成文件，会自动创建不存在的文件夹。
+    - 注意，可以通过 .pipe 多次指定输出的地方，具体请看 这里
+- gulp.task(name[, deps], fn)
+    - 定义名为 name 的任务，定义之后就可以在命令行中使用 gulp xxx 来执行任务。
+    - deps 里面的任务全部完成后才会执行 fn
+    - deps 里面的任务都是并行执行的，如果需要顺序执行，需要特殊写法。具体看 这里
+- gulp.watch(glob[, opts, cb])
+    - 监听文件变化
+    - 不会监听新文件（目录），所以一般你会需要 gulp-watch
+
 ### gulp.src(globs[, options])
 
 说明：src方法是指定需要处理的源文件的路径，gulp借鉴了Unix操作系统的管道（pipe）思想，前一级的输出，直接变成后一级的输入，gulp.src返回当前文件流至可用插件；
