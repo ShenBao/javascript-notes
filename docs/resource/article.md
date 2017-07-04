@@ -34,7 +34,7 @@
 
 - [朱安邦的博客](http://taobao.fm/)
 - [朱安邦的博客](https://zhubangbang.com/)
-
+- [每天一个 Linux 命令](https://mp.weixin.qq.com/s?__biz=MzAxODI5ODMwOA==&mid=519056788&idx=1&sn=93acb101e28f201c71babb80cd58b060&chksm=00dce93f37ab6029097237d10f30c36096c164a0dc7ec7f3475bdeffb158e7fbc9e5bb79925e&mpshare=1&scene=23&srcid=042244sA7OIIPXV2U6V4Im5z#rd)
 
 - [redux中文](http://cn.redux.js.org/)
 
