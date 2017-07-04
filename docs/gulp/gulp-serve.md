@@ -1,6 +1,12 @@
 # gulp serve
 
 
+创建 Web Server (with Live Reload)，常用：
+- gulp-connect，用来创建 Web Server，其实还有其他选择的，但多数都是利用 connect 来创建 Web Server 的。
+- node-proxy-middle，用来代理请求，可以把 /api/xxx 发送到指定的地址。(常用于 SPA 开发)
+- connect-modrewrite，匹配资源，如果不匹配就可以重定向到指定地址。(常用于 SPA 开发)
+- connect-history-api-fallback，作用同上，也用于匹配资源，但用起来简单很多。(常用于 SPA 开发)
+
 # gulp-webserver
 
 https://segmentfault.com/a/1190000002668509
@@ -222,6 +228,31 @@ gulp.task('connect', function() {
     }
   });
 });
+```
+### proxy
+```
+gulp.task('connect', function () {
+    connect.server({
+        root: './app',
+        port: 9000,
+        livereload: true,
+        middleware: function (connect, o) {
+            return [
+                (function () {
+                    var url = require('url');
+                    var proxy = require('proxy-middleware');
+                    var options = url.parse('http://localhost:3000/api');
+                    options.route = '/api';
+                    return proxy(options);
+                })(),
+                modRewrite([
+                    '!\\.html|\\.js|\\.css|\\.swf|\\.jp(e?)g|\\.png|\\.gif|\\.eot|\\.woff|\\.ttf|\\.svg$ /index.html'
+                ])
+            ];
+        }
+    });
+});
+
 ```
 
 ## gulp-livereload
