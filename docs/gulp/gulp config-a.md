@@ -378,7 +378,7 @@ gulp.task('jsmin', function () {
 
 基本使用
 ```
-8
+
 var gulp = require('gulp'),
     concat = require('gulp-concat');
  
