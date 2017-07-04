@@ -100,6 +100,21 @@ gulp.task('uglifyjs', function () {
     combined.on('error', handleError)
 })
 ```
+`啊哈哈`
+```
+var gulp = require('gulp');
+var plugin1 = require('gulp-plugin1');
+var plugin2 = require('gulp-plugin2');
+var sourcemaps = require('gulp-sourcemaps');
+gulp.task('javascript', function() {
+  gulp.src('src/**/*.js')
+    .pipe(sourcemaps.init())
+      .pipe(plugin1())
+      .pipe(plugin2())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('dist'));
+});
+```
 
 ## gulp-util
 
@@ -265,6 +280,112 @@ gulp.task('watchjs', function () {
     })
 })
 ```
+
+## browser-sync
+
+BrowserSync 是一个自动化测试辅助工具，可以帮你在网页文件变更时自动载入新的网页。
+
+```
+var gulp        = require('gulp');
+var browserSync = require('browser-sync');
+// Static server
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
+// or...
+gulp.task('browser-sync', function() {
+    browserSync({
+        proxy: "yourlocal.dev"
+    });
+});
+```
+还可以使用proxy-middleware作为http proxy,转发特定的请求。
+
+
+## gulp-handlebars
+
+handlebars是一个模版引擎库， ember.js用它作为前端的模版引擎。
+
+```
+var handlebars = require('gulp-handlebars');
+var wrap = require('gulp-wrap');
+var declare = require('gulp-declare');
+var concat = require('gulp-concat');
+gulp.task('templates', function(){
+  gulp.src('source/templates/*.hbs')
+    .pipe(handlebars())
+    .pipe(wrap('Handlebars.template(<%= contents %>)'))
+    .pipe(declare({
+      namespace: 'MyApp.templates',
+      noRedeclare: true, // Avoid duplicate declarations
+    }))
+    .pipe(concat('templates.js'))
+    .pipe(gulp.dest('build/js/'));
+});
+```
+
+
+## gulp-usemin
+
+用来将HTML 文件中（或者templates/views）中没有优化的script 和stylesheets 替换为优化过的版本。
+usemin 暴露两个内置的任务，分别为：
+
+useminPrepare 为将指定文件中的 usemin block 转换为单独的一行（优化版本）准备配置。这通过为每个优化步骤生成名为 generated 的子任务来完成。
+usemin 使用优化版本替换 usemin 块，如果在磁盘上可以找到 revisioned 版本，则替换为 revisioned 版本。
+
+usemin块如下定义：
+```
+<!-- build:<pipelineId>(alternate search path) <path> -->
+... HTML Markup, list of script / link tags.
+<!-- endbuild -->
+```
+如
+```
+<!-- build:css style.css -->
+<link rel="stylesheet" href="css/clear.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+<!-- endbuild -->
+<!-- build:js js/lib.js -->
+<script src="../lib/angular-min.js"></script>
+<script src="../lib/angular-animate-min.js"></script>
+<!-- endbuild -->
+<!-- build:js1 js/app.js -->
+<script src="js/app.js"></script>
+<script src="js/controllers/thing-controller.js"></script>
+<script src="js/models/thing-model.js"></script>
+<script src="js/views/thing-view.js"></script>
+<!-- endbuild -->
+<!-- build:remove -->
+<script src="js/localhostDependencies.js"></script>
+<!-- endbuild -->
+```
+gulp-usemin用法如下：
+```
+var usemin = require('gulp-usemin');
+var uglify = require('gulp-uglify');
+var minifyHtml = require('gulp-minify-html');
+var minifyCss = require('gulp-minify-css');
+var rev = require('gulp-rev');
+gulp.task('usemin', function() {
+  gulp.src('./*.html')
+    .pipe(usemin({
+      css: [minifyCss(), 'concat'],
+      html: [minifyHtml({empty: true})],
+      js: [uglify(), rev()]
+    }))
+    .pipe(gulp.dest('build/'));
+});
+```
+
+
+
+
+
+
 
 
 
