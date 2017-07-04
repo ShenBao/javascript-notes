@@ -37,7 +37,6 @@ Key | Type | Default | Description |
 
 ## gulp-connect
 
-
 ```
 var gulp = require('gulp'),
     connect = require('gulp-connect');
@@ -83,7 +82,6 @@ gulp.task('jenkins-tests', function() {
 });
 ```
 
-
 Multiple server
 ```
 var gulp = require('gulp'),
@@ -128,36 +126,21 @@ gulp.task('watch', function () {
 gulp.task('default', ['connectDist', 'connectDev', 'watch']);
 ```
 
-### API
+API
 
-options.root：根目录
-
-options.port：端口号 Type: Number Default: 8080
-
-options.host：域名 Type: String；Default: localhost
-
-options.name：服务器名称 Type: String Default: Server
-
-options.https：Type: Object；Default: false
-
-options.livereload：Type: Object or Boolean Default: false
-
-options.livereload.port：Type: Number Default: 35729
-
-options.livereload.hostname：Type: String Default: 'undefined'
-
-
-options.fallback：Type: String Default: undefined
-
-options.middleware：Type: Function Default: []
-
-options.debug：Type: Boolean Default: false
-
-options.index
-
-Type: Boolean or String of a new index pass or Array of new indexes in preferred order Default: true
-
-
+- options.root：根目录
+- options.port：端口号 Type: Number Default: 8080
+- options.host：域名 Type: String；Default: localhost
+- options.name：服务器名称 Type: String Default: Server
+- options.https：Type: Object；Default: false
+- options.livereload：Type: Object or Boolean Default: false
+- options.livereload.port：Type: Number Default: 35729
+- options.livereload.hostname：Type: String Default: 'undefined'
+- options.fallback：Type: String Default: undefined
+- options.middleware：Type: Function Default: []
+- options.debug：Type: Boolean Default: false
+- options.index
+- Type: Boolean or String of a new index pass or Array of new indexes in preferred order Default: true
 
 ```
 gulp.task('connect', function() {
@@ -171,9 +154,6 @@ gulp.task('connect', function() {
   });
 });
 ```
-
-
-
 
 ## gulp-livereload
 
@@ -213,3 +193,8 @@ gulp.task('watch', function() {
     gulp.watch('src/less/**/*.less', ['less']);
 });
 ```
+
+
+
+
+

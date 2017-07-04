@@ -1,5 +1,7 @@
 # gulp other
 
+
+
 ## gulp 之 copy
 
 copy文件
@@ -179,17 +181,11 @@ gulp-load-plugins并不会一开始就加载所有package.json里的gulp插件�
 最后要提醒的一点是，因为gulp-load-plugins是通过你的package.json文件来加载插件的，所以必须要保证你需要自动加载的插件已经写入到了package.json文件里，并且这些插件都是已经安装好了的。
 
 
-
-
-
 ## gulp 之 gulp-watch-path stream-combiner2
 
 ###  gulp-watch-path
 
-
 利用 gulp-watch-path 配合 event 获取编译路径和输出路径。
-
-
 
 ```
 var watchPath = require('gulp-watch-path')
@@ -226,14 +222,11 @@ gulp.task('watchjs', function () {
 |   distExt   |扩展名(非必填)|
 
 
-
-
 ### stream-combiner2
 
 如果文件中有 js 语法错误时，gulp 会终止运行并报错。
 
 应对这种情况，我们可以使用 [Combining streams to handle errors](https://github.com/gulpjs/gulp/blob/master/docs/recipes/combining-streams-to-handle-errors.md) 文档中推荐的 [stream-combiner2](https://github.com/substack/stream-combiner2)  捕获错误信息。
-
 
 ```
 var handleError = function (err) {

@@ -1,9 +1,9 @@
 # gulp version
 
+
 ## gulp-rev-append
 
 使用gulp-rev-append给页面的引用添加版本号，清除页面引用缓存。
-
 
 `npm install gulp-rev-append --save-dev`
 
@@ -52,12 +52,9 @@ gulp.task('testRev', function () {
 });
 ```
 
-
-
 ## gulp-rev gulp-rev-collector
 
 在实际生产环境中，我们页面引用的css和js文件的文件名都是带版本号的，这样方便回滚和防止缓存。通常我们使用文件的md5编码作为版本号。
-
 
 ```
 var rev = require('gulp-rev'),

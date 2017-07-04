@@ -1,23 +1,5 @@
 # gulp img
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## gulp-imagemin imagemin-pngquant
 
 使用gulp-imagemin压缩图片文件（包括PNG、JPEG、GIF和SVG图片）
@@ -97,3 +79,5 @@ gulp.task('testImagemin', function () {
         .pipe(gulp.dest('dist/img'));
 });
 ```
+
+

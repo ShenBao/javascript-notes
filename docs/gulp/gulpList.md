@@ -3,7 +3,6 @@
 
     gulp-file-include 合并html
     stream-combiner2
-    
     gulp-less ：less插件
     gulp-notify：通知
     gulp-clean-css：文件压缩
@@ -81,7 +80,6 @@
     gulp-order - 重新对文件进行排序 (引入顺序重要的话, 这个插件结合 event-stream 是神器)
     gulp-csslint - 通过CSSLint自动校验CSS.
     gulp-eslint - ECMAScript/JavaScript代码校验.
-
     webpack-stream gulp与webpack Example
 
     Angular相关

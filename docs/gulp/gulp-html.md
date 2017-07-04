@@ -1,6 +1,7 @@
 # gulp html
 
 
+
 ## gulp-htmlmin
 
 使用gulp-htmlmin压缩html，可以压缩页面javascript、css，去除页面空格、注释，删除多余属性等操作。
@@ -31,7 +32,6 @@ gulp.task('testHtmlmin', function () {
 
 ## gulp-minify-html
 
-
 用来压缩html文件
 
 ```
@@ -45,8 +45,7 @@ gulp.task('minify-html', function () {
 });
 ```
 
-
-### Options Quick Reference
+Options Quick Reference
 
 Most of the options are disabled by default.
 
@@ -90,22 +89,6 @@ Most of the options are disabled by default.
 | `trimCustomFragments`          | Trim white space around `ignoreCustomFragments`. | `false` |
 | `useShortDoctype`              | [Replaces the `doctype` with the short (HTML5) doctype](http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype) | `false` |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## gulp-inline-source
 
 一些touch上的活动页，样式和脚本都不多，与其增加额外的请求数，不如把样式和脚本都以内联的方式嵌到html文件中。
@@ -124,8 +107,6 @@ gulp.task('inlinesource', function () {
         .pipe(inlinesource(options))
         .pipe(gulp.dest('dist'));
 });
-
-
 ```
 
 HTML
@@ -159,3 +140,5 @@ Output:
   </body>
 </html>
 ```
+
+

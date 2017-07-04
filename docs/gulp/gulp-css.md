@@ -1,7 +1,6 @@
 # gulp css
 
 
-
 ## gulp-less
 
 `npm install gulp-less --save-dev`
@@ -98,8 +97,6 @@ gulp.task('testWatch', function () {
 
 Sass 是一种 CSS 的开发工具，提供了许多便利的写法，大大节省了开发者的时间，使得 CSS 的开发，变得简单和可维护。
 
-
-
 ```
 // 获取 gulp
 var gulp = require('gulp');
@@ -186,7 +183,6 @@ gulp-autoprefixer的browsers参数[详解](https://github.com/ai/browserslist#qu
 - ExplorerMobile or ie_mob for Internet Explorer Mobile.
 
 
-
 ## gulp-minify-css [gulp-clean-css]
 
 使用gulp-minify-css压缩css文件，减小文件大小，并给引用url添加版本号避免缓存。重要：gulp-minify-css已经被废弃，请使用gulp-clean-css，用法一致
@@ -244,15 +240,6 @@ gulp.task('testCssmin', function () {
    Important comments included in minified output.
 */
 ```
-
-
-
-
-
-
-
-
-
 
 
 
