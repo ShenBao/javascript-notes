@@ -199,7 +199,7 @@ gulp.task('testCssmin', function () {
 });
 ```
 
-给css文件里引用url加版本号（根据引用文件的md5生产版本号）
+`给css文件里引用url加版本号（根据引用文件的md5生产版本号）`
 ```
 var gulp = require('gulp'),
     cssmin = require('gulp-minify-css');
