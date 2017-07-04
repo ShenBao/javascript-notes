@@ -1,4 +1,4 @@
-# guylp css
+# gulp css
 
 
 
@@ -94,7 +94,7 @@ gulp.task('testWatch', function () {
 });
 ```
 
-## gulp 编译 Sass
+## gulp Sass
 
 Sass 是一种 CSS 的开发工具，提供了许多便利的写法，大大节省了开发者的时间，使得 CSS 的开发，变得简单和可维护。
 

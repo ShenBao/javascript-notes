@@ -64,6 +64,14 @@
 
 ## gulp
 1. [gulp](#docs/gulp/gulp)
+1. [gulp css](#docs/gulp/gulp-css)
+1. [gulp html](#docs/gulp/gulp-html)
+1. [gulp img](#docs/gulp/gulp-img)
+1. [gulp js](#docs/gulp/gulp-js)
+1. [gulp other](#docs/gulp/gulp-other)
+1. [gulp serve](#docs/gulp/gulp-serve)
+1. [gulp version](#docs/gulp/gulp-version)
+1. [gulp plugins list](#docs/gulp/gulpList)
 
 
 ## 库

@@ -64,7 +64,7 @@ Task 可以通过 `gulp <task> <othertask>` 方式来执行。如果只运行 `g
     gulp.task(name[, deps], fn)
     gulp.watch(glob [, opts], tasks), gulp.watch(glob [, opts, cb])
 
-## gulp.src(globs[, options])
+### gulp.src(globs[, options])
 
 说明：src方法是指定需要处理的源文件的路径，gulp借鉴了Unix操作系统的管道（pipe）思想，前一级的输出，直接变成后一级的输入，gulp.src返回当前文件流至可用插件；
 
@@ -107,7 +107,7 @@ gulp.src('client/js/**/*.js', { base: 'client' })
   .pipe(gulp.dest('build'));  // Writes 'build/js/somedir/somefile.js
 ```
 
-## gulp.dest(path[, options])
+### gulp.dest(path[, options])
 
 说明：dest方法是指定处理完后文件输出的路径；
 
@@ -125,7 +125,7 @@ options：  类型(可选)：Object，有2个属性cwd、mode；
     options.cwd：  类型：String  默认：process.cwd()：前脚本的工作目录的路径 当文件输出路径为相对路径将会用到；
     options.mode：  类型：String  默认：0777 指定被创建文件夹的权限；
 
-## gulp.task(name[, deps], fn)
+### gulp.task(name[, deps], fn)
 
 说明：task定义一个gulp任务；
 
@@ -149,7 +149,7 @@ gulp.task('minicss', ['testLess'], function () { //执行完testLess任务后再
 
 fn：  类型(必填)：Function 该任务调用的插件操作；
 
-## gulp.watch(glob [, opts], tasks) or gulp.watch(glob [, opts, cb])
+### gulp.watch(glob [, opts], tasks) or gulp.watch(glob [, opts, cb])
 
 说明：watch方法是用于监听文件变化，文件一修改就会执行指定的任务；
 
