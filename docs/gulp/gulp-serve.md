@@ -34,6 +34,75 @@ Key | Type | Default | Description |
 `middleware` | Function/Array | `[]` | a connect middleware function or a list of middleware functions
 `proxies` | Array | `[]`| a list of proxy objects.  Each proxy object can be specified by `{source: '/abc', target: 'http://localhost:8080/abc', options: {headers: {'ABC_HEADER': 'abc'}}}`.
 
+### mock data（模拟数据、转发请求）
+
+mock的原理非常简单，就是拦截请求“转发”到本地文件，所谓转发，其实就是读取本地mock文件，并以json或者script等格式返回给浏览器.
+
+```
+//mockAPI.js
+
+var fs = require('fs');
+var path = require('path');
+
+var mockbase = path.join(__dirname, 'mock');
+
+var mockApi = function(res, pathname, paramObj, next) {
+    switch (pathname) {
+        case '/api/vote':
+            var data = fs.readFileSync(path.join(mockbase, 'vote.json'), 'utf-8');
+
+            // res.setHeader('Content-Type', 'application/json');
+            res.setHeader('Content-type', 'application/javascript');
+            res.end(paramObj.callback + '(' + data + ')');
+            return ;
+
+        case '/api/getUserInfo':
+            var data = fs.readFileSync(path.join(mockbase, 'getUserInfo.json'), 'utf-8');
+            res.setHeader('Content-type', 'application/javascript');
+            res.end(paramObj.callback + '(' + data + ')');
+            return ;
+        case '/api/apply':
+            var data = fs.readFileSync(path.join(mockbase, 'apply.json'), 'utf-8');
+            res.setHeader('Content-type', 'application/javascript');
+            res.end(paramObj.callback + '(' + data + ')');
+            return ;
+        default:
+            ;
+    }
+    next();
+};
+
+module.exports = mockApi;
+```
+
+```
+//gulpfile.js
+var mockApi = require('./mockApi');
+...
+gulp.task('webserver', function() {
+    gulp.src('./app')
+        .pipe(webserver({
+            livereload: true,
+            directoryListing: {
+                enable:true,
+                path: 'market'
+            },
+            port: 8000,
+            // 这里是关键！
+            middleware: function(req, res, next) {
+                var urlObj = url.parse(req.url, true),
+                    method = req.method,
+                    paramObj = urlObj.query;
+                // mock数据
+                mockApi(res, urlObj.pathname, paramObj, next);
+            }
+        }));
+});
+```
+知道了原理后，无论是ajax还是jsonp，你想怎么mock就怎么mock。另外可以利用webserver的proxies选项把请求代理到线上（通过代理解决跨域），这样就不用本地的mock文件，而是直接请求线上或beta环境的接口了。
+
+
+
 
 ## gulp-connect
 
