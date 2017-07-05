@@ -7,15 +7,15 @@
 ```
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My index</title>
-  <!-- inject:css -->
-  <!-- endinject -->
-</head>
-<body>
-  <!-- inject:js -->
-  <!-- endinject -->
-</body>
+  <head>
+    <title>My index</title>
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body>
+    <!-- inject:js -->
+    <!-- endinject -->
+  </body>
 </html>
 ```
 ```
