@@ -1,7 +1,6 @@
 # gulp html
 
 
-
 ## gulp-htmlmin
 
 使用gulp-htmlmin压缩html，可以压缩页面javascript、css，去除页面空格、注释，删除多余属性等操作。
@@ -92,7 +91,6 @@ Most of the options are disabled by default.
 ## gulp-inline-source
 
 一些touch上的活动页，样式和脚本都不多，与其增加额外的请求数，不如把样式和脚本都以内联的方式嵌到html文件中。
-
 
 ```
 var gulp = require('gulp');
