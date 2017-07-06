@@ -108,8 +108,6 @@ gulp.task('webserver', function() {
 知道了原理后，无论是ajax还是jsonp，你想怎么mock就怎么mock。另外可以利用webserver的proxies选项把请求代理到线上（通过代理解决跨域），这样就不用本地的mock文件，而是直接请求线上或beta环境的接口了。
 
 
-
-
 ## gulp-connect
 
 ```
