@@ -260,20 +260,20 @@ function create_page_anchors() {
 
 function normalize_paths() {
   // images
-  $(ditto.content_id + " img").map(function() {
-    var src = $(this).attr("src").replace("./", "");
-    if ($(this).attr("src").slice(0, 4) !== "http") {
-      var pathname = location.pathname.substr(0, location.pathname.length - 1);
-      var url = location.hash.replace("#", "");
+  // $(ditto.content_id + " img").map(function() {
+  //   var src = $(this).attr("src").replace("./", "");
+  //   if ($(this).attr("src").slice(0, 4) !== "http") {
+  //     var pathname = location.pathname.substr(0, location.pathname.length - 1);
+  //     var url = location.hash.replace("#", "");
 
-      // split and extract base dir
-      url = url.split("/");
-      var base_dir = url.slice(0, url.length - 1).toString();
+  //     // split and extract base dir
+  //     url = url.split("/");
+  //     var base_dir = url.slice(0, url.length - 1).toString();
 
-      // normalize the path (i.e. make it absolute)
-      $(this).attr("src", pathname + base_dir + "/" + src);
-    }
-  });
+  //     // normalize the path (i.e. make it absolute)
+  //     $(this).attr("src", pathname + base_dir + "/" + src);
+  //   }
+  // });
 }
 
 function show_error() {
