@@ -268,7 +268,11 @@ $("#encode").html(EncodeText(dataEncode));
 ```
 调用方式：
 ```
-var dataPart = {"name":"Jake","age":31,"html":"<div style='background: #f00; height: 30px; line-height: 30px;'>html元素</div>"};
+var dataPart = {
+    "name":"Jake",
+    "age":31,
+    "html":"<div style='background: #f00; height: 30px; line-height: 30px;'>html元素</div>"
+    };
 var defPart = {"joke":"<div>{{=it.name}} who?</div>"};
 var partText = doT.template($("#parttmpl").text(), undefined, defPart);
 $("#part").html(partText(dataPart));
