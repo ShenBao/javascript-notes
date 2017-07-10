@@ -239,12 +239,17 @@ $("#encode").html(EncodeText(dataEncode));
 ```
 {{## #}} for compile-time defines
 ```
+
 6、{{# }} for compile-time evaluation/includes and partials
+
 {{## #}} for compile-time defines
 
 数据源：
 ```
-{"name":"Jake","age":31}
+{
+    "name":"Jake",
+    "age":31
+}
 ```
 区域：
 ```
@@ -253,11 +258,12 @@ $("#encode").html(EncodeText(dataEncode));
 模板：
 ```
 <script id="parttmpl" type="text/x-dot-template">
-{{##def.snippet:
-<div>{{=it.name}}</div>{{#def.joke}}
-#}}
-{{#def.snippet}}
-{{=it.html}}
+    {{##def.snippet:
+        <div>{{=it.name}}</div>
+        {{#def.joke}}
+        #}}
+    {{#def.snippet}}
+    {{=it.html}}
 </script>
 ```
 调用方式：
