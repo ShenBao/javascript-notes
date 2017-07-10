@@ -73,7 +73,7 @@ $("#interpolation").html(interText(dataInter));
 格式：
 ```
 {{ for var key in data { }} 
-{{= key }} 
+    {{= key }} 
 {{ } }}
 ```
 数据源：
@@ -95,9 +95,9 @@ $("#interpolation").html(interText(dataInter));
 模板：
 ```
 <script id="evaluationtmpl" type="text/x-dot-template">
-{{ for(var prop in it) { }}
-<div>KEY:{{= prop }}---VALUE:{{= it[prop] }}</div>
-{{ } }}
+    {{ for(var prop in it) { }}
+        <div>KEY:{{= prop }}---VALUE:{{= it[prop] }}</div>
+    {{ } }}
 </script>
 ```
 调用方式：
