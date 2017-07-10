@@ -26,17 +26,23 @@ var tmpText = doT.template(模板);
 tmpText(数据源);
 ```
 
-
 #### 例子一：
 
 = 放在html中
+
 1、for interpolation 赋值
+
 格式：
+```
 {{= }}
- 
+```
+
 数据源：
 ```
-{"name":"Jake","age":31}
+{
+    "name": "ShenBao",
+    "age": 24
+}
 ```
 区域:
 ```
@@ -45,19 +51,24 @@ tmpText(数据源);
 模板：
 ```
 <script id="interpolationtmpl" type="text/x-dot-template">
-<div>Hi {{=it.name}}!</div>
-<div>{{=it.age || ''}}</div>
+    <div>Hi {{=it.name}}!</div>
+    <div>{{=it.age || ''}}</div>
 </script>
 ```
+
 调用方式：
 ```
-var dataInter = {"name":"Jake","age":31};
+var dataInter = {
+        "name": "ShenBao",
+        "age": 24
+    };
 var interText = doT.template($("#interpolationtmpl").text());
 $("#interpolation").html(interText(dataInter));
 ```
 
 #### 例子二：
 取key及val           普通循环(不是foreach)
+
 2、for evaluation for in 循环
 格式：
 ```
