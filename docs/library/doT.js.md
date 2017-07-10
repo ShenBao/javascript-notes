@@ -141,13 +141,15 @@ $("#evaluation").html(evalText(dataEval));
 ```
 <script id="arraystmpl" type="text/x-dot-template">
 {{~it.array:value:index}}
-<div>{{= index+1 }}{{= value }}!</div>
+    <div>{{= index+1 }}{{= value }}!</div>
 {{~}}
 </script>
 ```
 调用方式：
 ```
-var dataArr = {"array":["banana","apple","orange"]};
+var dataArr = {
+        "array":["banana","apple","orange"]
+    }
 var arrText = doT.template($("#arraystmpl").text());
 $("#arrays").html(arrText(dataArr));
 ```
