@@ -195,7 +195,11 @@ if（）{
 ```
 调用方式：
 ```
-var dataEncode = {"uri":"http://bebedo.com/?keywords=Yoga","html":"<div style='background: #f00; height: 30px; line-height: 30px;'>html元素</div>"};
+var dataEncode = {
+    "uri":
+    "http://bebedo.com/?keywords=Yoga",
+    "html":"<div style='background: #f00; height: 30px; line-height: 30px;'>html元素</div>"
+};
 var EncodeText = doT.template($("#conditionstmpl").text());
 $("#condition").html(EncodeText(dataEncode));
 ```
