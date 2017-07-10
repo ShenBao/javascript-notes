@@ -67,9 +67,11 @@ $("#interpolation").html(interText(dataInter));
 ```
 
 #### 例子二：
+
 取key及val           普通循环(不是foreach)
 
 2、for evaluation for in 循环
+
 格式：
 ```
 {{ for var key in data { }} 
@@ -196,10 +198,10 @@ if（）{
 调用方式：
 ```
 var dataEncode = {
-    "uri":
-    "http://bebedo.com/?keywords=Yoga",
-    "html":"<div style='background: #f00; height: 30px; line-height: 30px;'>html元素</div>"
-};
+        "uri":
+        "http://bebedo.com/?keywords=Yoga",
+        "html":"<div style='background: #f00; height: 30px; line-height: 30px;'>html元素</div>"
+    };
 var EncodeText = doT.template($("#conditionstmpl").text());
 $("#condition").html(EncodeText(dataEncode));
 ```
