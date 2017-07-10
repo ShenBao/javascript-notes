@@ -43,6 +43,7 @@
 - [webpack 好文](https://github.com/webpack-china/awesome-webpack-cn)
 
 - [啊哈哈。。。](http://www.365mini.com/page/javascript-tostring.htm)
+- [web](http://www.css88.com/)
 
 ## Android
 - [Android](https://github.com/GcsSloop/AndroidNote)
