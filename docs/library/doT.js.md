@@ -157,8 +157,11 @@ $("#arrays").html(arrText(dataArr));
 #### 例子四：
 ```
 if（）{
+    ...
 }else if（）{
+    ...
 }else{
+    ...
 }
 ```
 
@@ -181,13 +184,13 @@ if（）{
 模板：
 ```
 <script id="conditionstmpl" type="text/x-dot-template">
-{{? !it.name }}
-<div>Oh, I love your name, {{=it.name}}!</div>
-{{?? !it.age === 0}}
-<div>Guess nobody named you yet!</div>
-{{??}}
-You are {{=it.age}} and still dont have a name?
-{{?}}
+    {{? !it.name }}
+        <div>Oh, I love your name, {{=it.name}}!</div>
+    {{?? !it.age === 0}}
+        <div>Guess nobody named you yet!</div>
+    {{??}}
+        You are {{=it.age}} and still dont have a name?
+    {{?}}
 </script>
 ```
 调用方式：
