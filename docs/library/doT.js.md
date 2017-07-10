@@ -102,14 +102,25 @@ $("#interpolation").html(interText(dataInter));
 ```
 调用方式：
 ```
-var dataEval = {"name":"Jake","age":31,"interests":["basketball","hockey","photography"],"contact":{"email":"jake@xyz.com","phone":"999999999"}};
+var dataEval = {
+        "name":"Jake",
+        "age":31,
+        "interests": ["basketball","hockey","photography"],
+        "contact":{
+            "email":"jake@xyz.com",
+            "phone":"999999999"
+        }
+    };
 var evalText = doT.template($("#evaluationtmpl").text());
 $("#evaluation").html(evalText(dataEval));
 ```
 
 #### 例子三：
+
 循环数组
+
 3、for array iteration 数组
+
 格式：
 ```
 {{~data.array :value:index }}
@@ -118,7 +129,9 @@ $("#evaluation").html(evalText(dataEval));
 ```
 数据源:
 ```
-{"array":["banana","apple","orange"]}
+{
+    "array":["banana","apple","orange"]
+}
 ```
 区域：
 ```
