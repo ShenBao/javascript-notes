@@ -54,7 +54,7 @@
 
 欢迎加我讨论，一起成长！！！
 
-## 许可证
+## 授权许可
 
 本笔记采用创意共享“署名—非商业性使用”许可证（Creative Commons Attribution-NonCommercial license）。所有内容不仅可以免费阅读，还可以自由使用（比如转载），只需遵守两个条件：
 
