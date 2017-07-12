@@ -60,9 +60,9 @@
 
 - [前端面试题](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions/Questions-and-Answers)
 
-
-
-
+http://www.cnblogs.com/dreamerjdw/category/920354.html
+- [css知多少](http://www.cnblogs.com/wangfupeng1988/p/4325007.html)
+- [深入理解javascript原型和闭包（完结）](http://www.cnblogs.com/wangfupeng1988/p/3977924.html)
 
 ## 积累
 
