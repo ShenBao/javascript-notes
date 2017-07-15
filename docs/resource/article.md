@@ -54,10 +54,9 @@
 
 - [设置WebView支持js的Alert,Confirm,Prompt函数的弹出提示框.](http://blog.csdn.net/mchenys/article/details/49930739)
 
-- [算法](http://www.jianshu.com/p/0e59a2f4b6e6)
-
 ## 
 
+- [算法](http://www.jianshu.com/p/0e59a2f4b6e6)
 - [前端面试题](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions/Questions-and-Answers)
 
 http://www.cnblogs.com/dreamerjdw/category/920354.html
