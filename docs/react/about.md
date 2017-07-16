@@ -11,16 +11,12 @@
 
 狭义来讲 React 是 Facebook 内部开源出来的一个前端 UI 开发框架，广义来讲 React 不仅仅是 js 框架本身，更是一套完整的前端开发生态体系，这套体系包括：
 
-
-
 1. React.js
 2. ReactRenders: ReactDOM / ReactServer / ReactCanvas
 3. Flux 模式及其实现（Redux , Fluxxor）
 4. React 开源组件 
 5. React Native 
 6. GraphQl + Relay 
-
-
 
 任何技术都是一样，技术本身的核心不会太复杂，但是围绕这个主体会有很多依附的知识点形成了体系化的技术栈。 所以学习 React 并不仅仅是学习 React 本身，而是学习这套开发体系，整个技术栈。
 
