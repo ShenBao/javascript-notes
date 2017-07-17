@@ -84,6 +84,8 @@ rap log   日志
 - 创建项目    `rap init`
 - 添加设备    `rap device add <your-device-id>`
 - 添加程序库   `rap install package-name --save`
+- 开发依赖  `rap install your-rap-name --save-dev`
+- 安装    `rap install`
 - 硬件准备    `rap layout`
 - 部署至硬件   `rap deploy`
 
