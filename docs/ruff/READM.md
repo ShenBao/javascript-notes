@@ -13,6 +13,7 @@
 社区demo：https://github.com/RuffApps/Apps
 
 https://github.com/putaoshu/hello-ruff
+https://github.com/vilic/ruff-home
 
 开发辅助工具：https://github.com/runinspring/ruffhelper
 
