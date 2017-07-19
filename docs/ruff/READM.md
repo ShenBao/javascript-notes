@@ -8,7 +8,9 @@
 
 可用包： https://rap.ruff.io/
 
-demo：https://github.com/RuffApps/Apps
+我的demo： https://github.com/ShenBao/Ruff-applications
+
+社区demo：https://github.com/RuffApps/Apps
 
 https://github.com/putaoshu/hello-ruff
 
