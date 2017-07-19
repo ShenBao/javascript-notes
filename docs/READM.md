@@ -20,9 +20,11 @@ web前端开发分享
 http://www.cnblogs.com/jikey/p/3613082.html
 
 
+https://github.com/smyhvae/Mac
 
+http://macplay.github.io/
 
-
+https://zhuanlan.zhihu.com/MacTips
 
 
 
