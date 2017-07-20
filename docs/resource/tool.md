@@ -46,4 +46,5 @@ https://github.com/localtunnel/localtunnel
 - Octotree
 - OctoMate
 - grammarly
-
+- [Insight.io，让你能像在GitHub上像你的IDE里一样浏览和搜索代码](
+https://chrome.google.com/webstore/detail/insightio-for-github/pmhfgjjhhomfplgmbalncpcohgeijonh/)
