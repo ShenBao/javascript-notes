@@ -20,12 +20,10 @@ web前端开发分享
 http://www.cnblogs.com/jikey/p/3613082.html
 
 
+mac奇技淫巧
 https://github.com/smyhvae/Mac
-
 http://macplay.github.io/
-
 https://zhuanlan.zhihu.com/MacTips
-
 https://support.apple.com/zh-cn/HT201236
 
 
