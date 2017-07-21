@@ -32,3 +32,4 @@
 - [Exploring ES6](http://exploringjs.com/es6/index.html)
 
 
+- [最新版react翻译](https://github.com/discountry/react)
