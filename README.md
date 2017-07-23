@@ -31,7 +31,7 @@
 - CSS / CSS3
 - LESS / SASS / SCSS
 - Bootstrap
-- JavaScript / ES5 / ES6
+- JavaScript / ES5 / ES6+
 - Jquery / Zepto
 - React / React-Router / Redux / React-Native
 - Webpack / Gulp / FIS3 / rollup
