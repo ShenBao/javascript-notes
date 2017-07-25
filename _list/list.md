@@ -16,6 +16,8 @@ learn-webpack
 react-babel-webpack-boilerplate
 
 
+webpack-simple-demo
+
 
 
 
