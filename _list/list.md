@@ -22,6 +22,7 @@ gulp-webpack-demo
 redux-step
 
 react-router-cn
+react-basic
 
 https://github.com/smyhvae
 
