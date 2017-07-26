@@ -34,5 +34,29 @@ https://github.com/xiaoping6688/node-server-project
 
 
 
-
+https://github.com/bailicangdu/node-elm
 http://blog.fens.me/series-nodejs/
+https://github.com/ouzhigang/nodejs-ozgweb
+https://github.com/xuguangwen/nodeStation
+https://github.com/ssly/node
+
+https://github.com/iahuohz/malladmin_nodejs
+https://github.com/chongbenben/backgroundmanagement
+https://github.com/hangaoke1/blog-server
+
+
+登录验证
+http://www.jb51.net/article/79153.htm
+https://segmentfault.com/a/1190000008276009
+http://www.jb51.net/article/111989.htm
+
+
+
+
+
+
+
+
+
+
+
