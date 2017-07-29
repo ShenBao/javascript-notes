@@ -61,4 +61,15 @@ react-webpack-boilerplate
 
 
 
+admin ui demo
+https://github.com/jiangxy/react-antd-admin
+https://github.com/fireyy/react-antd-admin
+https://github.com/myqianlan/antd-admin-boilerplate
+https://github.com/yezihaohao/react-admin
+https://github.com/didilinkin/admin-react-antd-example
+
+
+
+
+
 
