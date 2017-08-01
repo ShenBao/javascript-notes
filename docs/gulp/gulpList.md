@@ -134,7 +134,6 @@
   - [gulp-useref](https://github.com/jonkemp/gulp-useref) 功能类似与usemin [Example](https://github.com/hjzheng/CUF_meeting_knowledge_share/tree/master/2015-8-17/bower-dependence-inject) 新版本用法有变化，详见gulp-useref的README.md
 
 
-
 gulp-browserify 用它和 babelify 实现ES6 module Example
 
 - **AngularJS**
@@ -143,11 +142,10 @@ gulp-browserify 用它和 babelify 实现ES6 module Example
   - [gulp-angular-extender](https://libraries.io/npm/gulp-angular-extender) 为angular module添加dependencies
   - [gulp-angular-templatecache](https://github.com/miickel/gulp-angular-templatecache) 将html模板缓存到$templateCache中
 
-
-
-清理 dist/ 文件夹
+```
+  清理 dist/ 文件夹
   del，根据 glob 来删除文件/目录
-压缩文件
+  压缩文件
   gulp-htmlmin，压缩 html 文件
   gulp-minify-html，同上
   gulp-cssmin，压缩 css 文件
@@ -155,3 +153,4 @@ gulp-browserify 用它和 babelify 实现ES6 module Example
   gulp-uglify，混淆 JavaScript 代码
   gulp-usemin，合并指定 block 中的文件
   gulp-rev，给静态文件加上版本号，如 app.js -> app-d41d8cd98f.js
+```
