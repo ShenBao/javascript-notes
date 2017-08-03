@@ -69,7 +69,43 @@ https://github.com/yezihaohao/react-admin
 https://github.com/didilinkin/admin-react-antd-example
 
 
+http://www.usr.cn/Down/Instructions/USR-TCP232-304-spec-V1.0.2.pdf
+http://www.usr.cn/Down/Instructions/USR-TCP232-304_V1.0.3.pdf
+http://www.usr.cn/Download/index.html
+http://www.cqlvqing.com/html/B43/108.html
 
 
+http://blog.parryqiu.com/
+https://bubao.github.io/2017/07/01/%E7%BA%AFReact&%E7%BA%AFRedux/#Webpack
+https://bubao.github.io/2017/07/04/Webpack2-%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#019-Webpack-2-中配置多页面编译
+http://www.cnblogs.com/wdlhao/p/5853867.html
+http://www.jianshu.com/u/10ae59f49b13
+http://blog.csdn.net/xllily_11
+http://www.jianshu.com/p/ecbd0d10a075?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
+https://segmentfault.com/u/sysu_xuejia/articles
+http://www.css88.com/nav/
+admin ui demo
+https://github.com/jiangxy/react-antd-admin
+https://github.com/fireyy/react-antd-admin
+https://github.com/myqianlan/antd-admin-boilerplate
+https://github.com/yezihaohao/react-admin
+https://github.com/didilinkin/admin-react-antd-example
+
+
+http://www.usr.cn/Down/Instructions/USR-TCP232-304-spec-V1.0.2.pdf
+http://www.usr.cn/Down/Instructions/USR-TCP232-304_V1.0.3.pdf
+http://www.usr.cn/Download/index.html
+http://www.cqlvqing.com/html/B43/108.html
+
+
+http://blog.parryqiu.com/
+https://bubao.github.io/2017/07/01/%E7%BA%AFReact&%E7%BA%AFRedux/#Webpack
+https://bubao.github.io/2017/07/04/Webpack2-%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#019-Webpack-2-中配置多页面编译
+http://www.cnblogs.com/wdlhao/p/5853867.html
+http://www.jianshu.com/u/10ae59f49b13
+http://blog.csdn.net/xllily_11
+http://www.jianshu.com/p/ecbd0d10a075?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
+https://segmentfault.com/u/sysu_xuejia/articles
+http://www.css88.com/nav/
 
 
