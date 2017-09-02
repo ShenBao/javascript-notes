@@ -36,7 +36,7 @@
 - JavaScript / ES5 / ES6+
 - Jquery / Zepto
 - React / React-Router / Redux / React-Native
-- Webpack / Gulp / FIS3 / rollup ?Grunt
+- Webpack / Gulp / FIS3 / rollup / Grunt
 - Nodejs / Express / Koa
 - doT.js / Jade / Handlebarsjs
 - Git / SVN / Shell
