@@ -19,7 +19,7 @@
 
 - Name：[ShenBao](https://github.com/ShenBao)
 - City: BeiJing
-- Mail: <a href="mailto:shenbaoone@gmail.com">shenbaoone@gmail.com</a>
+- Mail: <a href="mailto:shenbao.china@gmail.com">shenbao.china@gmail.com</a>
 - QQ、WeChat：1351814223
 - 微博: [沈宝](http://weibo.com/ShenBaoPro)
 - 知乎: [沈宝](https://www.zhihu.com/people/shenbao)
