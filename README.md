@@ -39,7 +39,7 @@
 - React / React-Router / Redux / React-Native
 - Webpack / Gulp / FIS3 / rollup / Grunt
 - Nodejs / Express / Koa
-- doT.js / Jade / Handlebarsjs
+- doTjs / Jade / Handlebarsjs
 - Git / SVN / Shell
 
 ## QR CODE
