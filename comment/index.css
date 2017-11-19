@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 8px 0;
+    background: no-repeat center center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 60%, rgba(187, 2, 195, 0.34)), linear-gradient(70deg, rgba(22, 20, 187, 0.56) 32%, rgba(222, 100, 117, 0.58));
+    background-attachment: scroll;
+    background-size: cover;
+}
+.about {
+    height: 40px;
+    line-height: 40px;
+}
+.about a{
+    text-decoration: none;
+}
+.comments .disqus-thread {
+    padding: 0 20px;
+}
+@media (min-width: 768px){
+    .comments,header h2, .about {
+        margin: 0 auto;
+        width: 768px;
+    }
+}

@@ -5,9 +5,11 @@
 将云笔记的东西迁移到github
 
 这样不用每次查看都登录了
+
+（ps：持续更新ing）
 ```
 
-## Hello
+## Hello 
 
 学习过程中，做的笔记。方便查找！<b>:joy:</b>
 
@@ -17,7 +19,7 @@
 
 - Name：[ShenBao](https://github.com/ShenBao)
 - City: BeiJing
-- Mail: <a href="mailto:shenbaoone@gmail.com">shenbaoone@gmail.com</a>
+- Mail: <a href="mailto:shenbao.china@gmail.com">shenbao.china@gmail.com</a>
 - QQ、WeChat：1351814223
 - 微博: [沈宝](http://weibo.com/ShenBaoPro)
 - 知乎: [沈宝](https://www.zhihu.com/people/shenbao)
@@ -25,18 +27,19 @@
 - Blog: [ShenBao Blog](https://shenbao.github.io)
 - API DOC: [API DOC](https://shenbao.github.io/blog)
 
+
 ## TECHNOLOGY
 
 - HTML / HTML5
 - CSS / CSS3
-- LESS / SASS / SCSS
+- LESS / SASS / PostCSS
 - Bootstrap
-- JavaScript / ES5 / ES6
+- JavaScript / ES5 / ES6+
 - Jquery / Zepto
 - React / React-Router / Redux / React-Native
-- Webpack / Gulp / FIS3 / rollup
+- Webpack / Gulp / FIS3 / rollup / Grunt
 - Nodejs / Express / Koa
-- doT.js / Jade / Handlebarsjs
+- doTjs / Jade / Handlebarsjs
 - Git / SVN / Shell
 
 ## QR CODE
@@ -46,9 +49,11 @@
     <img src="images/about-me/me-qr-code.png" alt="我的QQ二维码\微信二维码" width="400" >
 </div>
 
+
 ## END
 
 欢迎加我讨论，一起成长！！！
+
 
 ## 授权许可
 
