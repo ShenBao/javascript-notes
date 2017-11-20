@@ -1,4 +1,6 @@
+
 # document节点
+
 
 ## 概述
 
@@ -143,14 +145,17 @@ var allSheets = [].slice.call(document.styleSheets);
 
 ### document.documentURI，document.URL
 
-`document.documentURI`属性和`document.URL`属性都返回一个字符串，表示当前文档的网址。不同之处是`documentURI`属性是所有文档都具备的，`URL`属性则是HTML文档独有的。
+`document.documentURI`属性和`document.URL`属性都返回一个字符串，表示当前文档的网址。不同之处是`documentURI`属性可用于所有文档（包括 XML 文档），`URL`属性只能用于 HTML 文档。
 
 ```javascript
+document.URL
+// http://www.example.com/about
+
 document.documentURI === document.URL
 // true
 ```
 
-另外，如果文档的锚点（`#anchor`）变化，这两个属性都不会跟着变化，它们的值是静态的。但是，`document.location`会跟着变化，`document.location`总是返回最新的URL，会跟踪锚点的变化。
+如果文档的锚点（`#anchor`）变化，这两个属性都会跟着变化。
 
 ### document.domain
 
@@ -198,7 +203,7 @@ document.location.pathname // "/path/a.html"
 document.location.search // "?x=111"
 document.location.hash // "#part1"
 document.location.user // "user"
-document.location.password // "passed"
+document.location.password // "passwd"
 ```
 
 `location`对象有以下方法。
@@ -509,7 +514,7 @@ var elements = document.getElementsByClassName('foo bar');
 
 注意，正常模式下，CSS的`class`是大小写敏感的。（`quirks mode`下，大小写不敏感。）
 
-与`getElementsByTagName`方法一样，`getElementsByClassName`方法不仅可以`在document`对象上调用，也可以在任何元素节点上调用。
+与`getElementsByTagName`方法一样，`getElementsByClassName`方法不仅可以在`document`对象上调用，也可以在任何元素节点上调用。
 
 ```javascript
 // 非document对象上调用
@@ -612,8 +617,8 @@ function escapeHtml(str) {
 
 var userWebsite = '" onmouseover="alert(\'derp\')" "';
 var profileLink = '<a href="' + escapeHtml(userWebsite) + '">Bob</a>';
-var div = document.getElemenetById('target');
-div.innerHtml = profileLink;
+var div = document.getElementById('target');
+div.innerHTML = profileLink;
 // <a href="" onmouseover="alert('derp')" "">Bob</a>
 ```
 
@@ -809,4 +814,4 @@ document.getElementById("container").appendChild(newNode);
 
 ### document.getSelection()
 
-这个方法指向`window.getSelection()`。
+这个方法指向`window.getSelection()`，参见`window`对象一节的介绍。

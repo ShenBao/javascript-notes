@@ -1,3 +1,4 @@
+
 # Object对象
 
 
@@ -24,7 +25,7 @@ new Object(123) instanceof Number
 
 与其他构造函数一样，如果要在`Object`对象上面部署一个方法，有两种做法。
 
-**（1）部署在`Object`对象本身**
+**（1）在`Object`对象本身**
 
 比如，在`Object`对象上面定义一个`print`方法，显示其他对象的内容。
 
@@ -37,7 +38,7 @@ Object.print(o)
 // Object
 ```
 
-**（2）部署在`Object.prototype`对象**
+**（2）在`Object.prototype`对象**
 
 所有构造函数都有一个prototype属性，指向一个原型对象。凡是定义在Object.prototype对象上面的属性和方法，将被所有实例对象共享。
 
@@ -117,7 +118,7 @@ isObject(true) // false
 
 ### Object.keys()，Object.getOwnPropertyNames()
 
-`Object.keys`方法和`Object.getOwnPropertyNames`方法很相似，一般用来遍历对象的属性。它们的参数都是一个对象，都返回一个数组，该数组的成员都是对象自身的（而不是继承的）所有属性名。它们的区别在于，`Object.keys`方法只返回可枚举的属性，`Object.getOwnPropertyNames`方法还返回不可枚举的属性名。
+`Object.keys`方法和`Object.getOwnPropertyNames`方法很相似，一般用来遍历对象的属性。它们的参数都是一个对象，都返回一个数组，该数组的成员都是对象自身的（而不是继承的）所有属性名。它们的区别在于，`Object.keys`方法只返回可枚举的属性（关于可枚举性的详细解释见后文），`Object.getOwnPropertyNames`方法还返回不可枚举的属性名。
 
 ```javascript
 var o = {
@@ -157,7 +158,7 @@ Object.getOwnPropertyNames(o).length
 
 ### 其他方法
 
-除了上面提到的方法，`Object`还有不少其他方法，将在后文逐一详细介绍。
+除了上面提到的方法，`Object`还有不少其他方法：
 
 **（1）对象属性模型的相关方法**
 
@@ -193,7 +194,7 @@ Object.getOwnPropertyNames(o).length
 - `isPrototypeOf()`：判断当前对象是否为另一个对象的原型。
 - `propertyIsEnumerable()`：判断某个属性是否可枚举。
 
-本节介绍前两个方法，其他方法将在后文相关章节介绍。
+
 
 ### Object.prototype.valueOf()
 
@@ -345,9 +346,7 @@ type(new Date()); // "date"
  'Number',
  'Boolean',
  'Function',
- 'RegExp',
- 'NaN',
- 'Infinite'
+ 'RegExp'
 ].forEach(function (t) {
   type['is' + t] = function (o) {
     return type(o) === t.toLowerCase();
@@ -358,3 +357,5 @@ type.isObject({}) // true
 type.isNumber(NaN) // true
 type.isRegExp(/abc/) // true
 ```
+
+

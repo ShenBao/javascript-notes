@@ -1,4 +1,5 @@
-# Mutation Observer API
+
+# Mutation Observer API 监视 DOM 变动
 
 
 ## 概述
@@ -112,7 +113,7 @@ observer.disconnect();
 observer.takeRecords();
 ```
 
-例：
+下面是一个例子。
 
 ```javascript
 // 保存所有没有被观察器处理的变动
@@ -258,5 +259,3 @@ ready('.foo', function(element){
   // ...
 });
 ```
-
-

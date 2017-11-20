@@ -1,3 +1,4 @@
+
 # Element对象
 
 
@@ -234,11 +235,11 @@ function checking(){
 
 `Element.scrollLeft`属性表示网页元素的水平滚动条向右侧滚动的像素数量，`Element.scrollTop`属性表示网页元素的垂直滚动条向下滚动的像素数量。对于那些没有滚动条的网页元素，这两个属性总是等于0。
 
-如果要查看整张网页的水平的和垂直的滚动距离，要从`document.body`元素上读取。
+如果要查看整张网页的水平的和垂直的滚动距离，要从`document.documentElement`元素上读取。
 
 ```javascript
-document.body.scrollLeft
-document.body.scrollTop
+document.documentElement.scrollLeft
+document.documentElement.scrollTop
 ```
 
 这两个属性都可读写，设置该属性的值，会导致浏览器将指定元素自动滚动到相应的位置。
@@ -284,7 +285,7 @@ function getElementPosition(e) {
 
 ### Element.style
 
-每个元素节点都有`style`用来读写该元素的行内样式信息，具体介绍参见《CSS操作》一节。
+每个元素节点都有`style`用来读写该元素的行内样式信息。
 
 ### 总结
 
@@ -404,9 +405,33 @@ el.nextElementSibling
 
 ### Element.offsetParent
 
-`Element.offsetParent`属性返回当前HTML元素的最靠近的、并且CSS的`position`属性不等于`static`的父元素。如果某个元素的所有上层节点都将`position`属性设为`static`，则`Element.offsetParent`属性指向`<body>`元素。
+`Element.offsetParent`属性返回当前 HTML 元素的最靠近的、并且 CSS 的`position`属性不等于`static`的上层元素。
 
-该属性主要用于确定子元素的位置偏移，是`Element.offsetTop`和`Element.offsetLeft`的计算基准。
+```html
+<div style="position: absolute;">
+  <p>
+    <span>Hello</span>
+  </p>
+</div>
+```
+
+上面代码中，`span`元素的`offsetParent`属性就是`div`元素。
+
+该属性主要用于确定子元素位置偏移的计算基准，`Element.offsetTop`和`Element.offsetLeft`就是`offsetParent`元素计算的。
+
+如果该元素是不可见的（`display`属性为`none`），或者位置是固定的（`position`属性为`fixed`），则`offsetParent`属性返回`null`。
+
+```html
+<div style="position: absolute;">
+  <p>
+    <span style="display: none;">Hello</span>
+  </p>
+</div>
+```
+
+上面代码中，`span`元素的`offsetParent`属性是`null`。
+
+如果某个元素的所有上层节点的`position`属性都是`static`，则`Element.offsetParent`属性指向`<body>`元素。
 
 ## 属性相关的方法
 
@@ -528,9 +553,9 @@ el.closest(":not(div)") // article
 
 上面代码中，由于closet方法将当前元素节点也考虑在内，所以第二个closet方法返回div-03。
 
-### Element.match()
+### Element.matches()
 
-`Element.match`方法返回一个布尔值，表示当前元素是否匹配给定的CSS选择器。
+`Element.matches`方法返回一个布尔值，表示当前元素是否匹配给定的CSS选择器。
 
 ```javascript
 if (el.matches('.someClass')) {
@@ -562,7 +587,7 @@ matchesSelector(
 
 ## 事件相关的方法
 
-以下三个方法与`Element`节点的事件相关。这些方法都继承自`EventTarget`接口，详见本章的《Event对象》一节。
+以下三个方法与`Element`节点的事件相关。这些方法都继承自`EventTarget`接口。
 
 - `Element.addEventListener()`：添加事件的回调函数
 - `Element.removeEventListener()`：移除事件监听函数
@@ -655,7 +680,7 @@ element.insertAdjacentHTML(position, text);
 - `beforebegin`：在当前元素节点的前面。
 - `afterbegin`：在当前元素节点的里面，插在它的第一个子元素之前。
 - `beforeend`：在当前元素节点的里面，插在它的最后一个子元素之后。
-- `afterend`：在当前元素节点的后面。'
+- `afterend`：在当前元素节点的后面。
 
 ```javascript
 // 原来的HTML代码：<div id="one">one</div>
@@ -683,4 +708,3 @@ el.remove();
 ```javascript
 document.getElementById('my-span').focus();
 ```
-

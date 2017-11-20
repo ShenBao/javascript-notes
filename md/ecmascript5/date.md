@@ -1,3 +1,4 @@
+
 # Date对象
 
 
@@ -407,7 +408,7 @@ d.getFullYear() // 2013
 d.getTimezoneOffset() // -480
 ```
 
-上面代码中，最后一行返回`-480`，表示UTC比当前时间晚480分钟，即8个小时。
+上面代码中，最后一行返回`-480`，即 UTC 时间减去当前时间，单位是分钟。`-480`表示 UTC 比当前时间少480分钟，即当前时区比 UTC 早8个小时。
 
 下面是一个例子，计算本年度还剩下多少天。
 
@@ -532,8 +533,3 @@ doSomething();
 var end = new Date();
 var elapsed = end.getTime() - start.getTime();
 ```
-
-## 参考链接
-
-- Rakhitha Nimesh，[Getting Started with the Date Object](http://jspro.com/raw-javascript/beginners-guide-to-javascript-date-and-time/)
-- Ilya Kantor, [Date/Time functions](http://javascript.info/tutorial/datetime-functions)

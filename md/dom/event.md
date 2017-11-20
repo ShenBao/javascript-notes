@@ -1,4 +1,6 @@
-# 事件模型
+
+
+#  event事件模型
 
 
 事件是一种异步编程的实现方式，本质上是程序各个组成部分之间的通信。DOM支持大量的事件，本节介绍DOM的事件编程。
@@ -30,7 +32,7 @@ request.addEventListener('readystatechange', function () {...}, false);
 
 - `type`：事件名称，大小写敏感。
 - `listener`：监听函数。事件发生时，会调用该监听函数。
-- `useCapture`：布尔值，表示监听函数是否在捕获阶段（capture）触发（参见后文《事件的传播》部分），默认为`false`（监听函数只在冒泡阶段被触发）。老式浏览器规定该参数必写，较新版本的浏览器允许该参数可选。为了保持兼容，建议总是写上该参数。
+- `useCapture`：布尔值，表示监听函数是否在捕获阶段（capture）触发，默认为`false`（监听函数只在冒泡阶段被触发）。老式浏览器规定该参数必写，较新版本的浏览器允许该参数可选。为了保持兼容，建议总是写上该参数。
 
 下面是一个例子。
 
@@ -175,6 +177,7 @@ div.onclick = function(event){
 window.addEventListener('load', doSomething, false);
 ```
 
+addEventListener方法的详细介绍，参见本节EventTarget接口的部分。
 
 在上面三种方法中，第一种“HTML标签的on-属性”，违反了HTML与JavaScript代码相分离的原则；第二种“Element节点的事件属性”的缺点是，同一个事件只能定义一个监听函数，也就是说，如果定义两次onclick属性，后一次定义会覆盖前一次。因此，这两种方法都不推荐使用，除非是为了程序的兼容问题，因为所有浏览器都支持这两种方法。
 
@@ -424,7 +427,7 @@ function goInput(e) {
 
 **（2）event.eventPhase**
 
-eventPhase属性返回一个整数值，表示事件目前所处的节点。
+eventPhase属性返回一个整数值，表示事件目前所处的阶段。
 
 ```javascript
 var phase = event.eventPhase;
@@ -826,6 +829,3 @@ var e = document.createEvent("UIEvent");
 e.initUIEvent("click", true, true, window, 1);
 ```
 
-## 参考链接
-
-- Mozilla Developer Network, [Using Firefox 1.5 caching](https://developer.mozilla.org/en-US/docs/Using_Firefox_1.5_caching)

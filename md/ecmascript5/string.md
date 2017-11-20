@@ -1,5 +1,5 @@
-# String对象
 
+# String对象
 
 ## 概述
 
@@ -406,6 +406,4 @@ matches.input // "cat, bat, sat, fat"
 
 `split`方法还可以使用正则表达式作为参数。
 
-## 参考链接
 
-- Ariya Hidayat, [JavaScript String: substring, substr, slice](http://ariya.ofilabs.com/2014/02/javascript-string-substring-substr-slice.html)

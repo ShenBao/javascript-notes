@@ -1,3 +1,4 @@
+
 # Text节点和DocumentFragment节点
 
 
@@ -8,7 +9,6 @@
 通常我们使用`Node`节点的`firstChild`、`nextSibling`等属性获取`Text`节点，或者使用`Document`节点的`createTextNode`方法创造一个`Text`节点。
 
 ```
-
 // 获取Text节点
 var textNode = document.querySelector('p').firstChild;
 
@@ -27,7 +27,7 @@ var text2 = new Text("This is a text node");
 
 注意，由于空格也是一个字符，所以哪怕只有一个空格，也会形成Text节点。
 
-Text节点除了继承Node节点的属性和方法，还继承了CharacterData接口。Node节点的属性和方法请参考《Node节点》章节，这里不再重复介绍了，以下的属性和方法大部分来自CharacterData接口。
+Text节点除了继承Node节点的属性和方法，还继承了CharacterData接口。
 
 ## Text节点的属性
 
@@ -112,6 +112,7 @@ replaceData方法用于替换文本，第一个参数为替换开始位置，第
 
 subStringData方法用于获取子字符串，第一个参数为子字符串在Text节点中的开始位置，第二个参数为子字符串长度。
 
+
 ```
 
 // HTML代码为
@@ -151,7 +152,6 @@ splitText方法将Text节点一分为二，变成两个毗邻的Text节点。它
 分割后，该方法返回分割位置后方的字符串，而原Text节点变成只包含分割位置前方的字符串。
 
 ```
-
 // html代码为 <p id="p">foobar</p>
 var p = document.getElementById('p');
 var textnode = p.firstChild;
@@ -159,7 +159,6 @@ var textnode = p.firstChild;
 var newText = textnode.splitText(3);
 newText // "bar"
 textnode // "foo"
-
 ```
 
 normalize方法可以将毗邻的两个Text节点合并。

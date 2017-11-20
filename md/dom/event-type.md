@@ -1,7 +1,6 @@
-# 事件种类
 
+# event-type 事件种类
 
-本节介绍各种常见的浏览器事件。
 
 ## 鼠标事件
 
@@ -121,7 +120,7 @@ event = new MouseEvent(typeArg, mouseEventInit);
 - view，设置事件的视图，一般是window或document.defaultView，等同于Event.view属性。
 - detail，设置鼠标点击的次数，等同于Event.detail属性。
 
-例:
+下面是一个例子。
 
 ```javascript
 function simulateClick() {
@@ -268,7 +267,7 @@ relatedTarget属性返回事件的次要相关节点。对于那些没有次要�
 |dragenter |将要进入的节点 |将要离开的节点 |
 |dragexit |将要离开的节点 |将要进入的节点 |
 
-例:
+下面是一个例子。
 
 ```javascript
 // HTML代码为
@@ -390,7 +389,7 @@ function showChar(e){
 
 key属性返回一个字符串，表示按下的键名。如果同时按下一个控制键和一个符号键，则返回符号键的键名。比如，按下Ctrl+a，则返回a。如果无法识别键名，则返回字符串Unidentified。
 
-主要功能键的键名（不同的浏览器可能有差异）：Backspace，Tab，Enter，Shift，Control，Alt，CapsLock，CapsLock，Esc，Spacebar，PageUp，PageDown，End，Home，Left，Right，Up，Down，PrintScreen，Insert，Del，Win，F1～F12，NumLock，Scroll等。
+主要功能键的键名（不同的浏览器可能有差异）：Backspace，Tab，Enter，Shift，Control，Alt，CapsLock，Esc，Spacebar，PageUp，PageDown，End，Home，Left，Right，Up，Down，PrintScreen，Insert，Del，Win，F1～F12，NumLock，Scroll等。
 
 charCode属性返回一个数值，表示keypress事件按键的Unicode值，keydown和keyup事件不提供这个属性。注意，该属性已经从标准移除，虽然浏览器还支持，但应该尽量不使用。
 
@@ -456,7 +455,7 @@ error事件有一个特殊的性质，就是不会冒泡。这样的设计是正
 
 - loaded：返回一个数值，表示当前进度已经完成的数量。该属性除以total属性，就可以得到目前进度的百分比。
 
-例：
+下面是一个例子。
 
 ```javascript
 var xhr = new XMLHttpRequest();
@@ -550,7 +549,7 @@ draggable属性可用于任何Element节点，但是图片（img元素）和链�
 
 - **dragstart事件**：拖拉开始时在被拖拉的节点上触发，该事件的target属性是被拖拉的节点。通常应该在这个事件的监听函数中，指定拖拉的数据。
 
-- **dragend事件**：拖拉结束时（释放鼠标键或按下escape键）在被拖拉的节点上触发，该事件的target属性是被拖拉的节点。它与dragStart事件，在同一个节点上触发。不管拖拉是否跨窗口，或者中途被取消，dragend事件总是会触发的。
+- **dragend事件**：拖拉结束时（释放鼠标键或按下escape键）在被拖拉的节点上触发，该事件的target属性是被拖拉的节点。它与dragstart事件，在同一个节点上触发。不管拖拉是否跨窗口，或者中途被取消，dragend事件总是会触发的。
 
 - **dragenter事件**：拖拉进入当前节点时，在当前节点上触发，该事件的target属性是当前节点。通常应该在这个事件的监听函数中，指定是否允许在当前节点放下（drop）拖拉的数据。如果当前节点没有该事件的监听函数，或者监听函数不执行任何操作，就意味着不允许在当前节点放下数据。在视觉上显示拖拉进入当前节点，也是在这个事件的监听函数中设置。
 
@@ -575,7 +574,7 @@ draggable属性可用于任何Element节点，但是图片（img元素）和链�
 
 上面代码中，如果不取消拖拉事件或者阻止默认行为，就不可能在div节点上drop被拖拉的节点。
 
-拖拉事件用一个DragEvent对象表示，该对象继承MouseEvent对象，因此也就继承了UIEvent和Event对象。DragEvent对象只有一个独有的属性DataTransfer，其他都是继承的属性。DataTransfer属性用来读写拖拉事件中传输的数据，详见下文《DataTransfer对象》的部分。
+拖拉事件用一个DragEvent对象表示，该对象继承MouseEvent对象，因此也就继承了UIEvent和Event对象。DragEvent对象只有一个独有的属性DataTransfer，其他都是继承的属性。DataTransfer属性用来读写拖拉事件中传输的数据。
 
 下面的例子展示，如何动态改变被拖动节点的背景色。
 
@@ -901,7 +900,7 @@ event.dataTransfer.clearData("text/uri-list");
 
 拖动过程中（dragstart事件触发后），浏览器会显示一张图片跟随鼠标一起移动，表示被拖动的节点。这张图片是自动创造的，通常显示为被拖动节点的外观，不需要自己动手设置。setDragImage方法可以用来自定义这张图片，它接受三个参数，第一个是img图片元素或者canvas元素，如果省略或为null则使用被拖动的节点的外观，第二个和第三个参数为鼠标相对于该图片左上角的横坐标和右坐标。
 
-例：
+下面是一个例子。
 
 ```javascript
 // HTML代码为
@@ -1026,7 +1025,7 @@ var touches = touchEvent.touches;
 
 - touchcancel：触摸点取消时触发，比如在触摸区域跳出一个情态窗口（modal window）、触摸点离开了文档区域（进入浏览器菜单栏区域）、用户放置更多的触摸点（自动取消早先的触摸点）。
 
-例：
+下面是一个例子。
 
 ```javascript
 var el = document.getElementsByTagName("canvas")[0];
@@ -1407,7 +1406,7 @@ history.go(2);  // state: {"page":3}
 
 - paste事件：在剪贴板内容被粘贴到文档后触发。
 
-这三个事件都有一个clipboardData只读属性。该属性存放剪贴的数据，是一个DataTransfer对象，具体的API接口和操作方法，请参见《触摸事件》的DataTransfer对象章节。
+这三个事件都有一个clipboardData只读属性。该属性存放剪贴的数据，是一个DataTransfer对象，有具体的API接口和操作方法。
 
 ### 焦点事件
 

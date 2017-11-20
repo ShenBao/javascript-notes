@@ -1,7 +1,9 @@
 
 # 二进制数组
 
-## 简介
+
+# 二进制数组
+
 ArrayBuffer对象、TypedArray对象、DataView对象是JavaScript操作二进制数据的一个接口。这些对象早就存在，属于独立的规格，ES6将它们纳入了ECMAScript规格，并且增加了新的方法。
 
 这些对象原始的设计目的，与WebGL项目有关。所谓WebGL，就是指浏览器与显卡之间的通信接口，为了满足JavaScript与显卡之间大量的、实时的数据交换，它们之间的数据通信必须是二进制的，而不能是传统的文本格式。文本格式传递一个32位整数，两端的JavaScript脚本与显卡都要进行格式转化，将非常耗时。这时要是存在一种机制，可以像C语言那样，直接操作字节，将4个字节的32位整数，以二进制形式原封不动地送入显卡，脚本的性能就会大幅提升。
@@ -301,7 +303,7 @@ var normalArray = Array.prototype.slice.call(typedArray);
 - `TypedArray.prototype.toString()`
 - `TypedArray.prototype.values()`
 
-上面所有方法的用法，请参阅数组方法的介绍，这里不再重复了。
+上面所有方法的用法和数组的用法一样。
 
 另外，`TypedArray`数组与普通数组一样，部署了Iterator接口，所以可以被遍历。
 
@@ -886,7 +888,7 @@ function processimage(e) {
 }
 ```
 
-具体处理图像数据时，先处理bmp的文件头。具体每个文件头的格式和定义，请参阅有关资料。
+具体处理图像数据时，先处理bmp的文件头。具体每个文件头的格式和定义，查阅有关资料。
 
 ```javascript
 bitmap.fileheader = {};
@@ -923,10 +925,3 @@ bitmap.pixels = new Uint8Array(buffer, start);
 
 至此，图像文件的数据全部处理完成。下一步，可以根据需要，进行图像变形，或者转换格式，或者展示在Canvas网页元素之中。
 
-## 参考链接
-
-- Ilmari Heikkinen, [Typed Arrays: Binary Data in the Browser](http://www.html5rocks.com/en/tutorials/webgl/typed_arrays/)
-- Khronos, [Typed Array Specification](http://www.khronos.org/registry/typedarray/specs/latest/)
-- Ian Elliot, [Reading A BMP File In JavaScript](http://www.i-programmer.info/projects/36-web/6234-reading-a-bmp-file-in-javascript.html)	
-- Renato Mangini, [How to convert ArrayBuffer to and from String](http://updates.html5rocks.com/2012/06/How-to-convert-ArrayBuffer-to-and-from-String)
-- Axel Rauschmayer, [Typed Arrays in ECMAScript 6](http://www.2ality.com/2015/09/typed-arrays.html)

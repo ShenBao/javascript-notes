@@ -1,5 +1,5 @@
-# CSS操作
 
+# CSS操作
 
 CSS与JavaScript是两个有着明确分工的领域，前者负责页面的视觉效果，后者负责与用户的行为互动。但是，它们毕竟同属网页开发的前端，因此不可避免有着交叉和互相配合。本节介绍如果通过JavaScript操作CSS。
 
@@ -201,7 +201,7 @@ CSS添加伪元素的写法如下。
 }
 ```
 
-DOM节点的`style`对象无法读写伪元素的样式，这时就要用到`window`对象的`getComputedStyle`方法。JavaScript获取伪元素，可以使用下面的方法。
+DOM节点的`style`对象无法读写伪元素的样式，这时就要用到`window`对象的`getComputedStyle`方法（详见下面介绍）。JavaScript获取伪元素，可以使用下面的方法。
 
 ```javascript
 var test = document.querySelector('#test');
@@ -230,22 +230,6 @@ var color = window.getComputedStyle(test, ':before')
 ```javascript
 var sheets = document.styleSheets;
 var sheet = document.styleSheets[0];
-```
-
-此外，`<link>`节点和`<style>`节点的`sheet`属性，也可以获取`StyleSheet`对象。
-
-```javascript
-// HTML代码为
-// <link id="linkElement" href="http://path/to/stylesheet">
-// <style id="styleElement">
-//   body{font-size: 1.2 rem;}
-// </style>
-
-// 等同于document.styleSheets[0]
-document.querySelector('#linkElement').sheet
-
-// 等同于document.styleSheets[1]
-document.querySelector('#styleElement').sheet
 ```
 
 ### 属性
@@ -736,8 +720,4 @@ element.style.webkitAnimationPlayState = "paused";
 element.style.webkitAnimationPlayState = "running";
 ```
 
-## 参考链接
 
-- Mozilla Developer Network, [Using CSS animations](https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations)
-- Ryan Morr, [Detecting CSS Style Support](http://ryanmorr.com/detecting-css-style-support/)
-- Mozilla Developer Network, [Testing media queries](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Testing_media_queries)

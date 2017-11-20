@@ -1,3 +1,4 @@
+
 # RegExp对象
 
 
@@ -19,7 +20,7 @@ var regex = new RegExp('xyz');
 
 上面两种写法是等价的，都新建了一个内容为`xyz`的正则表达式对象。它们的主要区别是，第一种方法在编译时新建正则表达式，第二种方法在运行时新建正则表达式。
 
-RegExp 构造函数还可以接受第二个参数，表示修饰符。
+RegExp 构造函数还可以接受第二个参数，表示修饰符（详细解释见下文）。
 
 ```javascript
 var regex = new RegExp('xyz', "i");
@@ -733,7 +734,7 @@ var html = "<b>Hello</b>\n<i>world!</i>";
 
 ### 贪婪模式
 
-上一小节的三个量词符，默认情况下都是最大可能匹配，即匹配直到下一个字符不满足匹配规则为止。这被称为贪婪模式。
+默认情况下都是最大可能匹配，即匹配直到下一个字符不满足匹配规则为止。这被称为贪婪模式。
 
 ```javascript
 var s = 'aaa';
@@ -864,7 +865,7 @@ m
 // true
 ```
 
-上面的代码中，`\1`表示前一个括号匹配的内容（即“a”），`\2`表示第二个括号匹配的内容（即“b”）。
+上面的代码中，`\1`表示第一个括号匹配的内容（即“a”），`\2`表示第二个括号匹配的内容（即“c”）。
 
 下面是另外一个例子。
 
@@ -982,9 +983,3 @@ m // ['b']
 
 上面的代码使用了先行否定断言，`b`不在`c`前面所以被匹配，而且括号对应的`d`不会被返回。
 
-## 参考链接
-
-- Axel Rauschmayer, [JavaScript: an overview of the regular expression API](http://www.2ality.com/2011/04/javascript-overview-of-regular.html)
-- Mozilla Developer Network, [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-- Axel Rauschmayer, [The flag /g of JavaScript’s regular expressions](http://www.2ality.com/2013/08/regexp-g.html)
-- Sam Hughes, [Learn regular expressions in about 55 minutes](http://qntm.org/files/re/re.html)

@@ -1,9 +1,10 @@
-# Object属性描述符
+
+# 属性描述对象
 
 
 ## 概述
 
-JavaScript提供了一个内部数据结构，用来描述一个对象的属性的行为，控制它的行为。这被称为“属性描述符”（attributes object）。每个属性都有自己对应的属性描述对象，保存该属性的一些元信息。
+JavaScript提供了一个内部数据结构，用来描述一个对象的属性的行为，控制它的行为。这被称为“属性描述对象”（attributes object）。每个属性都有自己对应的属性描述对象，保存该属性的一些元信息。
 
 下面是属性描述对象的一个实例。
 
@@ -248,7 +249,7 @@ JSON.stringify(o) // "{a:1, b:2, c:3}"
 
 基本上，JavaScript原生提供的属性都是不可枚举的，用户自定义的属性都是可枚举的。
 
-与枚举性相关的几个操作的区别的是，`for...in`循环包括继承自原型对象的属性，`Object.keys`方法只返回对象本身的属性。如果需要获取对象自身的所有属性，不管是否可枚举，可以使用`Object.getOwnPropertyNames`方法。
+与枚举性相关的几个操作的区别的是，`for...in`循环包括继承自原型对象的属性，`Object.keys`方法只返回对象本身的属性。如果需要获取对象自身的所有属性，不管是否可枚举，可以使用`Object.getOwnPropertyNames`方法，详见下文。
 
 考虑到`JSON.stringify`方法会排除`enumerable`为`false`的值，有时可以利用这一点，为对象添加注释信息。
 
@@ -942,11 +943,11 @@ if (!Object.isFrozen(obj)) {
 
 ### 局限性
 
-需要注意的是，使用上面这些方法锁定对象的可写性，但是依然可以通过改变该对象的原型对象，来为它增加属性。
+上面的方法锁定对象的可写性有一个漏洞，依然可以通过改变原型对象，来为对象增加属性。
 
 ```javascript
 var obj = new Object();
-Object.preventExtensions(o);
+Object.preventExtensions(obj);
 
 var proto = Object.getPrototypeOf(obj);
 proto.t = 'hello';
@@ -969,7 +970,7 @@ var obj = Object.seal(
   )
 );
 
-Object.getPrototypeOf(obj).t = "hello";
+Object.getPrototypeOf(obj).hello = "hello";
 obj.hello // undefined
 ```
 
