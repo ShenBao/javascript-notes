@@ -38,16 +38,16 @@
 
 ## DOM
 
-- [DOM概述](./md/dom/node.md)
-- [Document节点](./md/dom/document.md)
-- [Element节点](./md/dom/element.md)
-- [attribute属性的操作](./md/dom/attribute.md)
-- [Text节点和DocumentFragment节点](./md/dom/text.md)
-- [event事件模型](./md/dom/event.md)
-- [event-type事件类型](./md/dom/event-type.md)
-- [CSS操作](./md/dom/css.md)
-- [image对象](./md/dom/image.md)
-- [Mutation Observer](./md/dom/mutationobserver.md)
+1. [DOM概述](./md/dom/node.md)
+1. [Document节点](./md/dom/document.md)
+1. [Element节点](./md/dom/element.md)
+1. [attribute属性的操作](./md/dom/attribute.md)
+1. [Text节点和DocumentFragment节点](./md/dom/text.md)
+1. [event事件模型](./md/dom/event.md)
+1. [event-type事件类型](./md/dom/event-type.md)
+1. [CSS操作](./md/dom/css.md)
+1. [image对象](./md/dom/image.md)
+1. [Mutation Observer](./md/dom/mutationobserver.md)
 
 ## BOM
 
