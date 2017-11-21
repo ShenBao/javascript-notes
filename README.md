@@ -35,6 +35,12 @@
 1. [属性描述对象](./md/ecmascript5/attributes.md)
 1. [二进制数组](./md/ecmascript5/arraybuffer.md)
 
+## 面向对象编程
+1. [概述](./md/oop/basic.md)
+1. [this 关键字](./md/oop/this.md)
+1. [prototype 对象](./md/oop/prototype.md)
+1. [Object 对象与继承](./md/oop/object.md)
+1. [面向对象编程的模式](./md/oop/pattern.md)
 
 ## DOM
 
@@ -51,6 +57,23 @@
 
 ## BOM
 
+1. [概述](./md/bom/engine.md)
+1. [window对象](./md/bom/window.md)
+1. [History对象](./md/bom/history.md)
+1. [Cookie](./md/bom/cookie.md)
+1. [Web Storage：浏览器端数据储存机制](./md/bom/webstorage.md)
+1. [同源政策](./md/bom/same-origin.md)
+1. [Ajax](./md/bom/ajax.md)
+1. [fetch](./md/bom/fetch.md)
+1. [CORS](./md/bom/cors.md)
+1. [IndexedDB：浏览器端数据库](./md/bom/indexeddb.md)
+1. [移动设备API](./md/bom/mobile.md)
+1. [Notifications API](./md/bom/notification.md)
+1. [Performance API](./md/bom/performance.md)
+
+
+## HTML API
+
 
 ## jQuery
 
@@ -64,8 +87,11 @@
 
 ## library
 
+1. [Underscore.js](./md/library/underscore.md)
 1. [doT.js](./md/library/doT.js.md)
-
+1. [D3.js](./md/library/d3.md)
+1. [datejs](./md/library/datejs.md)
+1. [Modernizr](./md/library/modernizr.md)
 
 ## gulp
 
@@ -79,6 +105,13 @@
 1. [gulp serve](./md/gulp/gulp-serve.md)
 1. [gulp version](./md/gulp/gulp-version.md)
 1. [gulp plugins list](./md/gulp/gulpList.md)
+
+
+
+## 其他
+
+1. [设计模式](./md/other/designpattern.md)
+1. [排序算法](./md/other/sorting.md)
 
 
 
