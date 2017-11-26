@@ -1,8 +1,6 @@
 # shenbao-learn-notes
 
-这是沈宝的学习笔记，您可以<a href="https://shenbao.github.io/shenbao-learn-notes/comment" target="_blank">点击这里</a>进行评论以及错误反馈。
-
-持续更新中，链接失效的可以去评论处反馈！！！
+这是沈宝的学习笔记，内容持续更新中，您可以<a href="https://shenbao.github.io/shenbao-learn-notes/comment" target="_blank">点击这里</a>进行评论以及错误反馈，链接失效的可以去评论处反馈。
 
 
 ## JavaScript 基础
