@@ -7,4 +7,3 @@
 - [关于我](https://shenbao.github.io/about)
 - [博客](https://shenbao.github.io)
 - [博客模板](https://shenbao.github.io/xiaobao-blog-boilerplate/home)
-
