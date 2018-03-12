@@ -6,8 +6,6 @@
 [关于我](https://shenbao.github.io/about)
 
 
-
-
 ## JavaScript 基础
 
 1. [JavaScript的历史](./md/javascript/history.md)
@@ -178,6 +176,4 @@
 
 1. [设计模式](./md/other/designpattern.md)
 1. [排序算法](./md/other/sorting.md)
-
-
 
