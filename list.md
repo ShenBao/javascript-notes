@@ -1,10 +1,8 @@
 # shenbao-learn-notes
 
-
 这是我的学习笔记，内容持续更新中，积累工作学习过程的点滴，您可以<a href="https://shenbao.github.io/shenbao-learn-notes/comment" target="_blank">点击这里</a>进行评论以及错误反馈，链接失效的可以去评论处反馈。
 
 [关于我](https://shenbao.github.io/about)
-
 
 ## JavaScript 基础
 
@@ -73,7 +71,6 @@
 1. [Notifications API](./md/bom/notification.md)
 1. [Performance API](./md/bom/performance.md)
 
-
 ## HTML API
 
 1. [html api 概述](./md/htmlapi/elements.md)
@@ -97,12 +94,9 @@
 1. [Service Worker](./md/webapp/serviceworker.md)
 1. [Progressive Web App](./md/webapp/progressivewebapp.md)
 
-
 ## jQuery
 
-
 ## React
-
 
 ## nodejs
 
@@ -137,7 +131,6 @@
 1. [Express框架](./md/nodejs/express.md)
 1. [Koa 框架](./md/nodejs/koa.md)
 1. [MongoDB的应用](./md/nodejs/mongodb.md)
-
 
 ## library
 
@@ -176,4 +169,3 @@
 
 1. [设计模式](./md/other/designpattern.md)
 1. [排序算法](./md/other/sorting.md)
-
