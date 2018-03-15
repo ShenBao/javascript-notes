@@ -138,5 +138,3 @@ Output:
   </body>
 </html>
 ```
-
-
