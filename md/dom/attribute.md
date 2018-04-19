@@ -58,6 +58,7 @@ if (para.hasAttributes()) {
 
 ## 元素节点对象的属性
 
+
 HTML元素节点的标准属性（即在标准中定义的属性），会自动成为元素节点对象的属性。
 
 ```javascript
@@ -97,6 +98,7 @@ HTML元素的属性名是大小写不敏感的，但是JavaScript对象的属性
 - `class`属性改为`className`
 
 另外，HTML属性值一般都是字符串，但是JavaScript属性会自动转换类型。比如，将字符串`true`转为布尔值，将`onClick`的值转为一个函数，将`style`属性的值转为一个`CSSStyleDeclaration`对象。
+
 
 ## 属性操作的标准方法
 
@@ -159,6 +161,7 @@ myImage.setAttribute('src', 'path/to/example.png');
 
 ### Element.hasAttribute()
 
+
 `Element.hasAttribute`方法返回一个布尔值，表示当前元素节点是否包含指定属性。
 
 ```javascript
@@ -170,6 +173,7 @@ if (d.hasAttribute('align')) {
 ```
 
 上面代码检查`div`节点是否含有`align`属性。如果有，则设置为“居中对齐”。
+
 
 ### Element.removeAttribute()
 
