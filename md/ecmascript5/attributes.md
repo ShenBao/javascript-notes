@@ -850,6 +850,7 @@ o.p // 'b'
 
 上面代码中，`Object.seal`方法对`p`属性的`value`无效，是因为此时`p`属性的`writable`为`true`。
 
+
 ### Object.isSealed()
 
 `Object.isSealed`方法用于检查一个对象是否使用了`Object.seal`方法。
@@ -940,6 +941,7 @@ if (!Object.isFrozen(obj)) {
 ```
 
 上面代码中，确认`obj`没有被冻结后，再对它的属性赋值，就不会报错了。
+
 
 ### 局限性
 
