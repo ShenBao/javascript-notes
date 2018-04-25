@@ -1,4 +1,3 @@
-
 # Fetch API
 
 
@@ -450,3 +449,4 @@ addEventListener('fetch', function(evt) {
   });
 });
 ```
+
