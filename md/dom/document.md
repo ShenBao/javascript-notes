@@ -1,6 +1,5 @@
 # document节点
 
-
 ## 概述
 
 `document`节点是文档的根节点，每张网页都有自己的`document`节点。`window.document`属性就指向这个节点。只要浏览器开始载入HTML文档，这个节点对象就存在了，可以直接调用。
@@ -813,5 +812,4 @@ document.getElementById("container").appendChild(newNode);
 
 ### document.getSelection()
 
-这个方法指向`window.getSelection()`，参见`window`对象一节的介绍。
-
+这个方法指向`window.getSelection()`
