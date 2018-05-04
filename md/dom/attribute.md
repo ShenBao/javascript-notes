@@ -1,6 +1,5 @@
 # attribute属性的操作
 
-
 HTML元素包括标签名和若干个键值对，这个键值对就称为“属性”（attribute）。
 
 ```html
@@ -173,7 +172,6 @@ if (d.hasAttribute('align')) {
 ```
 
 上面代码检查`div`节点是否含有`align`属性。如果有，则设置为“居中对齐”。
-
 
 ### Element.removeAttribute()
 
