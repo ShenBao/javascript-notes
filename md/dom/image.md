@@ -1,4 +1,3 @@
-
 # Image对象
 
 ## 概述
@@ -73,6 +72,7 @@ document.body.appendChild(img);
 - useMap：设置图像的`usemap`属性
 - width：图像的宽度，可读写
 
+
 下面是`complete`属性的一个例子。
 
 ```javascript
@@ -107,3 +107,5 @@ img.onload = function() {
   // ...
 };
 ```
+
+
