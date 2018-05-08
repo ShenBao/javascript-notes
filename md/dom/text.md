@@ -1,4 +1,3 @@
-
 # Text节点和DocumentFragment节点
 
 
@@ -217,4 +216,3 @@ function reverse(n) {
 - `firstElementChild`：返回当前`DocumentFragment`对象的第一个子元素节点，如果没有则返回`null`。
 - `lastElementChild`：返回当前`DocumentFragment`对象的最后一个子元素节点，如果没有则返回`null`。
 - `childElementCount`：返回当前`DocumentFragment`对象的所有子元素数量。
-
