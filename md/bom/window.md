@@ -17,6 +17,7 @@ window.a // 1
 
 ## window对象的属性
 
+
 ### window.window，window.name
 
 `window`对象的`window`属性指向自身。
@@ -687,3 +688,4 @@ window.onunload = function() {
 ```
 
 这三个方法都具有堵塞效应，一旦弹出对话框，整个页面就是暂停执行，等待用户做出反应。
+
