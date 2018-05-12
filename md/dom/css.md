@@ -1,4 +1,3 @@
-
 # CSS操作
 
 CSS与JavaScript是两个有着明确分工的领域，前者负责页面的视觉效果，后者负责与用户的行为互动。但是，它们毕竟同属网页开发的前端，因此不可避免有着交叉和互相配合。本节介绍如果通过JavaScript操作CSS。
@@ -218,7 +217,6 @@ var result = window.getComputedStyle(test, ':before')
 var color = window.getComputedStyle(test, ':before')
   .getPropertyValue('color');
 ```
-
 ## StyleSheet对象
 
 ### 获取样式表
@@ -719,5 +717,3 @@ animation-play-state属性可以控制动画的状态（暂停/播放），该�
 element.style.webkitAnimationPlayState = "paused";
 element.style.webkitAnimationPlayState = "running";
 ```
-
-
