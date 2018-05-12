@@ -1,6 +1,4 @@
-
 # Object对象
-
 
 ## 概述
 
@@ -357,5 +355,3 @@ type.isObject({}) // true
 type.isNumber(NaN) // true
 type.isRegExp(/abc/) // true
 ```
-
-
