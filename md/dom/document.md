@@ -813,3 +813,4 @@ document.getElementById("container").appendChild(newNode);
 ### document.getSelection()
 
 这个方法指向`window.getSelection()`
+
