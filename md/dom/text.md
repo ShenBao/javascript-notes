@@ -1,6 +1,5 @@
 # Text节点和DocumentFragment节点
 
-
 ## Text节点的概念
 
 `Text`节点代表`Element`节点和`Attribute`节点的文本内容。如果一个节点只包含一段文本，那么它就有一个`Text`子节点，代表该节点的文本内容。
