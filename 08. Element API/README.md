@@ -1,6 +1,7 @@
-# javascript-notes
+# README
 
-JavaScript 学习笔记
+TODO ...
+
 
 
 ## More links
